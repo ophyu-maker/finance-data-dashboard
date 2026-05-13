@@ -8,7 +8,6 @@ The goal of this project is to demonstrate an end-to-end analytics workflow, sta
 
 This project focuses on analyzing invoice, vendor, budget, and workforce-related data in a structured dashboard format.
 
----
 
 ## Objective
 
@@ -21,7 +20,6 @@ The main objective of this project is to create a dashboard that helps users mon
 - Budget versus actual analysis
 - Workforce and department-level cost insights
 
----
 
 ## Tools and Technologies
 
@@ -35,7 +33,6 @@ The main objective of this project is to create a dashboard that helps users mon
 - Git
 - GitHub
 
----
 
 ## Project Structure
 
@@ -51,7 +48,6 @@ finance_data_dashboard_project/
 └── README.md              # Project documentation
 ```
 
----
 
 ## Data Workflow
 
@@ -71,7 +67,6 @@ Python / Streamlit Dashboard
 GitHub Portfolio Project
 ```
 
----
 
 ## SQL Process
 
@@ -84,7 +79,6 @@ Examples of SQL work completed in this project include:
 - Creating dashboard-ready SQL views
 - Calculating total outstanding balances using grouped queries and window functions
 
----
 
 ## Key SQL Views
 
@@ -100,7 +94,6 @@ Examples of views used in this project include:
 
 These views help separate the data preparation logic from the dashboard code.
 
----
 
 ## Dashboard Features
 
@@ -114,7 +107,6 @@ The Streamlit dashboard includes:
 - Budget versus actual charts
 - Interactive data tables
 
----
 
 ## Business Value
 
@@ -122,7 +114,6 @@ This dashboard helps finance and operations teams quickly understand invoice exp
 
 Instead of reviewing multiple CSV files manually, users can view summarized metrics and interactive charts in one place.
 
----
 
 ## Skills Demonstrated
 
@@ -137,9 +128,7 @@ This project demonstrates the following skills:
 - Data visualization with Plotly
 - Git and GitHub project documentation
 
----
 
 ## Disclaimer
 
 This project uses sample or anonymized data for portfolio purposes. No confidential company information is included.
-````
