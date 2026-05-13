@@ -48,6 +48,20 @@ finance_data_dashboard_project/
 └── README.md              # Project documentation
 ```
 
+## Data Preparation
+
+This project uses a combination of raw CSV files and synthetic data created for portfolio purposes.
+
+The raw CSV files were prepared before importing them into SQLite. 
+For the budget dataset, I created a synthetic budget CSV using Python so that the dashboard could include budget versus actual analysis without using confidential company budget data.
+
+The data preparation process included:
+
+- Reviewing the original raw CSV files
+- Cleaning and standardizing column names
+- Handling missing or inconsistent values
+- Creating a synthetic budget dataset using Python
+- Exporting cleaned files as CSV
 
 ## Data Workflow
 
@@ -56,15 +70,13 @@ The workflow for this project follows a typical analytics pipeline:
 ```text
 Raw CSV Files
 ↓
+Python Data Cleaning and Synthetic Budget Data Creation
+↓
 SQLite Database
 ↓
-Data Cleaning with SQL
+Data Transformation/ SQL Views for Dashboard Analysis
 ↓
-SQL Views for Dashboard Analysis
-↓
-Python / Streamlit Dashboard
-↓
-GitHub Portfolio Project
+Streamlit Dashboard
 ```
 
 
