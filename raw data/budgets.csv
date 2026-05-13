@@ -1,0 +1,2737 @@
+month,department_name,budget_category,budget_amount
+2025-01,Boston Police Department,very_large,1022898.6
+2025-02,Boston Police Department,very_large,1001490.62
+2025-03,Boston Police Department,very_large,988439.96
+2025-04,Boston Police Department,very_large,945115.11
+2025-05,Boston Police Department,very_large,945112.75
+2025-06,Boston Police Department,very_large,935529.39
+2025-07,Boston Police Department,very_large,1014624.15
+2025-08,Boston Police Department,very_large,988680.4
+2025-09,Boston Police Department,very_large,999149.23
+2025-10,Boston Police Department,very_large,931859.04
+2025-11,Boston Police Department,very_large,1024777.43
+2025-12,Boston Police Department,very_large,1011322.37
+2025-01,Superintendent's Office,small,13649.96
+2025-02,Superintendent's Office,small,13652.18
+2025-03,Superintendent's Office,small,13822.55
+2025-04,Superintendent's Office,small,14133.44
+2025-05,Superintendent's Office,small,14002.59
+2025-06,Superintendent's Office,small,13804.2
+2025-07,Superintendent's Office,small,14256.23
+2025-08,Superintendent's Office,small,13590.27
+2025-09,Superintendent's Office,small,13805.49
+2025-10,Superintendent's Office,small,13910.13
+2025-11,Superintendent's Office,small,14036.6
+2025-12,Superintendent's Office,small,14500.59
+2025-01,Boston Fire Department,very_large,834247.3
+2025-02,Boston Fire Department,very_large,840760.19
+2025-03,Boston Fire Department,very_large,795278.02
+2025-04,Boston Fire Department,very_large,842020.63
+2025-05,Boston Fire Department,very_large,805614.12
+2025-06,Boston Fire Department,very_large,796827.61
+2025-07,Boston Fire Department,very_large,870456.41
+2025-08,Boston Fire Department,very_large,871851.5
+2025-09,Boston Fire Department,very_large,858752.88
+2025-10,Boston Fire Department,very_large,816784.61
+2025-11,Boston Fire Department,very_large,799545.1
+2025-12,Boston Fire Department,very_large,848409.23
+2025-01,Public Works Department,large,417016.13
+2025-02,Public Works Department,large,433187.84
+2025-03,Public Works Department,large,413217.42
+2025-04,Public Works Department,large,451136.69
+2025-05,Public Works Department,large,422942.47
+2025-06,Public Works Department,large,440440.54
+2025-07,Public Works Department,large,425236.49
+2025-08,Public Works Department,large,434266.61
+2025-09,Public Works Department,large,435421.28
+2025-10,Public Works Department,large,419738.56
+2025-11,Public Works Department,large,453748.52
+2025-12,Public Works Department,large,445321.04
+2025-01,Inspectional Services Dept,medium,249389.05
+2025-02,Inspectional Services Dept,medium,242265.27
+2025-03,Inspectional Services Dept,medium,250037.95
+2025-04,Inspectional Services Dept,medium,230043.75
+2025-05,Inspectional Services Dept,medium,232622.62
+2025-06,Inspectional Services Dept,medium,229005.74
+2025-07,Inspectional Services Dept,medium,235725.88
+2025-08,Inspectional Services Dept,medium,237245.67
+2025-09,Inspectional Services Dept,medium,234430.78
+2025-10,Inspectional Services Dept,medium,247803.45
+2025-11,Inspectional Services Dept,medium,236479.77
+2025-12,Inspectional Services Dept,medium,234660.75
+2025-01,Facilities Management,medium_small,63343.0
+2025-02,Facilities Management,medium_small,67687.71
+2025-03,Facilities Management,medium_small,62906.91
+2025-04,Facilities Management,medium_small,68901.16
+2025-05,Facilities Management,medium_small,67490.91
+2025-06,Facilities Management,medium_small,63722.7
+2025-07,Facilities Management,medium_small,62453.38
+2025-08,Facilities Management,medium_small,67774.86
+2025-09,Facilities Management,medium_small,67061.3
+2025-10,Facilities Management,medium_small,67206.83
+2025-11,Facilities Management,medium_small,67484.51
+2025-12,Facilities Management,medium_small,62903.59
+2025-01,Traffic Division,medium_small,49891.87
+2025-02,Traffic Division,medium_small,53768.89
+2025-03,Traffic Division,medium_small,52524.66
+2025-04,Traffic Division,medium_small,51007.55
+2025-05,Traffic Division,medium_small,49620.46
+2025-06,Traffic Division,medium_small,50904.21
+2025-07,Traffic Division,medium_small,50977.89
+2025-08,Traffic Division,medium_small,53076.24
+2025-09,Traffic Division,medium_small,52598.65
+2025-10,Traffic Division,medium_small,53893.98
+2025-11,Traffic Division,medium_small,51740.77
+2025-12,Traffic Division,medium_small,49911.2
+2025-01,Office of Human Resources BPS,small,32455.1
+2025-02,Office of Human Resources BPS,small,31824.06
+2025-03,Office of Human Resources BPS,small,32487.31
+2025-04,Office of Human Resources BPS,small,31610.61
+2025-05,Office of Human Resources BPS,small,31702.14
+2025-06,Office of Human Resources BPS,small,31401.04
+2025-07,Office of Human Resources BPS,small,30129.12
+2025-08,Office of Human Resources BPS,small,30389.99
+2025-09,Office of Human Resources BPS,small,30148.13
+2025-10,Office of Human Resources BPS,small,32061.7
+2025-11,Office of Human Resources BPS,small,31043.04
+2025-12,Office of Human Resources BPS,small,31657.34
+2025-01,Office of Streets,small,37467.99
+2025-02,Office of Streets,small,38087.08
+2025-03,Office of Streets,small,39413.61
+2025-04,Office of Streets,small,37389.22
+2025-05,Office of Streets,small,36805.76
+2025-06,Office of Streets,small,37623.48
+2025-07,Office of Streets,small,37129.52
+2025-08,Office of Streets,small,40082.89
+2025-09,Office of Streets,small,39615.65
+2025-10,Office of Streets,small,38944.18
+2025-11,Office of Streets,small,39859.07
+2025-12,Office of Streets,small,39598.55
+2025-01,Boston Public Library,medium_small,40523.45
+2025-02,Boston Public Library,medium_small,39146.16
+2025-03,Boston Public Library,medium_small,40191.55
+2025-04,Boston Public Library,medium_small,40537.22
+2025-05,Boston Public Library,medium_small,38283.1
+2025-06,Boston Public Library,medium_small,37472.24
+2025-07,Boston Public Library,medium_small,37931.9
+2025-08,Boston Public Library,medium_small,38708.53
+2025-09,Boston Public Library,medium_small,40232.78
+2025-10,Boston Public Library,medium_small,40399.34
+2025-11,Boston Public Library,medium_small,37070.22
+2025-12,Boston Public Library,medium_small,39034.66
+2025-01,Property Management,medium_small,54741.13
+2025-02,Property Management,medium_small,54165.45
+2025-03,Property Management,medium_small,55391.5
+2025-04,Property Management,medium_small,58799.66
+2025-05,Property Management,medium_small,55310.35
+2025-06,Property Management,medium_small,56411.63
+2025-07,Property Management,medium_small,57448.94
+2025-08,Property Management,medium_small,55537.98
+2025-09,Property Management,medium_small,58962.23
+2025-10,Property Management,medium_small,58909.67
+2025-11,Property Management,medium_small,54908.21
+2025-12,Property Management,medium_small,56290.33
+2025-01,School Support,school,89837.61
+2025-02,School Support,school,87561.07
+2025-03,School Support,school,92819.0
+2025-04,School Support,school,91837.65
+2025-05,School Support,school,87695.04
+2025-06,School Support,school,89780.74
+2025-07,School Support,school,95561.47
+2025-08,School Support,school,89421.89
+2025-09,School Support,school,88552.72
+2025-10,School Support,school,91716.21
+2025-11,School Support,school,96271.96
+2025-12,School Support,school,89444.78
+2025-01,Operations,medium_small,77383.04
+2025-02,Operations,medium_small,73431.69
+2025-03,Operations,medium_small,77131.15
+2025-04,Operations,medium_small,74413.12
+2025-05,Operations,medium_small,76407.89
+2025-06,Operations,medium_small,76417.12
+2025-07,Operations,medium_small,75679.94
+2025-08,Operations,medium_small,72320.53
+2025-09,Operations,medium_small,77938.69
+2025-10,Operations,medium_small,74058.67
+2025-11,Operations,medium_small,73046.2
+2025-12,Operations,medium_small,71947.14
+2025-01,Family & Community Advancement,medium_small,70547.79
+2025-02,Family & Community Advancement,medium_small,65966.1
+2025-03,Family & Community Advancement,medium_small,69400.8
+2025-04,Family & Community Advancement,medium_small,67421.12
+2025-05,Family & Community Advancement,medium_small,70323.26
+2025-06,Family & Community Advancement,medium_small,67059.78
+2025-07,Family & Community Advancement,medium_small,70640.49
+2025-08,Family & Community Advancement,medium_small,68531.85
+2025-09,Family & Community Advancement,medium_small,72344.25
+2025-10,Family & Community Advancement,medium_small,66804.38
+2025-11,Family & Community Advancement,medium_small,68215.29
+2025-12,Family & Community Advancement,medium_small,66637.69
+2025-01,Planning,medium_small,97912.29
+2025-02,Planning,medium_small,92068.15
+2025-03,Planning,medium_small,95861.5
+2025-04,Planning,medium_small,97345.08
+2025-05,Planning,medium_small,94872.85
+2025-06,Planning,medium_small,94631.78
+2025-07,Planning,medium_small,91916.35
+2025-08,Planning,medium_small,90512.86
+2025-09,Planning,medium_small,98099.83
+2025-10,Planning,medium_small,98130.05
+2025-11,Planning,medium_small,95607.86
+2025-12,Planning,medium_small,92833.23
+2025-01,Kennedy Academy Health Careers,school,102124.84
+2025-02,Kennedy Academy Health Careers,school,103834.13
+2025-03,Kennedy Academy Health Careers,school,103734.03
+2025-04,Kennedy Academy Health Careers,school,102663.33
+2025-05,Kennedy Academy Health Careers,school,101286.71
+2025-06,Kennedy Academy Health Careers,school,95715.14
+2025-07,Kennedy Academy Health Careers,school,96489.01
+2025-08,Kennedy Academy Health Careers,school,103848.55
+2025-09,Kennedy Academy Health Careers,school,100931.15
+2025-10,Kennedy Academy Health Careers,school,94966.7
+2025-11,Kennedy Academy Health Careers,school,95888.23
+2025-12,Kennedy Academy Health Careers,school,101501.13
+2025-01,Election Division,medium_small,24518.76
+2025-02,Election Division,medium_small,25503.3
+2025-03,Election Division,medium_small,25866.64
+2025-04,Election Division,medium_small,25765.29
+2025-05,Election Division,medium_small,24679.82
+2025-06,Election Division,medium_small,25918.12
+2025-07,Election Division,medium_small,24712.77
+2025-08,Election Division,medium_small,24936.49
+2025-09,Election Division,medium_small,26005.2
+2025-10,Election Division,medium_small,25759.38
+2025-11,Election Division,medium_small,26265.93
+2025-12,Election Division,medium_small,25779.63
+2025-01,Boston Retirement System,medium_small,64875.45
+2025-02,Boston Retirement System,medium_small,66728.6
+2025-03,Boston Retirement System,medium_small,66035.37
+2025-04,Boston Retirement System,medium_small,65891.92
+2025-05,Boston Retirement System,medium_small,70821.79
+2025-06,Boston Retirement System,medium_small,66900.24
+2025-07,Boston Retirement System,medium_small,70274.29
+2025-08,Boston Retirement System,medium_small,68509.95
+2025-09,Boston Retirement System,medium_small,69616.75
+2025-10,Boston Retirement System,medium_small,67640.98
+2025-11,Boston Retirement System,medium_small,68143.19
+2025-12,Boston Retirement System,medium_small,67572.55
+2025-01,Chief of Staff,medium_small,40525.1
+2025-02,Chief of Staff,medium_small,38774.14
+2025-03,Chief of Staff,medium_small,37757.46
+2025-04,Chief of Staff,medium_small,40219.92
+2025-05,Chief of Staff,medium_small,38363.19
+2025-06,Chief of Staff,medium_small,41389.34
+2025-07,Chief of Staff,medium_small,41442.74
+2025-08,Chief of Staff,medium_small,41287.88
+2025-09,Chief of Staff,medium_small,39128.49
+2025-10,Chief of Staff,medium_small,37722.34
+2025-11,Chief of Staff,medium_small,41341.22
+2025-12,Chief of Staff,medium_small,39358.52
+2025-01,Special Education,medium_small,102019.37
+2025-02,Special Education,medium_small,100940.92
+2025-03,Special Education,medium_small,95495.01
+2025-04,Special Education,medium_small,96378.82
+2025-05,Special Education,medium_small,100922.66
+2025-06,Special Education,medium_small,95714.12
+2025-07,Special Education,medium_small,94276.7
+2025-08,Special Education,medium_small,98052.92
+2025-09,Special Education,medium_small,101751.58
+2025-10,Special Education,medium_small,99410.38
+2025-11,Special Education,medium_small,98182.2
+2025-12,Special Education,medium_small,93571.62
+2025-01,Eliot K-8,medium_small,74611.08
+2025-02,Eliot K-8,medium_small,68565.62
+2025-03,Eliot K-8,medium_small,71255.91
+2025-04,Eliot K-8,medium_small,73809.63
+2025-05,Eliot K-8,medium_small,72838.02
+2025-06,Eliot K-8,medium_small,72526.83
+2025-07,Eliot K-8,medium_small,72565.72
+2025-08,Eliot K-8,medium_small,70126.17
+2025-09,Eliot K-8,medium_small,69657.45
+2025-10,Eliot K-8,medium_small,73325.89
+2025-11,Eliot K-8,medium_small,73331.24
+2025-12,Eliot K-8,medium_small,73736.36
+2025-01,Dpt of Innovation & Technology,medium,235807.25
+2025-02,Dpt of Innovation & Technology,medium,235575.81
+2025-03,Dpt of Innovation & Technology,medium,242566.14
+2025-04,Dpt of Innovation & Technology,medium,239072.34
+2025-05,Dpt of Innovation & Technology,medium,240297.22
+2025-06,Dpt of Innovation & Technology,medium,242507.2
+2025-07,Dpt of Innovation & Technology,medium,244726.28
+2025-08,Dpt of Innovation & Technology,medium,231724.23
+2025-09,Dpt of Innovation & Technology,medium,232609.57
+2025-10,Dpt of Innovation & Technology,medium,225976.74
+2025-11,Dpt of Innovation & Technology,medium,237383.9
+2025-12,Dpt of Innovation & Technology,medium,224609.67
+2025-01,TechBoston Academy,school,119774.94
+2025-02,TechBoston Academy,school,116720.49
+2025-03,TechBoston Academy,school,120349.67
+2025-04,TechBoston Academy,school,113666.78
+2025-05,TechBoston Academy,school,113748.46
+2025-06,TechBoston Academy,school,123113.88
+2025-07,TechBoston Academy,school,117598.88
+2025-08,TechBoston Academy,school,114818.42
+2025-09,TechBoston Academy,school,119531.62
+2025-10,TechBoston Academy,school,122486.45
+2025-11,TechBoston Academy,school,115877.04
+2025-12,TechBoston Academy,school,120732.01
+2025-01,Blackstone Elementary,school,53385.54
+2025-02,Blackstone Elementary,school,56066.49
+2025-03,Blackstone Elementary,school,56118.36
+2025-04,Blackstone Elementary,school,56659.36
+2025-05,Blackstone Elementary,school,57154.9
+2025-06,Blackstone Elementary,school,58550.84
+2025-07,Blackstone Elementary,school,55982.35
+2025-08,Blackstone Elementary,school,54901.73
+2025-09,Blackstone Elementary,school,57541.08
+2025-10,Blackstone Elementary,school,54610.4
+2025-11,Blackstone Elementary,school,55550.15
+2025-12,Blackstone Elementary,school,53535.18
+2025-01,Boston Latin,medium_small,28145.89
+2025-02,Boston Latin,medium_small,27805.14
+2025-03,Boston Latin,medium_small,27428.5
+2025-04,Boston Latin,medium_small,26656.38
+2025-05,Boston Latin,medium_small,26022.42
+2025-06,Boston Latin,medium_small,25977.08
+2025-07,Boston Latin,medium_small,26229.43
+2025-08,Boston Latin,medium_small,27033.73
+2025-09,Boston Latin,medium_small,27478.6
+2025-10,Boston Latin,medium_small,27332.26
+2025-11,Boston Latin,medium_small,26309.3
+2025-12,Boston Latin,medium_small,28124.95
+2025-01,East Boston High,school,165544.42
+2025-02,East Boston High,school,166488.96
+2025-03,East Boston High,school,163325.71
+2025-04,East Boston High,school,160495.89
+2025-05,East Boston High,school,162278.08
+2025-06,East Boston High,school,168894.91
+2025-07,East Boston High,school,156654.0
+2025-08,East Boston High,school,158328.14
+2025-09,East Boston High,school,157174.44
+2025-10,East Boston High,school,157087.61
+2025-11,East Boston High,school,170502.13
+2025-12,East Boston High,school,168002.7
+2025-01,Chief Academic Officer,small,22327.2
+2025-02,Chief Academic Officer,small,23243.25
+2025-03,Chief Academic Officer,small,23201.04
+2025-04,Chief Academic Officer,small,22502.53
+2025-05,Chief Academic Officer,small,23108.87
+2025-06,Chief Academic Officer,small,23026.64
+2025-07,Chief Academic Officer,small,23532.25
+2025-08,Chief Academic Officer,small,23577.02
+2025-09,Chief Academic Officer,small,22205.0
+2025-10,Chief Academic Officer,small,22971.07
+2025-11,Chief Academic Officer,small,23555.54
+2025-12,Chief Academic Officer,small,23270.05
+2025-01,Student Support,medium_small,90652.87
+2025-02,Student Support,medium_small,86228.87
+2025-03,Student Support,medium_small,85404.63
+2025-04,Student Support,medium_small,90507.64
+2025-05,Student Support,medium_small,85011.48
+2025-06,Student Support,medium_small,90002.17
+2025-07,Student Support,medium_small,93165.21
+2025-08,Student Support,medium_small,89910.25
+2025-09,Student Support,medium_small,88238.8
+2025-10,Student Support,medium_small,90515.4
+2025-11,Student Support,medium_small,88864.2
+2025-12,Student Support,medium_small,89643.81
+2025-01,Madison Park Tech Vocational,medium_small,94520.89
+2025-02,Madison Park Tech Vocational,medium_small,100019.3
+2025-03,Madison Park Tech Vocational,medium_small,99485.41
+2025-04,Madison Park Tech Vocational,medium_small,92701.32
+2025-05,Madison Park Tech Vocational,medium_small,91492.53
+2025-06,Madison Park Tech Vocational,medium_small,91792.9
+2025-07,Madison Park Tech Vocational,medium_small,91003.59
+2025-08,Madison Park Tech Vocational,medium_small,91732.34
+2025-09,Madison Park Tech Vocational,medium_small,97359.59
+2025-10,Madison Park Tech Vocational,medium_small,91510.0
+2025-11,Madison Park Tech Vocational,medium_small,93879.09
+2025-12,Madison Park Tech Vocational,medium_small,98907.21
+2025-01,Lyon High,school,46977.58
+2025-02,Lyon High,school,44551.77
+2025-03,Lyon High,school,43806.24
+2025-04,Lyon High,school,46441.37
+2025-05,Lyon High,school,46132.6
+2025-06,Lyon High,school,47264.53
+2025-07,Lyon High,school,46615.96
+2025-08,Lyon High,school,46927.54
+2025-09,Lyon High,school,44552.59
+2025-10,Lyon High,school,44076.21
+2025-11,Lyon High,school,46686.76
+2025-12,Lyon High,school,46942.81
+2025-01,Mayor's Office,small,40973.16
+2025-02,Mayor's Office,small,40805.34
+2025-03,Mayor's Office,small,42476.88
+2025-04,Mayor's Office,small,40676.32
+2025-05,Mayor's Office,small,43114.85
+2025-06,Mayor's Office,small,42815.82
+2025-07,Mayor's Office,small,41040.85
+2025-08,Mayor's Office,small,42371.31
+2025-09,Mayor's Office,small,42386.48
+2025-10,Mayor's Office,small,39693.89
+2025-11,Mayor's Office,small,42998.27
+2025-12,Mayor's Office,small,41356.06
+2025-01,BPS Long Term Leave,medium_small,85419.02
+2025-02,BPS Long Term Leave,medium_small,90424.74
+2025-03,BPS Long Term Leave,medium_small,86020.54
+2025-04,BPS Long Term Leave,medium_small,82729.37
+2025-05,BPS Long Term Leave,medium_small,90510.5
+2025-06,BPS Long Term Leave,medium_small,83429.15
+2025-07,BPS Long Term Leave,medium_small,85412.62
+2025-08,BPS Long Term Leave,medium_small,90899.14
+2025-09,BPS Long Term Leave,medium_small,90903.89
+2025-10,BPS Long Term Leave,medium_small,87623.1
+2025-11,BPS Long Term Leave,medium_small,88131.09
+2025-12,BPS Long Term Leave,medium_small,86535.87
+2025-01,Parks Department,large,365794.54
+2025-02,Parks Department,large,378591.79
+2025-03,Parks Department,large,381563.81
+2025-04,Parks Department,large,383022.89
+2025-05,Parks Department,large,382949.91
+2025-06,Parks Department,large,356957.03
+2025-07,Parks Department,large,371963.49
+2025-08,Parks Department,large,355704.77
+2025-09,Parks Department,large,374014.48
+2025-10,Parks Department,large,369995.09
+2025-11,Parks Department,large,386600.39
+2025-12,Parks Department,large,366622.64
+2025-01,Brighton High,school,58993.74
+2025-02,Brighton High,school,62777.7
+2025-03,Brighton High,school,61901.07
+2025-04,Brighton High,school,58737.59
+2025-05,Brighton High,school,58633.49
+2025-06,Brighton High,school,62407.32
+2025-07,Brighton High,school,58564.09
+2025-08,Brighton High,school,63146.91
+2025-09,Brighton High,school,62439.58
+2025-10,Brighton High,school,58616.62
+2025-11,Brighton High,school,58637.96
+2025-12,Brighton High,school,64154.99
+2025-01,Chittick Elementary,school,102699.23
+2025-02,Chittick Elementary,school,107299.66
+2025-03,Chittick Elementary,school,108698.54
+2025-04,Chittick Elementary,school,109101.74
+2025-05,Chittick Elementary,school,106681.41
+2025-06,Chittick Elementary,school,102757.67
+2025-07,Chittick Elementary,school,99711.66
+2025-08,Chittick Elementary,school,106928.71
+2025-09,Chittick Elementary,school,104652.8
+2025-10,Chittick Elementary,school,103256.7
+2025-11,Chittick Elementary,school,108273.05
+2025-12,Chittick Elementary,school,99999.83
+2025-01,Bradley Elementary,school,117722.83
+2025-02,Bradley Elementary,school,123382.96
+2025-03,Bradley Elementary,school,118279.18
+2025-04,Bradley Elementary,school,119052.93
+2025-05,Bradley Elementary,school,119036.94
+2025-06,Bradley Elementary,school,125617.64
+2025-07,Bradley Elementary,school,126816.17
+2025-08,Bradley Elementary,school,124802.71
+2025-09,Bradley Elementary,school,129491.2
+2025-10,Bradley Elementary,school,122222.11
+2025-11,Bradley Elementary,school,121118.59
+2025-12,Bradley Elementary,school,128333.03
+2025-01,Capital Planning,medium_small,43704.55
+2025-02,Capital Planning,medium_small,39731.97
+2025-03,Capital Planning,medium_small,43732.36
+2025-04,Capital Planning,medium_small,39861.48
+2025-05,Capital Planning,medium_small,43403.48
+2025-06,Capital Planning,medium_small,41885.39
+2025-07,Capital Planning,medium_small,43828.79
+2025-08,Capital Planning,medium_small,39989.45
+2025-09,Capital Planning,medium_small,41994.64
+2025-10,Capital Planning,medium_small,43729.95
+2025-11,Capital Planning,medium_small,41866.17
+2025-12,Capital Planning,medium_small,42310.18
+2025-01,Finance,medium,198385.49
+2025-02,Finance,medium,201833.57
+2025-03,Finance,medium,200971.76
+2025-04,Finance,medium,207286.18
+2025-05,Finance,medium,190232.58
+2025-06,Finance,medium,194926.23
+2025-07,Finance,medium,208267.76
+2025-08,Finance,medium,207069.07
+2025-09,Finance,medium,198407.73
+2025-10,Finance,medium,201685.59
+2025-11,Finance,medium,194854.85
+2025-12,Finance,medium,193075.97
+2025-01,Treasury-Treasury Division,medium_small,58900.76
+2025-02,Treasury-Treasury Division,medium_small,60277.45
+2025-03,Treasury-Treasury Division,medium_small,57253.19
+2025-04,Treasury-Treasury Division,medium_small,62613.19
+2025-05,Treasury-Treasury Division,medium_small,62683.82
+2025-06,Treasury-Treasury Division,medium_small,60961.94
+2025-07,Treasury-Treasury Division,medium_small,59993.15
+2025-08,Treasury-Treasury Division,medium_small,58638.79
+2025-09,Treasury-Treasury Division,medium_small,61653.16
+2025-10,Treasury-Treasury Division,medium_small,60881.65
+2025-11,Treasury-Treasury Division,medium_small,57760.59
+2025-12,Treasury-Treasury Division,medium_small,62233.8
+2025-01,Quincy Elementary,school,186796.66
+2025-02,Quincy Elementary,school,182791.08
+2025-03,Quincy Elementary,school,180783.57
+2025-04,Quincy Elementary,school,177294.75
+2025-05,Quincy Elementary,school,186491.5
+2025-06,Quincy Elementary,school,185299.83
+2025-07,Quincy Elementary,school,170626.71
+2025-08,Quincy Elementary,school,170289.72
+2025-09,Quincy Elementary,school,176547.91
+2025-10,Quincy Elementary,school,184307.54
+2025-11,Quincy Elementary,school,187466.57
+2025-12,Quincy Elementary,school,172507.19
+2025-01,Data Info and Sys Improvement,medium_small,68731.28
+2025-02,Data Info and Sys Improvement,medium_small,72828.52
+2025-03,Data Info and Sys Improvement,medium_small,71939.58
+2025-04,Data Info and Sys Improvement,medium_small,71913.21
+2025-05,Data Info and Sys Improvement,medium_small,69342.03
+2025-06,Data Info and Sys Improvement,medium_small,68967.29
+2025-07,Data Info and Sys Improvement,medium_small,67983.63
+2025-08,Data Info and Sys Improvement,medium_small,66473.96
+2025-09,Data Info and Sys Improvement,medium_small,72096.81
+2025-10,Data Info and Sys Improvement,medium_small,71736.34
+2025-11,Data Info and Sys Improvement,medium_small,73035.83
+2025-12,Data Info and Sys Improvement,medium_small,73014.4
+2025-01,Multilingual Multicultural Ed,medium_small,68450.38
+2025-02,Multilingual Multicultural Ed,medium_small,69622.07
+2025-03,Multilingual Multicultural Ed,medium_small,68988.04
+2025-04,Multilingual Multicultural Ed,medium_small,64973.27
+2025-05,Multilingual Multicultural Ed,medium_small,66327.72
+2025-06,Multilingual Multicultural Ed,medium_small,64185.45
+2025-07,Multilingual Multicultural Ed,medium_small,69683.96
+2025-08,Multilingual Multicultural Ed,medium_small,67365.11
+2025-09,Multilingual Multicultural Ed,medium_small,64848.58
+2025-10,Multilingual Multicultural Ed,medium_small,67801.89
+2025-11,Multilingual Multicultural Ed,medium_small,67444.79
+2025-12,Multilingual Multicultural Ed,medium_small,65711.93
+2025-01,Human Services,medium_small,34091.88
+2025-02,Human Services,medium_small,33584.88
+2025-03,Human Services,medium_small,34429.54
+2025-04,Human Services,medium_small,33584.4
+2025-05,Human Services,medium_small,34697.22
+2025-06,Human Services,medium_small,33690.79
+2025-07,Human Services,medium_small,33721.06
+2025-08,Human Services,medium_small,34779.24
+2025-09,Human Services,medium_small,33193.32
+2025-10,Human Services,medium_small,32290.15
+2025-11,Human Services,medium_small,31937.45
+2025-12,Human Services,medium_small,34371.96
+2025-01,Communications,medium_small,72982.86
+2025-02,Communications,medium_small,69470.24
+2025-03,Communications,medium_small,68922.43
+2025-04,Communications,medium_small,68051.08
+2025-05,Communications,medium_small,70454.57
+2025-06,Communications,medium_small,72166.34
+2025-07,Communications,medium_small,70752.51
+2025-08,Communications,medium_small,71076.02
+2025-09,Communications,medium_small,74413.89
+2025-10,Communications,medium_small,70437.89
+2025-11,Communications,medium_small,71623.27
+2025-12,Communications,medium_small,73551.99
+2025-01,Environment Department,medium_small,55409.02
+2025-02,Environment Department,medium_small,56724.31
+2025-03,Environment Department,medium_small,57201.42
+2025-04,Environment Department,medium_small,52808.76
+2025-05,Environment Department,medium_small,57075.88
+2025-06,Environment Department,medium_small,54697.55
+2025-07,Environment Department,medium_small,53417.32
+2025-08,Environment Department,medium_small,54517.01
+2025-09,Environment Department,medium_small,57368.44
+2025-10,Environment Department,medium_small,54700.3
+2025-11,Environment Department,medium_small,53803.28
+2025-12,Environment Department,medium_small,55470.95
+2025-01,Emergency Preparedness,medium_small,41186.67
+2025-02,Emergency Preparedness,medium_small,41414.7
+2025-03,Emergency Preparedness,medium_small,41411.11
+2025-04,Emergency Preparedness,medium_small,41513.72
+2025-05,Emergency Preparedness,medium_small,41457.48
+2025-06,Emergency Preparedness,medium_small,43616.84
+2025-07,Emergency Preparedness,medium_small,41642.66
+2025-08,Emergency Preparedness,medium_small,42347.12
+2025-09,Emergency Preparedness,medium_small,44717.54
+2025-10,Emergency Preparedness,medium_small,42898.93
+2025-11,Emergency Preparedness,medium_small,43731.6
+2025-12,Emergency Preparedness,medium_small,41601.54
+2025-01,Trotter Elementary,school,70330.36
+2025-02,Trotter Elementary,school,71274.4
+2025-03,Trotter Elementary,school,72082.72
+2025-04,Trotter Elementary,school,71333.92
+2025-05,Trotter Elementary,school,70682.96
+2025-06,Trotter Elementary,school,70918.36
+2025-07,Trotter Elementary,school,73425.72
+2025-08,Trotter Elementary,school,71550.08
+2025-09,Trotter Elementary,school,72714.3
+2025-10,Trotter Elementary,school,73740.03
+2025-11,Trotter Elementary,school,75118.33
+2025-12,Trotter Elementary,school,70318.88
+2025-01,Office of People Operations,small,35089.15
+2025-02,Office of People Operations,small,33196.99
+2025-03,Office of People Operations,small,35940.33
+2025-04,Office of People Operations,small,36104.19
+2025-05,Office of People Operations,small,33125.34
+2025-06,Office of People Operations,small,33873.0
+2025-07,Office of People Operations,small,35706.9
+2025-08,Office of People Operations,small,35506.15
+2025-09,Office of People Operations,small,33553.02
+2025-10,Office of People Operations,small,33639.04
+2025-11,Office of People Operations,small,34197.27
+2025-12,Office of People Operations,small,34592.41
+2025-01,Law Department,medium_small,70433.56
+2025-02,Law Department,medium_small,71101.72
+2025-03,Law Department,medium_small,73135.29
+2025-04,Law Department,medium_small,68062.46
+2025-05,Law Department,medium_small,69602.27
+2025-06,Law Department,medium_small,72891.76
+2025-07,Law Department,medium_small,74189.66
+2025-08,Law Department,medium_small,71452.45
+2025-09,Law Department,medium_small,71598.3
+2025-10,Law Department,medium_small,68565.53
+2025-11,Law Department,medium_small,70993.79
+2025-12,Law Department,medium_small,71601.89
+2025-01,Edison Elementary School,school,80184.4
+2025-02,Edison Elementary School,school,81071.19
+2025-03,Edison Elementary School,school,78139.24
+2025-04,Edison Elementary School,school,80618.07
+2025-05,Edison Elementary School,school,79710.03
+2025-06,Edison Elementary School,school,80662.54
+2025-07,Edison Elementary School,school,78957.49
+2025-08,Edison Elementary School,school,85283.8
+2025-09,Edison Elementary School,school,82846.61
+2025-10,Edison Elementary School,school,83548.46
+2025-11,Edison Elementary School,school,84451.89
+2025-12,Edison Elementary School,school,82065.63
+2025-01,Public Facilities Department,medium_small,31635.98
+2025-02,Public Facilities Department,medium_small,31792.74
+2025-03,Public Facilities Department,medium_small,32292.62
+2025-04,Public Facilities Department,medium_small,31303.62
+2025-05,Public Facilities Department,medium_small,30345.19
+2025-06,Public Facilities Department,medium_small,30837.5
+2025-07,Public Facilities Department,medium_small,31087.47
+2025-08,Public Facilities Department,medium_small,31978.94
+2025-09,Public Facilities Department,medium_small,31742.11
+2025-10,Public Facilities Department,medium_small,31065.45
+2025-11,Public Facilities Department,medium_small,33052.47
+2025-12,Public Facilities Department,medium_small,31852.41
+2025-01,Haley Pilot,medium_small,41087.96
+2025-02,Haley Pilot,medium_small,41306.52
+2025-03,Haley Pilot,medium_small,41704.91
+2025-04,Haley Pilot,medium_small,41340.0
+2025-05,Haley Pilot,medium_small,41450.77
+2025-06,Haley Pilot,medium_small,41872.39
+2025-07,Haley Pilot,medium_small,41394.31
+2025-08,Haley Pilot,medium_small,44489.85
+2025-09,Haley Pilot,medium_small,40995.75
+2025-10,Haley Pilot,medium_small,42896.9
+2025-11,Haley Pilot,medium_small,42408.58
+2025-12,Haley Pilot,medium_small,44856.2
+2025-01,Office of Housing,small,10479.88
+2025-02,Office of Housing,small,11085.1
+2025-03,Office of Housing,small,10975.03
+2025-04,Office of Housing,small,10923.75
+2025-05,Office of Housing,small,10331.7
+2025-06,Office of Housing,small,10239.56
+2025-07,Office of Housing,small,10766.59
+2025-08,Office of Housing,small,11042.65
+2025-09,Office of Housing,small,10648.13
+2025-10,Office of Housing,small,10663.85
+2025-11,Office of Housing,small,10355.07
+2025-12,Office of Housing,small,10873.37
+2025-01,Channing Elementary,school,71556.29
+2025-02,Channing Elementary,school,72297.5
+2025-03,Channing Elementary,school,72896.06
+2025-04,Channing Elementary,school,70964.32
+2025-05,Channing Elementary,school,70035.07
+2025-06,Channing Elementary,school,73646.39
+2025-07,Channing Elementary,school,71301.0
+2025-08,Channing Elementary,school,73432.37
+2025-09,Channing Elementary,school,70322.98
+2025-10,Channing Elementary,school,72703.25
+2025-11,Channing Elementary,school,73078.01
+2025-12,Channing Elementary,school,69576.08
+2025-01,Planning & Engineering,medium_small,48408.43
+2025-02,Planning & Engineering,medium_small,48051.48
+2025-03,Planning & Engineering,medium_small,52707.14
+2025-04,Planning & Engineering,medium_small,49352.73
+2025-05,Planning & Engineering,medium_small,51802.29
+2025-06,Planning & Engineering,medium_small,49012.5
+2025-07,Planning & Engineering,medium_small,51157.29
+2025-08,Planning & Engineering,medium_small,51552.84
+2025-09,Planning & Engineering,medium_small,50725.86
+2025-10,Planning & Engineering,medium_small,50102.5
+2025-11,Planning & Engineering,medium_small,49802.36
+2025-12,Planning & Engineering,medium_small,49485.95
+2025-01,Kilmer K-8,medium_small,97846.14
+2025-02,Kilmer K-8,medium_small,99119.17
+2025-03,Kilmer K-8,medium_small,91156.23
+2025-04,Kilmer K-8,medium_small,96901.34
+2025-05,Kilmer K-8,medium_small,98866.41
+2025-06,Kilmer K-8,medium_small,91695.49
+2025-07,Kilmer K-8,medium_small,90608.77
+2025-08,Kilmer K-8,medium_small,96998.45
+2025-09,Kilmer K-8,medium_small,95420.06
+2025-10,Kilmer K-8,medium_small,97952.31
+2025-11,Kilmer K-8,medium_small,91302.8
+2025-12,Kilmer K-8,medium_small,97511.3
+2025-01,Off of Eco Opp & Incl,medium_small,38772.57
+2025-02,Off of Eco Opp & Incl,medium_small,38775.01
+2025-03,Off of Eco Opp & Incl,medium_small,41384.19
+2025-04,Off of Eco Opp & Incl,medium_small,40784.85
+2025-05,Off of Eco Opp & Incl,medium_small,40214.59
+2025-06,Off of Eco Opp & Incl,medium_small,39555.65
+2025-07,Off of Eco Opp & Incl,medium_small,41635.45
+2025-08,Off of Eco Opp & Incl,medium_small,39690.52
+2025-09,Off of Eco Opp & Incl,medium_small,41392.31
+2025-10,Off of Eco Opp & Incl,medium_small,39877.85
+2025-11,Off of Eco Opp & Incl,medium_small,39628.32
+2025-12,Off of Eco Opp & Incl,medium_small,39972.31
+2025-01,Warren-Prescott K-8,medium_small,48782.04
+2025-02,Warren-Prescott K-8,medium_small,47616.29
+2025-03,Warren-Prescott K-8,medium_small,46328.58
+2025-04,Warren-Prescott K-8,medium_small,49505.45
+2025-05,Warren-Prescott K-8,medium_small,47050.62
+2025-06,Warren-Prescott K-8,medium_small,47810.67
+2025-07,Warren-Prescott K-8,medium_small,49538.28
+2025-08,Warren-Prescott K-8,medium_small,48194.75
+2025-09,Warren-Prescott K-8,medium_small,45779.65
+2025-10,Warren-Prescott K-8,medium_small,49697.09
+2025-11,Warren-Prescott K-8,medium_small,48211.27
+2025-12,Warren-Prescott K-8,medium_small,46817.44
+2025-01,Cemetery Division,medium_small,36487.59
+2025-02,Cemetery Division,medium_small,35871.01
+2025-03,Cemetery Division,medium_small,35564.01
+2025-04,Cemetery Division,medium_small,36841.57
+2025-05,Cemetery Division,medium_small,36468.35
+2025-06,Cemetery Division,medium_small,34210.75
+2025-07,Cemetery Division,medium_small,34778.05
+2025-08,Cemetery Division,medium_small,34553.92
+2025-09,Cemetery Division,medium_small,36310.08
+2025-10,Cemetery Division,medium_small,33791.99
+2025-11,Cemetery Division,medium_small,35693.13
+2025-12,Cemetery Division,medium_small,36375.7
+2025-01,Behavioral Health Services,medium_small,89324.2
+2025-02,Behavioral Health Services,medium_small,93673.07
+2025-03,Behavioral Health Services,medium_small,87223.62
+2025-04,Behavioral Health Services,medium_small,93901.73
+2025-05,Behavioral Health Services,medium_small,87376.61
+2025-06,Behavioral Health Services,medium_small,89825.23
+2025-07,Behavioral Health Services,medium_small,93455.6
+2025-08,Behavioral Health Services,medium_small,87580.16
+2025-09,Behavioral Health Services,medium_small,88300.18
+2025-10,Behavioral Health Services,medium_small,92774.53
+2025-11,Behavioral Health Services,medium_small,92754.42
+2025-12,Behavioral Health Services,medium_small,92038.44
+2025-01,Newcomers Academy,school,157996.9
+2025-02,Newcomers Academy,school,153419.93
+2025-03,Newcomers Academy,school,154897.16
+2025-04,Newcomers Academy,school,152315.49
+2025-05,Newcomers Academy,school,163750.68
+2025-06,Newcomers Academy,school,158636.7
+2025-07,Newcomers Academy,school,155764.89
+2025-08,Newcomers Academy,school,156727.0
+2025-09,Newcomers Academy,school,164361.61
+2025-10,Newcomers Academy,school,151871.1
+2025-11,Newcomers Academy,school,158681.35
+2025-12,Newcomers Academy,school,157417.38
+2025-01,Shaw-Taylor Elementary School,school,136656.94
+2025-02,Shaw-Taylor Elementary School,school,148918.5
+2025-03,Shaw-Taylor Elementary School,school,149779.87
+2025-04,Shaw-Taylor Elementary School,school,144510.86
+2025-05,Shaw-Taylor Elementary School,school,146399.13
+2025-06,Shaw-Taylor Elementary School,school,149641.77
+2025-07,Shaw-Taylor Elementary School,school,146551.15
+2025-08,Shaw-Taylor Elementary School,school,138587.01
+2025-09,Shaw-Taylor Elementary School,school,144671.02
+2025-10,Shaw-Taylor Elementary School,school,145107.87
+2025-11,Shaw-Taylor Elementary School,school,142486.41
+2025-12,Shaw-Taylor Elementary School,school,146970.47
+2025-01,Office ofWorkforce Development,small,41044.95
+2025-02,Office ofWorkforce Development,small,39175.97
+2025-03,Office ofWorkforce Development,small,37846.85
+2025-04,Office ofWorkforce Development,small,41278.31
+2025-05,Office ofWorkforce Development,small,40703.74
+2025-06,Office ofWorkforce Development,small,37891.83
+2025-07,Office ofWorkforce Development,small,41026.35
+2025-08,Office ofWorkforce Development,small,40825.78
+2025-09,Office ofWorkforce Development,small,39443.68
+2025-10,Office ofWorkforce Development,small,39728.86
+2025-11,Office ofWorkforce Development,small,38971.89
+2025-12,Office ofWorkforce Development,small,37616.63
+2025-01,Otis Elementary,school,100486.69
+2025-02,Otis Elementary,school,92701.41
+2025-03,Otis Elementary,school,95908.94
+2025-04,Otis Elementary,school,96539.68
+2025-05,Otis Elementary,school,97897.6
+2025-06,Otis Elementary,school,101627.85
+2025-07,Otis Elementary,school,96034.24
+2025-08,Otis Elementary,school,96040.16
+2025-09,Otis Elementary,school,99849.29
+2025-10,Otis Elementary,school,97066.84
+2025-11,Otis Elementary,school,94846.87
+2025-12,Otis Elementary,school,97069.0
+2025-01,Tobin K-8,medium_small,34413.37
+2025-02,Tobin K-8,medium_small,35558.47
+2025-03,Tobin K-8,medium_small,35275.94
+2025-04,Tobin K-8,medium_small,37039.65
+2025-05,Tobin K-8,medium_small,35074.89
+2025-06,Tobin K-8,medium_small,35850.88
+2025-07,Tobin K-8,medium_small,36034.66
+2025-08,Tobin K-8,medium_small,33832.63
+2025-09,Tobin K-8,medium_small,36145.89
+2025-10,Tobin K-8,medium_small,34419.23
+2025-11,Tobin K-8,medium_small,37204.04
+2025-12,Tobin K-8,medium_small,34314.77
+2025-01,Dudley St Neighborhood Charter,medium_small,53770.75
+2025-02,Dudley St Neighborhood Charter,medium_small,58884.12
+2025-03,Dudley St Neighborhood Charter,medium_small,56109.12
+2025-04,Dudley St Neighborhood Charter,medium_small,56631.89
+2025-05,Dudley St Neighborhood Charter,medium_small,53668.25
+2025-06,Dudley St Neighborhood Charter,medium_small,57499.01
+2025-07,Dudley St Neighborhood Charter,medium_small,54469.47
+2025-08,Dudley St Neighborhood Charter,medium_small,58329.77
+2025-09,Dudley St Neighborhood Charter,medium_small,54442.74
+2025-10,Dudley St Neighborhood Charter,medium_small,54361.67
+2025-11,Dudley St Neighborhood Charter,medium_small,53497.0
+2025-12,Dudley St Neighborhood Charter,medium_small,55940.11
+2025-01,Sarah Roberts ElementarySchool,school,129908.88
+2025-02,Sarah Roberts ElementarySchool,school,139548.71
+2025-03,Sarah Roberts ElementarySchool,school,135172.49
+2025-04,Sarah Roberts ElementarySchool,school,136138.09
+2025-05,Sarah Roberts ElementarySchool,school,135002.37
+2025-06,Sarah Roberts ElementarySchool,school,134459.15
+2025-07,Sarah Roberts ElementarySchool,school,136616.81
+2025-08,Sarah Roberts ElementarySchool,school,131124.78
+2025-09,Sarah Roberts ElementarySchool,school,131487.22
+2025-10,Sarah Roberts ElementarySchool,school,140720.15
+2025-11,Sarah Roberts ElementarySchool,school,141865.41
+2025-12,Sarah Roberts ElementarySchool,school,134086.31
+2025-01,Dearborn STEM Academy,school,88040.56
+2025-02,Dearborn STEM Academy,school,85998.68
+2025-03,Dearborn STEM Academy,school,82671.57
+2025-04,Dearborn STEM Academy,school,83806.5
+2025-05,Dearborn STEM Academy,school,88665.22
+2025-06,Dearborn STEM Academy,school,88170.09
+2025-07,Dearborn STEM Academy,school,82686.41
+2025-08,Dearborn STEM Academy,school,84377.75
+2025-09,Dearborn STEM Academy,school,84456.76
+2025-10,Dearborn STEM Academy,school,88282.65
+2025-11,Dearborn STEM Academy,school,82622.31
+2025-12,Dearborn STEM Academy,school,83354.81
+2025-01,English High,school,169361.0
+2025-02,English High,school,177658.86
+2025-03,English High,school,170404.58
+2025-04,English High,school,167976.8
+2025-05,English High,school,170491.89
+2025-06,English High,school,178875.37
+2025-07,English High,school,181210.2
+2025-08,English High,school,180764.4
+2025-09,English High,school,173186.87
+2025-10,English High,school,177927.27
+2025-11,English High,school,169823.65
+2025-12,English High,school,171366.39
+2025-01,Boston Latin Academy,school,181751.58
+2025-02,Boston Latin Academy,school,183136.86
+2025-03,Boston Latin Academy,school,185474.96
+2025-04,Boston Latin Academy,school,182010.08
+2025-05,Boston Latin Academy,school,184969.6
+2025-06,Boston Latin Academy,school,192642.53
+2025-07,Boston Latin Academy,school,189554.74
+2025-08,Boston Latin Academy,school,198558.2
+2025-09,Boston Latin Academy,school,197120.92
+2025-10,Boston Latin Academy,school,188033.8
+2025-11,Boston Latin Academy,school,186459.61
+2025-12,Boston Latin Academy,school,188757.42
+2025-01,Teaching & Learning,medium_small,67665.45
+2025-02,Teaching & Learning,medium_small,70132.13
+2025-03,Teaching & Learning,medium_small,68644.6
+2025-04,Teaching & Learning,medium_small,69632.66
+2025-05,Teaching & Learning,medium_small,68829.66
+2025-06,Teaching & Learning,medium_small,67848.34
+2025-07,Teaching & Learning,medium_small,72378.65
+2025-08,Teaching & Learning,medium_small,71098.17
+2025-09,Teaching & Learning,medium_small,66779.11
+2025-10,Teaching & Learning,medium_small,71824.58
+2025-11,Teaching & Learning,medium_small,69185.05
+2025-12,Teaching & Learning,medium_small,72005.27
+2025-01,Umana Academy,school,173667.29
+2025-02,Umana Academy,school,166620.24
+2025-03,Umana Academy,school,170928.29
+2025-04,Umana Academy,school,175704.37
+2025-05,Umana Academy,school,177311.42
+2025-06,Umana Academy,school,170739.49
+2025-07,Umana Academy,school,168665.48
+2025-08,Umana Academy,school,180836.35
+2025-09,Umana Academy,school,183451.75
+2025-10,Umana Academy,school,175425.39
+2025-11,Umana Academy,school,169231.06
+2025-12,Umana Academy,school,170991.8
+2025-01,Labor Relations,medium_small,27472.19
+2025-02,Labor Relations,medium_small,25370.95
+2025-03,Labor Relations,medium_small,26581.15
+2025-04,Labor Relations,medium_small,25783.27
+2025-05,Labor Relations,medium_small,26522.22
+2025-06,Labor Relations,medium_small,26778.74
+2025-07,Labor Relations,medium_small,27249.14
+2025-08,Labor Relations,medium_small,25604.86
+2025-09,Labor Relations,medium_small,25089.34
+2025-10,Labor Relations,medium_small,25421.43
+2025-11,Labor Relations,medium_small,27434.52
+2025-12,Labor Relations,medium_small,27365.6
+2025-01,Fenway High,school,142655.17
+2025-02,Fenway High,school,143566.42
+2025-03,Fenway High,school,136650.61
+2025-04,Fenway High,school,147088.49
+2025-05,Fenway High,school,140088.27
+2025-06,Fenway High,school,139585.02
+2025-07,Fenway High,school,141502.7
+2025-08,Fenway High,school,134837.07
+2025-09,Fenway High,school,136522.25
+2025-10,Fenway High,school,144597.4
+2025-11,Fenway High,school,135343.15
+2025-12,Fenway High,school,142692.39
+2025-01,Greater Egleston High,school,81644.23
+2025-02,Greater Egleston High,school,80813.68
+2025-03,Greater Egleston High,school,81366.65
+2025-04,Greater Egleston High,school,84366.59
+2025-05,Greater Egleston High,school,80883.26
+2025-06,Greater Egleston High,school,83106.41
+2025-07,Greater Egleston High,school,82360.46
+2025-08,Greater Egleston High,school,83909.42
+2025-09,Greater Egleston High,school,86164.57
+2025-10,Greater Egleston High,school,84478.26
+2025-11,Greater Egleston High,school,80204.78
+2025-12,Greater Egleston High,school,78687.72
+2025-01,Kennedy PJ Elementary,school,86189.09
+2025-02,Kennedy PJ Elementary,school,81547.53
+2025-03,Kennedy PJ Elementary,school,85346.32
+2025-04,Kennedy PJ Elementary,school,86204.16
+2025-05,Kennedy PJ Elementary,school,83962.16
+2025-06,Kennedy PJ Elementary,school,87690.32
+2025-07,Kennedy PJ Elementary,school,82018.58
+2025-08,Kennedy PJ Elementary,school,81749.98
+2025-09,Kennedy PJ Elementary,school,87325.56
+2025-10,Kennedy PJ Elementary,school,85338.85
+2025-11,Kennedy PJ Elementary,school,86985.87
+2025-12,Kennedy PJ Elementary,school,84820.91
+2025-01,Quincy Upper,medium_small,44867.61
+2025-02,Quincy Upper,medium_small,44782.02
+2025-03,Quincy Upper,medium_small,44326.7
+2025-04,Quincy Upper,medium_small,42489.44
+2025-05,Quincy Upper,medium_small,43872.48
+2025-06,Quincy Upper,medium_small,42875.66
+2025-07,Quincy Upper,medium_small,41704.35
+2025-08,Quincy Upper,medium_small,45294.64
+2025-09,Quincy Upper,medium_small,41901.03
+2025-10,Quincy Upper,medium_small,45437.79
+2025-11,Quincy Upper,medium_small,43245.38
+2025-12,Quincy Upper,medium_small,42111.11
+2025-01,Curley K-8,medium_small,68090.68
+2025-02,Curley K-8,medium_small,67166.95
+2025-03,Curley K-8,medium_small,67654.92
+2025-04,Curley K-8,medium_small,66684.87
+2025-05,Curley K-8,medium_small,66904.72
+2025-06,Curley K-8,medium_small,67934.78
+2025-07,Curley K-8,medium_small,63999.33
+2025-08,Curley K-8,medium_small,65573.15
+2025-09,Curley K-8,medium_small,63812.52
+2025-10,Curley K-8,medium_small,68843.75
+2025-11,Curley K-8,medium_small,68557.49
+2025-12,Curley K-8,medium_small,62619.25
+2025-01,Boston Green Academy,school,166035.14
+2025-02,Boston Green Academy,school,154175.29
+2025-03,Boston Green Academy,school,160344.64
+2025-04,Boston Green Academy,school,165879.7
+2025-05,Boston Green Academy,school,151840.03
+2025-06,Boston Green Academy,school,162406.69
+2025-07,Boston Green Academy,school,156035.06
+2025-08,Boston Green Academy,school,166021.57
+2025-09,Boston Green Academy,school,166764.72
+2025-10,Boston Green Academy,school,166338.03
+2025-11,Boston Green Academy,school,158851.86
+2025-12,Boston Green Academy,school,165028.51
+2025-01,Office of Equity,small,35570.57
+2025-02,Office of Equity,small,37417.42
+2025-03,Office of Equity,small,34548.66
+2025-04,Office of Equity,small,36574.64
+2025-05,Office of Equity,small,35247.83
+2025-06,Office of Equity,small,34851.37
+2025-07,Office of Equity,small,34693.37
+2025-08,Office of Equity,small,36936.97
+2025-09,Office of Equity,small,35645.83
+2025-10,Office of Equity,small,37040.13
+2025-11,Office of Equity,small,34651.36
+2025-12,Office of Equity,small,35556.77
+2025-01,Mel H King South End Academy,school,135407.27
+2025-02,Mel H King South End Academy,school,129196.99
+2025-03,Mel H King South End Academy,school,133238.38
+2025-04,Mel H King South End Academy,school,136660.65
+2025-05,Mel H King South End Academy,school,133106.43
+2025-06,Mel H King South End Academy,school,128068.11
+2025-07,Mel H King South End Academy,school,125323.86
+2025-08,Mel H King South End Academy,school,136451.71
+2025-09,Mel H King South End Academy,school,125282.65
+2025-10,Mel H King South End Academy,school,136512.28
+2025-11,Mel H King South End Academy,school,131962.64
+2025-12,Mel H King South End Academy,school,137359.22
+2025-01,Boston International High,school,183500.96
+2025-02,Boston International High,school,172187.69
+2025-03,Boston International High,school,179467.58
+2025-04,Boston International High,school,173082.99
+2025-05,Boston International High,school,174445.44
+2025-06,Boston International High,school,177025.97
+2025-07,Boston International High,school,181328.98
+2025-08,Boston International High,school,183258.85
+2025-09,Boston International High,school,179486.55
+2025-10,Boston International High,school,173359.79
+2025-11,Boston International High,school,173422.55
+2025-12,Boston International High,school,178950.08
+2025-01,Neighborhood Services,medium_small,41236.9
+2025-02,Neighborhood Services,medium_small,42284.49
+2025-03,Neighborhood Services,medium_small,41995.36
+2025-04,Neighborhood Services,medium_small,42034.28
+2025-05,Neighborhood Services,medium_small,41765.24
+2025-06,Neighborhood Services,medium_small,40943.49
+2025-07,Neighborhood Services,medium_small,40839.57
+2025-08,Neighborhood Services,medium_small,45001.02
+2025-09,Neighborhood Services,medium_small,42598.37
+2025-10,Neighborhood Services,medium_small,42411.95
+2025-11,Neighborhood Services,medium_small,43679.12
+2025-12,Neighborhood Services,medium_small,41699.36
+2025-01,Hennigan Elementary School,school,205720.25
+2025-02,Hennigan Elementary School,school,191782.02
+2025-03,Hennigan Elementary School,school,198345.2
+2025-04,Hennigan Elementary School,school,207575.65
+2025-05,Hennigan Elementary School,school,208887.88
+2025-06,Hennigan Elementary School,school,199341.58
+2025-07,Hennigan Elementary School,school,202261.69
+2025-08,Hennigan Elementary School,school,193334.42
+2025-09,Hennigan Elementary School,school,209816.59
+2025-10,Hennigan Elementary School,school,194627.14
+2025-11,Hennigan Elementary School,school,208847.88
+2025-12,Hennigan Elementary School,school,202986.37
+2025-01,Mason Elementary,school,143137.52
+2025-02,Mason Elementary,school,139105.89
+2025-03,Mason Elementary,school,138331.9
+2025-04,Mason Elementary,school,138960.31
+2025-05,Mason Elementary,school,138473.58
+2025-06,Mason Elementary,school,146952.96
+2025-07,Mason Elementary,school,140813.58
+2025-08,Mason Elementary,school,136635.22
+2025-09,Mason Elementary,school,149662.24
+2025-10,Mason Elementary,school,148442.59
+2025-11,Mason Elementary,school,149071.11
+2025-12,Mason Elementary,school,150031.14
+2025-01,Young Achievers Elementary Sch,school,69916.17
+2025-02,Young Achievers Elementary Sch,school,72473.64
+2025-03,Young Achievers Elementary Sch,school,72034.08
+2025-04,Young Achievers Elementary Sch,school,68204.01
+2025-05,Young Achievers Elementary Sch,school,72880.54
+2025-06,Young Achievers Elementary Sch,school,68702.4
+2025-07,Young Achievers Elementary Sch,school,68698.0
+2025-08,Young Achievers Elementary Sch,school,70910.43
+2025-09,Young Achievers Elementary Sch,school,71305.82
+2025-10,Young Achievers Elementary Sch,school,71215.01
+2025-11,Young Achievers Elementary Sch,school,67763.1
+2025-12,Young Achievers Elementary Sch,school,73315.94
+2025-01,Treasury-Collecting Division,medium_small,43255.78
+2025-02,Treasury-Collecting Division,medium_small,46666.26
+2025-03,Treasury-Collecting Division,medium_small,46966.79
+2025-04,Treasury-Collecting Division,medium_small,46546.68
+2025-05,Treasury-Collecting Division,medium_small,46310.35
+2025-06,Treasury-Collecting Division,medium_small,45617.35
+2025-07,Treasury-Collecting Division,medium_small,45148.45
+2025-08,Treasury-Collecting Division,medium_small,43064.75
+2025-09,Treasury-Collecting Division,medium_small,44508.77
+2025-10,Treasury-Collecting Division,medium_small,44348.12
+2025-11,Treasury-Collecting Division,medium_small,43840.82
+2025-12,Treasury-Collecting Division,medium_small,45923.61
+2025-01,Beethoven Elementary,school,119104.5
+2025-02,Beethoven Elementary,school,120834.15
+2025-03,Beethoven Elementary,school,126590.76
+2025-04,Beethoven Elementary,school,119043.39
+2025-05,Beethoven Elementary,school,128678.57
+2025-06,Beethoven Elementary,school,124252.29
+2025-07,Beethoven Elementary,school,124071.29
+2025-08,Beethoven Elementary,school,125461.37
+2025-09,Beethoven Elementary,school,128348.82
+2025-10,Beethoven Elementary,school,122420.7
+2025-11,Beethoven Elementary,school,126525.59
+2025-12,Beethoven Elementary,school,125129.75
+2025-01,Ellis Elementary,school,89434.09
+2025-02,Ellis Elementary,school,88734.34
+2025-03,Ellis Elementary,school,87536.78
+2025-04,Ellis Elementary,school,89192.39
+2025-05,Ellis Elementary,school,89336.4
+2025-06,Ellis Elementary,school,87966.87
+2025-07,Ellis Elementary,school,89075.47
+2025-08,Ellis Elementary,school,87873.02
+2025-09,Ellis Elementary,school,87723.68
+2025-10,Ellis Elementary,school,87193.47
+2025-11,Ellis Elementary,school,88349.07
+2025-12,Ellis Elementary,school,83229.53
+2025-01,Guild Elementary,school,195486.91
+2025-02,Guild Elementary,school,179605.79
+2025-03,Guild Elementary,school,194619.4
+2025-04,Guild Elementary,school,181483.46
+2025-05,Guild Elementary,school,185370.81
+2025-06,Guild Elementary,school,193068.07
+2025-07,Guild Elementary,school,182084.51
+2025-08,Guild Elementary,school,194471.45
+2025-09,Guild Elementary,school,194738.47
+2025-10,Guild Elementary,school,188619.21
+2025-11,Guild Elementary,school,179174.9
+2025-12,Guild Elementary,school,184464.59
+2025-01,Tynan Elementary,school,151440.37
+2025-02,Tynan Elementary,school,146392.36
+2025-03,Tynan Elementary,school,141017.27
+2025-04,Tynan Elementary,school,146424.04
+2025-05,Tynan Elementary,school,145065.56
+2025-06,Tynan Elementary,school,148531.24
+2025-07,Tynan Elementary,school,138809.17
+2025-08,Tynan Elementary,school,148259.35
+2025-09,Tynan Elementary,school,145084.07
+2025-10,Tynan Elementary,school,151177.49
+2025-11,Tynan Elementary,school,142203.07
+2025-12,Tynan Elementary,school,146404.04
+2025-01,Health & Wellness,medium_small,91129.84
+2025-02,Health & Wellness,medium_small,99051.5
+2025-03,Health & Wellness,medium_small,96685.18
+2025-04,Health & Wellness,medium_small,90800.79
+2025-05,Health & Wellness,medium_small,93013.21
+2025-06,Health & Wellness,medium_small,96877.7
+2025-07,Health & Wellness,medium_small,90796.17
+2025-08,Health & Wellness,medium_small,95681.92
+2025-09,Health & Wellness,medium_small,93439.51
+2025-10,Health & Wellness,medium_small,96049.62
+2025-11,Health & Wellness,medium_small,90591.1
+2025-12,Health & Wellness,medium_small,98428.07
+2025-01,Boston Day & Evening Academy,school,213475.94
+2025-02,Boston Day & Evening Academy,school,209005.6
+2025-03,Boston Day & Evening Academy,school,196371.74
+2025-04,Boston Day & Evening Academy,school,209181.2
+2025-05,Boston Day & Evening Academy,school,194220.45
+2025-06,Boston Day & Evening Academy,school,194170.22
+2025-07,Boston Day & Evening Academy,school,200317.98
+2025-08,Boston Day & Evening Academy,school,203683.25
+2025-09,Boston Day & Evening Academy,school,209428.84
+2025-10,Boston Day & Evening Academy,school,207652.49
+2025-11,Boston Day & Evening Academy,school,202811.7
+2025-12,Boston Day & Evening Academy,school,199298.74
+2025-01,Haynes EEC,medium_small,99047.74
+2025-02,Haynes EEC,medium_small,99299.26
+2025-03,Haynes EEC,medium_small,96427.83
+2025-04,Haynes EEC,medium_small,102726.08
+2025-05,Haynes EEC,medium_small,101716.98
+2025-06,Haynes EEC,medium_small,96998.06
+2025-07,Haynes EEC,medium_small,95617.15
+2025-08,Haynes EEC,medium_small,101585.44
+2025-09,Haynes EEC,medium_small,101326.12
+2025-10,Haynes EEC,medium_small,97521.82
+2025-11,Haynes EEC,medium_small,104283.25
+2025-12,Haynes EEC,medium_small,96302.44
+2025-01,Opportunity Gaps,medium_small,59972.58
+2025-02,Opportunity Gaps,medium_small,56964.14
+2025-03,Opportunity Gaps,medium_small,58220.6
+2025-04,Opportunity Gaps,medium_small,56837.04
+2025-05,Opportunity Gaps,medium_small,56128.54
+2025-06,Opportunity Gaps,medium_small,60204.36
+2025-07,Opportunity Gaps,medium_small,56904.46
+2025-08,Opportunity Gaps,medium_small,59688.23
+2025-09,Opportunity Gaps,medium_small,55874.37
+2025-10,Opportunity Gaps,medium_small,55777.61
+2025-11,Opportunity Gaps,medium_small,54732.64
+2025-12,Opportunity Gaps,medium_small,58296.06
+2025-01,Harvard-Kent Elementary,school,106843.81
+2025-02,Harvard-Kent Elementary,school,102811.55
+2025-03,Harvard-Kent Elementary,school,107914.22
+2025-04,Harvard-Kent Elementary,school,99845.88
+2025-05,Harvard-Kent Elementary,school,106887.78
+2025-06,Harvard-Kent Elementary,school,105939.1
+2025-07,Harvard-Kent Elementary,school,105880.6
+2025-08,Harvard-Kent Elementary,school,106642.02
+2025-09,Harvard-Kent Elementary,school,105778.56
+2025-10,Harvard-Kent Elementary,school,104388.9
+2025-11,Harvard-Kent Elementary,school,99286.31
+2025-12,Harvard-Kent Elementary,school,98268.64
+2025-01,Safety Services,medium_small,95160.84
+2025-02,Safety Services,medium_small,96852.92
+2025-03,Safety Services,medium_small,93889.78
+2025-04,Safety Services,medium_small,90463.85
+2025-05,Safety Services,medium_small,90537.95
+2025-06,Safety Services,medium_small,95809.08
+2025-07,Safety Services,medium_small,93408.02
+2025-08,Safety Services,medium_small,91246.62
+2025-09,Safety Services,medium_small,93984.52
+2025-10,Safety Services,medium_small,89964.38
+2025-11,Safety Services,medium_small,94834.64
+2025-12,Safety Services,medium_small,91890.66
+2025-01,Registry Division,medium_small,83208.48
+2025-02,Registry Division,medium_small,84437.12
+2025-03,Registry Division,medium_small,80674.65
+2025-04,Registry Division,medium_small,81190.56
+2025-05,Registry Division,medium_small,83905.1
+2025-06,Registry Division,medium_small,84646.78
+2025-07,Registry Division,medium_small,85665.28
+2025-08,Registry Division,medium_small,83049.88
+2025-09,Registry Division,medium_small,86470.71
+2025-10,Registry Division,medium_small,87871.38
+2025-11,Registry Division,medium_small,87190.54
+2025-12,Registry Division,medium_small,80912.12
+2025-01,Adams Elementary,school,116941.14
+2025-02,Adams Elementary,school,118610.53
+2025-03,Adams Elementary,school,127676.33
+2025-04,Adams Elementary,school,117398.5
+2025-05,Adams Elementary,school,121737.62
+2025-06,Adams Elementary,school,123189.72
+2025-07,Adams Elementary,school,124216.19
+2025-08,Adams Elementary,school,122477.39
+2025-09,Adams Elementary,school,115782.56
+2025-10,Adams Elementary,school,119638.3
+2025-11,Adams Elementary,school,121966.8
+2025-12,Adams Elementary,school,116733.38
+2025-01,ASD Office of Budget Mangmnt,small,18054.56
+2025-02,ASD Office of Budget Mangmnt,small,18140.5
+2025-03,ASD Office of Budget Mangmnt,small,18743.4
+2025-04,ASD Office of Budget Mangmnt,small,18243.02
+2025-05,ASD Office of Budget Mangmnt,small,19066.52
+2025-06,ASD Office of Budget Mangmnt,small,19297.43
+2025-07,ASD Office of Budget Mangmnt,small,19507.88
+2025-08,ASD Office of Budget Mangmnt,small,18370.74
+2025-09,ASD Office of Budget Mangmnt,small,18308.87
+2025-10,ASD Office of Budget Mangmnt,small,18189.72
+2025-11,ASD Office of Budget Mangmnt,small,19196.99
+2025-12,ASD Office of Budget Mangmnt,small,19329.65
+2025-01,Boston City Council,medium_small,28562.83
+2025-02,Boston City Council,medium_small,26142.75
+2025-03,Boston City Council,medium_small,27481.98
+2025-04,Boston City Council,medium_small,27941.14
+2025-05,Boston City Council,medium_small,28384.26
+2025-06,Boston City Council,medium_small,27954.89
+2025-07,Boston City Council,medium_small,28194.76
+2025-08,Boston City Council,medium_small,26929.55
+2025-09,Boston City Council,medium_small,28230.6
+2025-10,Boston City Council,medium_small,26219.78
+2025-11,Boston City Council,medium_small,28449.53
+2025-12,Boston City Council,medium_small,27499.22
+2025-01,Roosevelt K-8,medium_small,85885.85
+2025-02,Roosevelt K-8,medium_small,87536.37
+2025-03,Roosevelt K-8,medium_small,86525.18
+2025-04,Roosevelt K-8,medium_small,88295.89
+2025-05,Roosevelt K-8,medium_small,82686.91
+2025-06,Roosevelt K-8,medium_small,82503.29
+2025-07,Roosevelt K-8,medium_small,84114.9
+2025-08,Roosevelt K-8,medium_small,83359.29
+2025-09,Roosevelt K-8,medium_small,89505.73
+2025-10,Roosevelt K-8,medium_small,83874.22
+2025-11,Roosevelt K-8,medium_small,90403.92
+2025-12,Roosevelt K-8,medium_small,84889.79
+2025-01,Ohrenberger 3-8,medium_small,39778.78
+2025-02,Ohrenberger 3-8,medium_small,39272.39
+2025-03,Ohrenberger 3-8,medium_small,38651.87
+2025-04,Ohrenberger 3-8,medium_small,38872.87
+2025-05,Ohrenberger 3-8,medium_small,39506.25
+2025-06,Ohrenberger 3-8,medium_small,37609.08
+2025-07,Ohrenberger 3-8,medium_small,40577.61
+2025-08,Ohrenberger 3-8,medium_small,40494.34
+2025-09,Ohrenberger 3-8,medium_small,39239.99
+2025-10,Ohrenberger 3-8,medium_small,37497.31
+2025-11,Ohrenberger 3-8,medium_small,39355.59
+2025-12,Ohrenberger 3-8,medium_small,37005.01
+2025-01,Charlestown High,school,45641.97
+2025-02,Charlestown High,school,46600.58
+2025-03,Charlestown High,school,48498.03
+2025-04,Charlestown High,school,47838.01
+2025-05,Charlestown High,school,47910.69
+2025-06,Charlestown High,school,46426.91
+2025-07,Charlestown High,school,46054.77
+2025-08,Charlestown High,school,46172.2
+2025-09,Charlestown High,school,49056.42
+2025-10,Charlestown High,school,44624.26
+2025-11,Charlestown High,school,48492.22
+2025-12,Charlestown High,school,47143.42
+2025-01,Kennedy JF Elementary,school,117354.5
+2025-02,Kennedy JF Elementary,school,114616.24
+2025-03,Kennedy JF Elementary,school,119054.99
+2025-04,Kennedy JF Elementary,school,119368.06
+2025-05,Kennedy JF Elementary,school,113870.83
+2025-06,Kennedy JF Elementary,school,112207.91
+2025-07,Kennedy JF Elementary,school,115829.13
+2025-08,Kennedy JF Elementary,school,119501.9
+2025-09,Kennedy JF Elementary,school,111448.53
+2025-10,Kennedy JF Elementary,school,116180.51
+2025-11,Kennedy JF Elementary,school,116279.14
+2025-12,Kennedy JF Elementary,school,117444.66
+2025-01,Greenwood K-8,medium_small,35620.11
+2025-02,Greenwood K-8,medium_small,36293.77
+2025-03,Greenwood K-8,medium_small,33750.71
+2025-04,Greenwood K-8,medium_small,33952.45
+2025-05,Greenwood K-8,medium_small,36511.22
+2025-06,Greenwood K-8,medium_small,33755.22
+2025-07,Greenwood K-8,medium_small,36103.23
+2025-08,Greenwood K-8,medium_small,34840.65
+2025-09,Greenwood K-8,medium_small,33986.23
+2025-10,Greenwood K-8,medium_small,36160.29
+2025-11,Greenwood K-8,medium_small,34676.87
+2025-12,Greenwood K-8,medium_small,34919.24
+2025-01,Carter,medium_small,52425.31
+2025-02,Carter,medium_small,50194.76
+2025-03,Carter,medium_small,51376.75
+2025-04,Carter,medium_small,54380.75
+2025-05,Carter,medium_small,50686.19
+2025-06,Carter,medium_small,52756.63
+2025-07,Carter,medium_small,51034.5
+2025-08,Carter,medium_small,53362.99
+2025-09,Carter,medium_small,50025.17
+2025-10,Carter,medium_small,54382.87
+2025-11,Carter,medium_small,51702.47
+2025-12,Carter,medium_small,50571.48
+2025-01,Boston Adult Technical Academy,school,52135.59
+2025-02,Boston Adult Technical Academy,school,54022.74
+2025-03,Boston Adult Technical Academy,school,53037.31
+2025-04,Boston Adult Technical Academy,school,55689.34
+2025-05,Boston Adult Technical Academy,school,53543.5
+2025-06,Boston Adult Technical Academy,school,52561.29
+2025-07,Boston Adult Technical Academy,school,54547.72
+2025-08,Boston Adult Technical Academy,school,55030.99
+2025-09,Boston Adult Technical Academy,school,52120.94
+2025-10,Boston Adult Technical Academy,school,52124.06
+2025-11,Boston Adult Technical Academy,school,51418.04
+2025-12,Boston Adult Technical Academy,school,55190.71
+2025-01,Condon K-8,medium_small,74595.62
+2025-02,Condon K-8,medium_small,77359.23
+2025-03,Condon K-8,medium_small,77071.3
+2025-04,Condon K-8,medium_small,75423.67
+2025-05,Condon K-8,medium_small,77539.47
+2025-06,Condon K-8,medium_small,72585.46
+2025-07,Condon K-8,medium_small,71883.07
+2025-08,Condon K-8,medium_small,73063.4
+2025-09,Condon K-8,medium_small,71473.0
+2025-10,Condon K-8,medium_small,75018.44
+2025-11,Condon K-8,medium_small,78050.51
+2025-12,Condon K-8,medium_small,71340.3
+2025-01,Orchard Gardens K-8,medium_small,33994.96
+2025-02,Orchard Gardens K-8,medium_small,35640.28
+2025-03,Orchard Gardens K-8,medium_small,33530.27
+2025-04,Orchard Gardens K-8,medium_small,34182.96
+2025-05,Orchard Gardens K-8,medium_small,32592.34
+2025-06,Orchard Gardens K-8,medium_small,32957.05
+2025-07,Orchard Gardens K-8,medium_small,35820.49
+2025-08,Orchard Gardens K-8,medium_small,35747.01
+2025-09,Orchard Gardens K-8,medium_small,32467.21
+2025-10,Orchard Gardens K-8,medium_small,35701.55
+2025-11,Orchard Gardens K-8,medium_small,34633.45
+2025-12,Orchard Gardens K-8,medium_small,35414.99
+2025-01,Boston Collaborative High,school,117639.83
+2025-02,Boston Collaborative High,school,117325.64
+2025-03,Boston Collaborative High,school,119416.57
+2025-04,Boston Collaborative High,school,113224.11
+2025-05,Boston Collaborative High,school,111935.87
+2025-06,Boston Collaborative High,school,115200.65
+2025-07,Boston Collaborative High,school,119860.75
+2025-08,Boston Collaborative High,school,113954.71
+2025-09,Boston Collaborative High,school,119493.72
+2025-10,Boston Collaborative High,school,122976.07
+2025-11,Boston Collaborative High,school,112686.74
+2025-12,Boston Collaborative High,school,119483.97
+2025-01,Perkins Elementary,school,119881.68
+2025-02,Perkins Elementary,school,111892.08
+2025-03,Perkins Elementary,school,117852.27
+2025-04,Perkins Elementary,school,119534.5
+2025-05,Perkins Elementary,school,120765.89
+2025-06,Perkins Elementary,school,117743.84
+2025-07,Perkins Elementary,school,115592.37
+2025-08,Perkins Elementary,school,116987.65
+2025-09,Perkins Elementary,school,119890.5
+2025-10,Perkins Elementary,school,116441.46
+2025-11,Perkins Elementary,school,110195.14
+2025-12,Perkins Elementary,school,120607.88
+2025-01,Office of Finance,medium,201753.92
+2025-02,Office of Finance,medium,192617.59
+2025-03,Office of Finance,medium,201404.43
+2025-04,Office of Finance,medium,196150.27
+2025-05,Office of Finance,medium,201252.72
+2025-06,Office of Finance,medium,190454.99
+2025-07,Office of Finance,medium,201383.81
+2025-08,Office of Finance,medium,208155.56
+2025-09,Office of Finance,medium,189297.56
+2025-10,Office of Finance,medium,207714.65
+2025-11,Office of Finance,medium,196408.87
+2025-12,Office of Finance,medium,205604.81
+2025-01,Assessing Department,medium_small,84239.7
+2025-02,Assessing Department,medium_small,85674.23
+2025-03,Assessing Department,medium_small,86846.29
+2025-04,Assessing Department,medium_small,82876.77
+2025-05,Assessing Department,medium_small,82231.54
+2025-06,Assessing Department,medium_small,85081.31
+2025-07,Assessing Department,medium_small,86254.93
+2025-08,Assessing Department,medium_small,85873.68
+2025-09,Assessing Department,medium_small,86170.98
+2025-10,Assessing Department,medium_small,83139.88
+2025-11,Assessing Department,medium_small,86338.51
+2025-12,Assessing Department,medium_small,80500.86
+2025-01,King Elementary,school,125870.36
+2025-02,King Elementary,school,130092.11
+2025-03,King Elementary,school,130646.6
+2025-04,King Elementary,school,131040.02
+2025-05,King Elementary,school,135003.13
+2025-06,King Elementary,school,130939.19
+2025-07,King Elementary,school,131735.48
+2025-08,King Elementary,school,128939.54
+2025-09,King Elementary,school,130736.52
+2025-10,King Elementary,school,128803.49
+2025-11,King Elementary,school,126763.33
+2025-12,King Elementary,school,133784.66
+2025-01,UP Academy Dorchester,school,154864.09
+2025-02,UP Academy Dorchester,school,152476.8
+2025-03,UP Academy Dorchester,school,151195.76
+2025-04,UP Academy Dorchester,school,158595.76
+2025-05,UP Academy Dorchester,school,153327.49
+2025-06,UP Academy Dorchester,school,152716.88
+2025-07,UP Academy Dorchester,school,145776.11
+2025-08,UP Academy Dorchester,school,150606.0
+2025-09,UP Academy Dorchester,school,151202.03
+2025-10,UP Academy Dorchester,school,151487.1
+2025-11,UP Academy Dorchester,school,154262.39
+2025-12,UP Academy Dorchester,school,153549.7
+2025-01,Mozart Elementary,school,146771.59
+2025-02,Mozart Elementary,school,147459.38
+2025-03,Mozart Elementary,school,146103.0
+2025-04,Mozart Elementary,school,149497.45
+2025-05,Mozart Elementary,school,136095.67
+2025-06,Mozart Elementary,school,138634.29
+2025-07,Mozart Elementary,school,135943.11
+2025-08,Mozart Elementary,school,145092.84
+2025-09,Mozart Elementary,school,148675.39
+2025-10,Mozart Elementary,school,139316.38
+2025-11,Mozart Elementary,school,149090.1
+2025-12,Mozart Elementary,school,136696.7
+2025-01,Hernandez Elementary School,school,194476.95
+2025-02,Hernandez Elementary School,school,189537.81
+2025-03,Hernandez Elementary School,school,197127.1
+2025-04,Hernandez Elementary School,school,192604.63
+2025-05,Hernandez Elementary School,school,193159.27
+2025-06,Hernandez Elementary School,school,193601.79
+2025-07,Hernandez Elementary School,school,203387.92
+2025-08,Hernandez Elementary School,school,198179.07
+2025-09,Hernandez Elementary School,school,193681.11
+2025-10,Hernandez Elementary School,school,199584.06
+2025-11,Hernandez Elementary School,school,201672.95
+2025-12,Hernandez Elementary School,school,192917.47
+2025-01,Mattahunt Elementary,school,106409.9
+2025-02,Mattahunt Elementary,school,107065.3
+2025-03,Mattahunt Elementary,school,112594.53
+2025-04,Mattahunt Elementary,school,107068.5
+2025-05,Mattahunt Elementary,school,110869.8
+2025-06,Mattahunt Elementary,school,112903.39
+2025-07,Mattahunt Elementary,school,106243.91
+2025-08,Mattahunt Elementary,school,111335.93
+2025-09,Mattahunt Elementary,school,107899.31
+2025-10,Mattahunt Elementary,school,115711.1
+2025-11,Mattahunt Elementary,school,110409.55
+2025-12,Mattahunt Elementary,school,113975.53
+2025-01,Grew Elementary,school,127281.53
+2025-02,Grew Elementary,school,135146.94
+2025-03,Grew Elementary,school,139391.51
+2025-04,Grew Elementary,school,134726.3
+2025-05,Grew Elementary,school,137628.15
+2025-06,Grew Elementary,school,138495.29
+2025-07,Grew Elementary,school,129744.46
+2025-08,Grew Elementary,school,129530.6
+2025-09,Grew Elementary,school,134851.26
+2025-10,Grew Elementary,school,132184.47
+2025-11,Grew Elementary,school,137903.86
+2025-12,Grew Elementary,school,138706.24
+2025-01,O'Donnell Elementary,school,97923.93
+2025-02,O'Donnell Elementary,school,103391.48
+2025-03,O'Donnell Elementary,school,98305.45
+2025-04,O'Donnell Elementary,school,103814.77
+2025-05,O'Donnell Elementary,school,99803.26
+2025-06,O'Donnell Elementary,school,102255.28
+2025-07,O'Donnell Elementary,school,96502.52
+2025-08,O'Donnell Elementary,school,101815.89
+2025-09,O'Donnell Elementary,school,100085.16
+2025-10,O'Donnell Elementary,school,101441.25
+2025-11,O'Donnell Elementary,school,97231.44
+2025-12,O'Donnell Elementary,school,102952.47
+2025-01,Henderson K-12 Inclusion,medium_small,87168.66
+2025-02,Henderson K-12 Inclusion,medium_small,86082.94
+2025-03,Henderson K-12 Inclusion,medium_small,85436.35
+2025-04,Henderson K-12 Inclusion,medium_small,90983.4
+2025-05,Henderson K-12 Inclusion,medium_small,90670.52
+2025-06,Henderson K-12 Inclusion,medium_small,90128.7
+2025-07,Henderson K-12 Inclusion,medium_small,87305.08
+2025-08,Henderson K-12 Inclusion,medium_small,88731.1
+2025-09,Henderson K-12 Inclusion,medium_small,90557.33
+2025-10,Henderson K-12 Inclusion,medium_small,89680.78
+2025-11,Henderson K-12 Inclusion,medium_small,94085.69
+2025-12,Henderson K-12 Inclusion,medium_small,86448.29
+2025-01,Murphy K-8,medium_small,76397.8
+2025-02,Murphy K-8,medium_small,76582.0
+2025-03,Murphy K-8,medium_small,78814.3
+2025-04,Murphy K-8,medium_small,78620.21
+2025-05,Murphy K-8,medium_small,80925.19
+2025-06,Murphy K-8,medium_small,74269.43
+2025-07,Murphy K-8,medium_small,74082.11
+2025-08,Murphy K-8,medium_small,78866.3
+2025-09,Murphy K-8,medium_small,77740.49
+2025-10,Murphy K-8,medium_small,75393.81
+2025-11,Murphy K-8,medium_small,73891.66
+2025-12,Murphy K-8,medium_small,73939.78
+2025-01,Russell Elementary,school,184822.44
+2025-02,Russell Elementary,school,187330.2
+2025-03,Russell Elementary,school,185485.86
+2025-04,Russell Elementary,school,187933.28
+2025-05,Russell Elementary,school,182487.46
+2025-06,Russell Elementary,school,191061.95
+2025-07,Russell Elementary,school,182452.92
+2025-08,Russell Elementary,school,196426.23
+2025-09,Russell Elementary,school,185620.41
+2025-10,Russell Elementary,school,191461.5
+2025-11,Russell Elementary,school,197946.53
+2025-12,Russell Elementary,school,193575.69
+2025-01,Snowden International High,school,128200.64
+2025-02,Snowden International High,school,128313.76
+2025-03,Snowden International High,school,132704.65
+2025-04,Snowden International High,school,136941.14
+2025-05,Snowden International High,school,132604.85
+2025-06,Snowden International High,school,131247.0
+2025-07,Snowden International High,school,133502.79
+2025-08,Snowden International High,school,130038.92
+2025-09,Snowden International High,school,124753.13
+2025-10,Snowden International High,school,131305.89
+2025-11,Snowden International High,school,136464.65
+2025-12,Snowden International High,school,126255.9
+2025-01,ASD Office Of Labor Relation,small,29895.21
+2025-02,ASD Office Of Labor Relation,small,30927.25
+2025-03,ASD Office Of Labor Relation,small,29573.92
+2025-04,ASD Office Of Labor Relation,small,30663.9
+2025-05,ASD Office Of Labor Relation,small,31606.25
+2025-06,ASD Office Of Labor Relation,small,30347.1
+2025-07,ASD Office Of Labor Relation,small,31325.04
+2025-08,ASD Office Of Labor Relation,small,31727.32
+2025-09,ASD Office Of Labor Relation,small,32133.26
+2025-10,ASD Office Of Labor Relation,small,29999.09
+2025-11,ASD Office Of Labor Relation,small,30506.56
+2025-12,ASD Office Of Labor Relation,small,29745.69
+2025-01,Consumer Affairs & Licensing,medium_small,103682.2
+2025-02,Consumer Affairs & Licensing,medium_small,99833.58
+2025-03,Consumer Affairs & Licensing,medium_small,102837.31
+2025-04,Consumer Affairs & Licensing,medium_small,99644.66
+2025-05,Consumer Affairs & Licensing,medium_small,100665.15
+2025-06,Consumer Affairs & Licensing,medium_small,95350.67
+2025-07,Consumer Affairs & Licensing,medium_small,101974.58
+2025-08,Consumer Affairs & Licensing,medium_small,95734.38
+2025-09,Consumer Affairs & Licensing,medium_small,102678.56
+2025-10,Consumer Affairs & Licensing,medium_small,102240.64
+2025-11,Consumer Affairs & Licensing,medium_small,101511.94
+2025-12,Consumer Affairs & Licensing,medium_small,94824.01
+2025-01,Clap Elementary,school,90004.24
+2025-02,Clap Elementary,school,90898.68
+2025-03,Clap Elementary,school,88386.62
+2025-04,Clap Elementary,school,96216.29
+2025-05,Clap Elementary,school,92684.05
+2025-06,Clap Elementary,school,90395.23
+2025-07,Clap Elementary,school,91238.35
+2025-08,Clap Elementary,school,91701.33
+2025-09,Clap Elementary,school,93115.42
+2025-10,Clap Elementary,school,92332.6
+2025-11,Clap Elementary,school,96054.35
+2025-12,Clap Elementary,school,92160.07
+2025-01,Mildred Avenue K-8,medium_small,102905.43
+2025-02,Mildred Avenue K-8,medium_small,96514.1
+2025-03,Mildred Avenue K-8,medium_small,103692.48
+2025-04,Mildred Avenue K-8,medium_small,95598.08
+2025-05,Mildred Avenue K-8,medium_small,102567.68
+2025-06,Mildred Avenue K-8,medium_small,98225.11
+2025-07,Mildred Avenue K-8,medium_small,103169.36
+2025-08,Mildred Avenue K-8,medium_small,103070.77
+2025-09,Mildred Avenue K-8,medium_small,102453.11
+2025-10,Mildred Avenue K-8,medium_small,102295.1
+2025-11,Mildred Avenue K-8,medium_small,97470.13
+2025-12,Mildred Avenue K-8,medium_small,95245.69
+2025-01,O'Bryant School of Math & Sci,school,105277.0
+2025-02,O'Bryant School of Math & Sci,school,110951.68
+2025-03,O'Bryant School of Math & Sci,school,107155.13
+2025-04,O'Bryant School of Math & Sci,school,114006.1
+2025-05,O'Bryant School of Math & Sci,school,110364.23
+2025-06,O'Bryant School of Math & Sci,school,112339.59
+2025-07,O'Bryant School of Math & Sci,school,104830.79
+2025-08,O'Bryant School of Math & Sci,school,112769.83
+2025-09,O'Bryant School of Math & Sci,school,113430.9
+2025-10,O'Bryant School of Math & Sci,school,108689.22
+2025-11,O'Bryant School of Math & Sci,school,109986.38
+2025-12,O'Bryant School of Math & Sci,school,111711.96
+2025-01,Horace Mann,medium_small,38122.68
+2025-02,Horace Mann,medium_small,37726.67
+2025-03,Horace Mann,medium_small,36765.13
+2025-04,Horace Mann,medium_small,37608.03
+2025-05,Horace Mann,medium_small,36467.08
+2025-06,Horace Mann,medium_small,36305.63
+2025-07,Horace Mann,medium_small,36722.41
+2025-08,Horace Mann,medium_small,39877.96
+2025-09,Horace Mann,medium_small,38301.67
+2025-10,Horace Mann,medium_small,39888.28
+2025-11,Horace Mann,medium_small,37855.63
+2025-12,Horace Mann,medium_small,37395.67
+2025-01,Auditing Department,medium_small,62579.8
+2025-02,Auditing Department,medium_small,60477.88
+2025-03,Auditing Department,medium_small,63847.29
+2025-04,Auditing Department,medium_small,61172.8
+2025-05,Auditing Department,medium_small,63713.57
+2025-06,Auditing Department,medium_small,63906.32
+2025-07,Auditing Department,medium_small,60769.77
+2025-08,Auditing Department,medium_small,60198.87
+2025-09,Auditing Department,medium_small,64728.33
+2025-10,Auditing Department,medium_small,62707.54
+2025-11,Auditing Department,medium_small,60178.81
+2025-12,Auditing Department,medium_small,66076.35
+2025-01,Dever Elementary,school,52297.23
+2025-02,Dever Elementary,school,53777.88
+2025-03,Dever Elementary,school,49958.84
+2025-04,Dever Elementary,school,49461.62
+2025-05,Dever Elementary,school,49354.59
+2025-06,Dever Elementary,school,50287.63
+2025-07,Dever Elementary,school,49250.25
+2025-08,Dever Elementary,school,52282.49
+2025-09,Dever Elementary,school,49051.46
+2025-10,Dever Elementary,school,51345.09
+2025-11,Dever Elementary,school,53844.65
+2025-12,Dever Elementary,school,52907.33
+2025-01,Mather Elementary,school,141409.35
+2025-02,Mather Elementary,school,145989.86
+2025-03,Mather Elementary,school,144593.19
+2025-04,Mather Elementary,school,143137.34
+2025-05,Mather Elementary,school,138877.96
+2025-06,Mather Elementary,school,149778.2
+2025-07,Mather Elementary,school,143479.12
+2025-08,Mather Elementary,school,139799.6
+2025-09,Mather Elementary,school,142296.29
+2025-10,Mather Elementary,school,142964.96
+2025-11,Mather Elementary,school,148926.44
+2025-12,Mather Elementary,school,147572.03
+2025-01,Adult Education,medium_small,78654.2
+2025-02,Adult Education,medium_small,82004.48
+2025-03,Adult Education,medium_small,82543.59
+2025-04,Adult Education,medium_small,78721.69
+2025-05,Adult Education,medium_small,80711.57
+2025-06,Adult Education,medium_small,84850.41
+2025-07,Adult Education,medium_small,79696.84
+2025-08,Adult Education,medium_small,82989.87
+2025-09,Adult Education,medium_small,80342.65
+2025-10,Adult Education,medium_small,78663.21
+2025-11,Adult Education,medium_small,80557.66
+2025-12,Adult Education,medium_small,86633.24
+2025-01,Lee K-8,medium_small,89026.98
+2025-02,Lee K-8,medium_small,85011.9
+2025-03,Lee K-8,medium_small,81793.54
+2025-04,Lee K-8,medium_small,85523.49
+2025-05,Lee K-8,medium_small,84726.96
+2025-06,Lee K-8,medium_small,88046.29
+2025-07,Lee K-8,medium_small,81694.35
+2025-08,Lee K-8,medium_small,85015.2
+2025-09,Lee K-8,medium_small,82136.66
+2025-10,Lee K-8,medium_small,83623.01
+2025-11,Lee K-8,medium_small,87135.55
+2025-12,Lee K-8,medium_small,84911.16
+2025-01,Kenny Elementary,school,103213.95
+2025-02,Kenny Elementary,school,103891.68
+2025-03,Kenny Elementary,school,107287.86
+2025-04,Kenny Elementary,school,108404.73
+2025-05,Kenny Elementary,school,109064.52
+2025-06,Kenny Elementary,school,107307.54
+2025-07,Kenny Elementary,school,102389.14
+2025-08,Kenny Elementary,school,106277.24
+2025-09,Kenny Elementary,school,103663.82
+2025-10,Kenny Elementary,school,101755.57
+2025-11,Kenny Elementary,school,107870.51
+2025-12,Kenny Elementary,school,99499.82
+2025-01,OPAT,medium_small,92275.31
+2025-02,OPAT,medium_small,93903.08
+2025-03,OPAT,medium_small,94108.28
+2025-04,OPAT,medium_small,96292.21
+2025-05,OPAT,medium_small,93898.15
+2025-06,OPAT,medium_small,93687.54
+2025-07,OPAT,medium_small,88617.95
+2025-08,OPAT,medium_small,92802.67
+2025-09,OPAT,medium_small,89391.59
+2025-10,OPAT,medium_small,94831.55
+2025-11,OPAT,medium_small,92745.36
+2025-12,OPAT,medium_small,94301.64
+2025-01,Hurley K-8,medium_small,26957.68
+2025-02,Hurley K-8,medium_small,28733.89
+2025-03,Hurley K-8,medium_small,26921.93
+2025-04,Hurley K-8,medium_small,26919.61
+2025-05,Hurley K-8,medium_small,26753.25
+2025-06,Hurley K-8,medium_small,29409.4
+2025-07,Hurley K-8,medium_small,28793.47
+2025-08,Hurley K-8,medium_small,27712.73
+2025-09,Hurley K-8,medium_small,27553.21
+2025-10,Hurley K-8,medium_small,27702.75
+2025-11,Hurley K-8,medium_small,28897.94
+2025-12,Hurley K-8,medium_small,28579.33
+2025-01,Albert HollandSch ofTechnology,medium,110477.61
+2025-02,Albert HollandSch ofTechnology,medium,109612.97
+2025-03,Albert HollandSch ofTechnology,medium,116029.91
+2025-04,Albert HollandSch ofTechnology,medium,117218.38
+2025-05,Albert HollandSch ofTechnology,medium,111516.11
+2025-06,Albert HollandSch ofTechnology,medium,108728.49
+2025-07,Albert HollandSch ofTechnology,medium,109427.69
+2025-08,Albert HollandSch ofTechnology,medium,119542.19
+2025-09,Albert HollandSch ofTechnology,medium,111863.26
+2025-10,Albert HollandSch ofTechnology,medium,117273.77
+2025-11,Albert HollandSch ofTechnology,medium,115622.91
+2025-12,Albert HollandSch ofTechnology,medium,112851.02
+2025-01,Procurement,medium_small,38895.94
+2025-02,Procurement,medium_small,40891.5
+2025-03,Procurement,medium_small,41536.79
+2025-04,Procurement,medium_small,41008.3
+2025-05,Procurement,medium_small,40549.05
+2025-06,Procurement,medium_small,38574.81
+2025-07,Procurement,medium_small,42320.48
+2025-08,Procurement,medium_small,41634.14
+2025-09,Procurement,medium_small,39589.0
+2025-10,Procurement,medium_small,42366.9
+2025-11,Procurement,medium_small,40838.42
+2025-12,Procurement,medium_small,40759.75
+2025-01,Baldwin Early Learning Academy,school,171531.68
+2025-02,Baldwin Early Learning Academy,school,168948.48
+2025-03,Baldwin Early Learning Academy,school,160159.07
+2025-04,Baldwin Early Learning Academy,school,163655.18
+2025-05,Baldwin Early Learning Academy,school,173466.51
+2025-06,Baldwin Early Learning Academy,school,161764.63
+2025-07,Baldwin Early Learning Academy,school,164219.09
+2025-08,Baldwin Early Learning Academy,school,165215.66
+2025-09,Baldwin Early Learning Academy,school,165337.56
+2025-10,Baldwin Early Learning Academy,school,168224.23
+2025-11,Baldwin Early Learning Academy,school,173715.9
+2025-12,Baldwin Early Learning Academy,school,162032.07
+2025-01,Comm Academy of Sci & Health,school,60043.73
+2025-02,Comm Academy of Sci & Health,school,64312.61
+2025-03,Comm Academy of Sci & Health,school,62819.71
+2025-04,Comm Academy of Sci & Health,school,60591.3
+2025-05,Comm Academy of Sci & Health,school,63873.14
+2025-06,Comm Academy of Sci & Health,school,64154.39
+2025-07,Comm Academy of Sci & Health,school,64062.41
+2025-08,Comm Academy of Sci & Health,school,64510.76
+2025-09,Comm Academy of Sci & Health,school,60382.85
+2025-10,Comm Academy of Sci & Health,school,63496.04
+2025-11,Comm Academy of Sci & Health,school,61672.57
+2025-12,Comm Academy of Sci & Health,school,64034.44
+2025-01,Holmes Elementary,school,167590.13
+2025-02,Holmes Elementary,school,165628.49
+2025-03,Holmes Elementary,school,157821.23
+2025-04,Holmes Elementary,school,163816.09
+2025-05,Holmes Elementary,school,170985.86
+2025-06,Holmes Elementary,school,170214.78
+2025-07,Holmes Elementary,school,155631.78
+2025-08,Holmes Elementary,school,157615.52
+2025-09,Holmes Elementary,school,157075.95
+2025-10,Holmes Elementary,school,166767.1
+2025-11,Holmes Elementary,school,168264.28
+2025-12,Holmes Elementary,school,158409.67
+2025-01,Higginson-Lewis 3-8,medium_small,65083.3
+2025-02,Higginson-Lewis 3-8,medium_small,64404.18
+2025-03,Higginson-Lewis 3-8,medium_small,63204.79
+2025-04,Higginson-Lewis 3-8,medium_small,63507.59
+2025-05,Higginson-Lewis 3-8,medium_small,62991.57
+2025-06,Higginson-Lewis 3-8,medium_small,61664.74
+2025-07,Higginson-Lewis 3-8,medium_small,63348.19
+2025-08,Higginson-Lewis 3-8,medium_small,64127.78
+2025-09,Higginson-Lewis 3-8,medium_small,65288.61
+2025-10,Higginson-Lewis 3-8,medium_small,63796.76
+2025-11,Higginson-Lewis 3-8,medium_small,64582.42
+2025-12,Higginson-Lewis 3-8,medium_small,60799.48
+2025-01,Excel High,school,112773.93
+2025-02,Excel High,school,115588.7
+2025-03,Excel High,school,121278.59
+2025-04,Excel High,school,124425.43
+2025-05,Excel High,school,113839.45
+2025-06,Excel High,school,117424.7
+2025-07,Excel High,school,122151.54
+2025-08,Excel High,school,115082.98
+2025-09,Excel High,school,119246.18
+2025-10,Excel High,school,121356.97
+2025-11,Excel High,school,119968.42
+2025-12,Excel High,school,114893.11
+2025-01,McKay K-8,medium_small,53119.74
+2025-02,McKay K-8,medium_small,51933.94
+2025-03,McKay K-8,medium_small,49098.16
+2025-04,McKay K-8,medium_small,53001.96
+2025-05,McKay K-8,medium_small,49253.55
+2025-06,McKay K-8,medium_small,52923.15
+2025-07,McKay K-8,medium_small,50117.04
+2025-08,McKay K-8,medium_small,54019.97
+2025-09,McKay K-8,medium_small,50971.71
+2025-10,McKay K-8,medium_small,50759.88
+2025-11,McKay K-8,medium_small,49840.21
+2025-12,McKay K-8,medium_small,50649.71
+2025-01,Career & Technical Education,medium_small,95252.98
+2025-02,Career & Technical Education,medium_small,89553.73
+2025-03,Career & Technical Education,medium_small,90282.45
+2025-04,Career & Technical Education,medium_small,92764.07
+2025-05,Career & Technical Education,medium_small,94253.49
+2025-06,Career & Technical Education,medium_small,91593.17
+2025-07,Career & Technical Education,medium_small,89764.42
+2025-08,Career & Technical Education,medium_small,89955.86
+2025-09,Career & Technical Education,medium_small,92524.02
+2025-10,Career & Technical Education,medium_small,86240.57
+2025-11,Career & Technical Education,medium_small,91834.07
+2025-12,Career & Technical Education,medium_small,89437.42
+2025-01,Higginson Inclusion K0-2,medium_small,81122.93
+2025-02,Higginson Inclusion K0-2,medium_small,85310.68
+2025-03,Higginson Inclusion K0-2,medium_small,84403.9
+2025-04,Higginson Inclusion K0-2,medium_small,85768.37
+2025-05,Higginson Inclusion K0-2,medium_small,80884.99
+2025-06,Higginson Inclusion K0-2,medium_small,85241.18
+2025-07,Higginson Inclusion K0-2,medium_small,85084.74
+2025-08,Higginson Inclusion K0-2,medium_small,85077.77
+2025-09,Higginson Inclusion K0-2,medium_small,85439.94
+2025-10,Higginson Inclusion K0-2,medium_small,86057.1
+2025-11,Higginson Inclusion K0-2,medium_small,87143.93
+2025-12,Higginson Inclusion K0-2,medium_small,82618.29
+2025-01,Conley Elementary,school,179143.65
+2025-02,Conley Elementary,school,171596.85
+2025-03,Conley Elementary,school,171265.24
+2025-04,Conley Elementary,school,176204.87
+2025-05,Conley Elementary,school,184279.54
+2025-06,Conley Elementary,school,182896.02
+2025-07,Conley Elementary,school,184346.16
+2025-08,Conley Elementary,school,179484.32
+2025-09,Conley Elementary,school,178103.42
+2025-10,Conley Elementary,school,172858.14
+2025-11,Conley Elementary,school,176096.55
+2025-12,Conley Elementary,school,177992.69
+2025-01,Ruth Batson Academy,school,54856.72
+2025-02,Ruth Batson Academy,school,56987.72
+2025-03,Ruth Batson Academy,school,57763.33
+2025-04,Ruth Batson Academy,school,59245.75
+2025-05,Ruth Batson Academy,school,58877.61
+2025-06,Ruth Batson Academy,school,57237.95
+2025-07,Ruth Batson Academy,school,55988.98
+2025-08,Ruth Batson Academy,school,57201.9
+2025-09,Ruth Batson Academy,school,58045.43
+2025-10,Ruth Batson Academy,school,54279.55
+2025-11,Ruth Batson Academy,school,55924.97
+2025-12,Ruth Batson Academy,school,58351.02
+2025-01,Alighieri Montessori,medium_small,54174.05
+2025-02,Alighieri Montessori,medium_small,54259.56
+2025-03,Alighieri Montessori,medium_small,52090.35
+2025-04,Alighieri Montessori,medium_small,53046.47
+2025-05,Alighieri Montessori,medium_small,52897.35
+2025-06,Alighieri Montessori,medium_small,51239.0
+2025-07,Alighieri Montessori,medium_small,51228.22
+2025-08,Alighieri Montessori,medium_small,55571.59
+2025-09,Alighieri Montessori,medium_small,52566.88
+2025-10,Alighieri Montessori,medium_small,53884.71
+2025-11,Alighieri Montessori,medium_small,52704.87
+2025-12,Alighieri Montessori,medium_small,56157.77
+2025-01,ASD Human Resources,medium_small,44134.6
+2025-02,ASD Human Resources,medium_small,46103.94
+2025-03,ASD Human Resources,medium_small,45967.06
+2025-04,ASD Human Resources,medium_small,43052.06
+2025-05,ASD Human Resources,medium_small,45792.42
+2025-06,ASD Human Resources,medium_small,44261.41
+2025-07,ASD Human Resources,medium_small,44371.56
+2025-08,ASD Human Resources,medium_small,42818.18
+2025-09,ASD Human Resources,medium_small,42583.15
+2025-10,ASD Human Resources,medium_small,45460.38
+2025-11,ASD Human Resources,medium_small,44431.53
+2025-12,ASD Human Resources,medium_small,44166.58
+2025-01,Everett Elementary,school,167585.91
+2025-02,Everett Elementary,school,157683.0
+2025-03,Everett Elementary,school,165050.81
+2025-04,Everett Elementary,school,157298.48
+2025-05,Everett Elementary,school,167355.1
+2025-06,Everett Elementary,school,165813.69
+2025-07,Everett Elementary,school,170705.67
+2025-08,Everett Elementary,school,156214.55
+2025-09,Everett Elementary,school,156020.23
+2025-10,Everett Elementary,school,159695.55
+2025-11,Everett Elementary,school,159361.18
+2025-12,Everett Elementary,school,159120.77
+2025-01,Lee Academy,school,187882.62
+2025-02,Lee Academy,school,188314.36
+2025-03,Lee Academy,school,197707.94
+2025-04,Lee Academy,school,191740.54
+2025-05,Lee Academy,school,198041.56
+2025-06,Lee Academy,school,184333.31
+2025-07,Lee Academy,school,192469.58
+2025-08,Lee Academy,school,183721.41
+2025-09,Lee Academy,school,184281.03
+2025-10,Lee Academy,school,200541.52
+2025-11,Lee Academy,school,185757.03
+2025-12,Lee Academy,school,193333.87
+2025-01,Data & Accountability,medium_small,54979.85
+2025-02,Data & Accountability,medium_small,58064.53
+2025-03,Data & Accountability,medium_small,53162.41
+2025-04,Data & Accountability,medium_small,56746.64
+2025-05,Data & Accountability,medium_small,58419.4
+2025-06,Data & Accountability,medium_small,56168.1
+2025-07,Data & Accountability,medium_small,58271.04
+2025-08,Data & Accountability,medium_small,53332.33
+2025-09,Data & Accountability,medium_small,55378.78
+2025-10,Data & Accountability,medium_small,54493.08
+2025-11,Data & Accountability,medium_small,57120.89
+2025-12,Data & Accountability,medium_small,58519.36
+2025-01,Lyndon K-8,medium_small,44921.82
+2025-02,Lyndon K-8,medium_small,42904.15
+2025-03,Lyndon K-8,medium_small,44528.77
+2025-04,Lyndon K-8,medium_small,44080.19
+2025-05,Lyndon K-8,medium_small,46327.89
+2025-06,Lyndon K-8,medium_small,44719.88
+2025-07,Lyndon K-8,medium_small,43573.97
+2025-08,Lyndon K-8,medium_small,42532.52
+2025-09,Lyndon K-8,medium_small,42696.88
+2025-10,Lyndon K-8,medium_small,43024.56
+2025-11,Lyndon K-8,medium_small,43138.04
+2025-12,Lyndon K-8,medium_small,45790.87
+2025-01,Transformation,medium_small,67248.64
+2025-02,Transformation,medium_small,64507.13
+2025-03,Transformation,medium_small,69507.95
+2025-04,Transformation,medium_small,68586.61
+2025-05,Transformation,medium_small,64191.12
+2025-06,Transformation,medium_small,68486.11
+2025-07,Transformation,medium_small,67383.81
+2025-08,Transformation,medium_small,64285.43
+2025-09,Transformation,medium_small,66811.94
+2025-10,Transformation,medium_small,66989.03
+2025-11,Transformation,medium_small,64849.33
+2025-12,Transformation,medium_small,70081.97
+2025-01,Succeed Boston,medium_small,90248.19
+2025-02,Succeed Boston,medium_small,88413.53
+2025-03,Succeed Boston,medium_small,87965.09
+2025-04,Succeed Boston,medium_small,90088.01
+2025-05,Succeed Boston,medium_small,89151.35
+2025-06,Succeed Boston,medium_small,84863.41
+2025-07,Succeed Boston,medium_small,88859.11
+2025-08,Succeed Boston,medium_small,91467.43
+2025-09,Succeed Boston,medium_small,88386.41
+2025-10,Succeed Boston,medium_small,84771.85
+2025-11,Succeed Boston,medium_small,91288.82
+2025-12,Succeed Boston,medium_small,86097.81
+2025-01,Boston Cntr - Youth & Families,medium_small,42907.97
+2025-02,Boston Cntr - Youth & Families,medium_small,43642.78
+2025-03,Boston Cntr - Youth & Families,medium_small,45536.45
+2025-04,Boston Cntr - Youth & Families,medium_small,44482.63
+2025-05,Boston Cntr - Youth & Families,medium_small,43086.34
+2025-06,Boston Cntr - Youth & Families,medium_small,46074.0
+2025-07,Boston Cntr - Youth & Families,medium_small,46081.78
+2025-08,Boston Cntr - Youth & Families,medium_small,46041.8
+2025-09,Boston Cntr - Youth & Families,medium_small,43236.91
+2025-10,Boston Cntr - Youth & Families,medium_small,44180.08
+2025-11,Boston Cntr - Youth & Families,medium_small,46549.75
+2025-12,Boston Cntr - Youth & Families,medium_small,45604.2
+2025-01,Finance Commission,medium,84041.07
+2025-02,Finance Commission,medium,87544.33
+2025-03,Finance Commission,medium,91456.7
+2025-04,Finance Commission,medium,88201.28
+2025-05,Finance Commission,medium,87842.02
+2025-06,Finance Commission,medium,84394.88
+2025-07,Finance Commission,medium,89238.73
+2025-08,Finance Commission,medium,90691.28
+2025-09,Finance Commission,medium,86810.59
+2025-10,Finance Commission,medium,90282.8
+2025-11,Finance Commission,medium,91942.19
+2025-12,Finance Commission,medium,85258.49
+2025-01,Transportation,large,458090.92
+2025-02,Transportation,large,481761.18
+2025-03,Transportation,large,471685.8
+2025-04,Transportation,large,474353.2
+2025-05,Transportation,large,481998.0
+2025-06,Transportation,large,463184.87
+2025-07,Transportation,large,487482.47
+2025-08,Transportation,large,469599.94
+2025-09,Transportation,large,452044.45
+2025-10,Transportation,large,477223.15
+2025-11,Transportation,large,481780.23
+2025-12,Transportation,large,459477.47
+2025-01,Community Academy,school,192024.43
+2025-02,Community Academy,school,180413.1
+2025-03,Community Academy,school,193452.29
+2025-04,Community Academy,school,177899.93
+2025-05,Community Academy,school,179031.17
+2025-06,Community Academy,school,178702.88
+2025-07,Community Academy,school,191800.16
+2025-08,Community Academy,school,187377.03
+2025-09,Community Academy,school,178110.16
+2025-10,Community Academy,school,183428.66
+2025-11,Community Academy,school,186657.47
+2025-12,Community Academy,school,176843.54
+2025-01,Athletics,medium_small,93949.52
+2025-02,Athletics,medium_small,91228.7
+2025-03,Athletics,medium_small,95440.55
+2025-04,Athletics,medium_small,90431.36
+2025-05,Athletics,medium_small,95595.4
+2025-06,Athletics,medium_small,92712.34
+2025-07,Athletics,medium_small,92409.18
+2025-08,Athletics,medium_small,88135.36
+2025-09,Athletics,medium_small,94663.69
+2025-10,Athletics,medium_small,90520.07
+2025-11,Athletics,medium_small,88101.43
+2025-12,Athletics,medium_small,86737.12
+2025-01,Early Childhood,medium_small,67165.2
+2025-02,Early Childhood,medium_small,68450.94
+2025-03,Early Childhood,medium_small,69595.69
+2025-04,Early Childhood,medium_small,64164.47
+2025-05,Early Childhood,medium_small,68532.28
+2025-06,Early Childhood,medium_small,64887.91
+2025-07,Early Childhood,medium_small,69380.81
+2025-08,Early Childhood,medium_small,69118.82
+2025-09,Early Childhood,medium_small,67254.92
+2025-10,Early Childhood,medium_small,68389.92
+2025-11,Early Childhood,medium_small,65738.16
+2025-12,Early Childhood,medium_small,66788.55
+2025-01,UP Academy Holland,school,177878.6
+2025-02,UP Academy Holland,school,176066.34
+2025-03,UP Academy Holland,school,178502.78
+2025-04,UP Academy Holland,school,184468.88
+2025-05,UP Academy Holland,school,175662.86
+2025-06,UP Academy Holland,school,172779.33
+2025-07,UP Academy Holland,school,182392.85
+2025-08,UP Academy Holland,school,184428.32
+2025-09,UP Academy Holland,school,171473.29
+2025-10,UP Academy Holland,school,173960.14
+2025-11,UP Academy Holland,school,172211.55
+2025-12,UP Academy Holland,school,175890.29
+2025-01,High School Renewal,school,119629.59
+2025-02,High School Renewal,school,118489.44
+2025-03,High School Renewal,school,118136.7
+2025-04,High School Renewal,school,115002.01
+2025-05,High School Renewal,school,120710.72
+2025-06,High School Renewal,school,116390.01
+2025-07,High School Renewal,school,122317.52
+2025-08,High School Renewal,school,118290.94
+2025-09,High School Renewal,school,112362.73
+2025-10,High School Renewal,school,118781.6
+2025-11,High School Renewal,school,114683.69
+2025-12,High School Renewal,school,118900.07
+2025-01,Perry Elementary,school,51541.5
+2025-02,Perry Elementary,school,55168.66
+2025-03,Perry Elementary,school,51820.11
+2025-04,Perry Elementary,school,55069.06
+2025-05,Perry Elementary,school,52097.65
+2025-06,Perry Elementary,school,54034.71
+2025-07,Perry Elementary,school,54307.83
+2025-08,Perry Elementary,school,53340.94
+2025-09,Perry Elementary,school,52236.35
+2025-10,Perry Elementary,school,51742.68
+2025-11,Perry Elementary,school,50786.66
+2025-12,Perry Elementary,school,52229.08
+2025-01,Gardner Pilot Academy,school,157124.81
+2025-02,Gardner Pilot Academy,school,156114.77
+2025-03,Gardner Pilot Academy,school,154532.13
+2025-04,Gardner Pilot Academy,school,154869.05
+2025-05,Gardner Pilot Academy,school,153010.6
+2025-06,Gardner Pilot Academy,school,146918.8
+2025-07,Gardner Pilot Academy,school,156656.52
+2025-08,Gardner Pilot Academy,school,153097.12
+2025-09,Gardner Pilot Academy,school,151436.93
+2025-10,Gardner Pilot Academy,school,144671.47
+2025-11,Gardner Pilot Academy,school,149730.17
+2025-12,Gardner Pilot Academy,school,149930.42
+2025-01,Boston Arts Academy,school,186627.14
+2025-02,Boston Arts Academy,school,183538.91
+2025-03,Boston Arts Academy,school,194617.67
+2025-04,Boston Arts Academy,school,178529.32
+2025-05,Boston Arts Academy,school,184321.86
+2025-06,Boston Arts Academy,school,177253.22
+2025-07,Boston Arts Academy,school,190217.07
+2025-08,Boston Arts Academy,school,193526.82
+2025-09,Boston Arts Academy,school,181674.56
+2025-10,Boston Arts Academy,school,192417.18
+2025-11,Boston Arts Academy,school,181900.83
+2025-12,Boston Arts Academy,school,193391.09
+2025-01,Food & Nutrition Services,medium_small,84033.57
+2025-02,Food & Nutrition Services,medium_small,77616.62
+2025-03,Food & Nutrition Services,medium_small,85321.23
+2025-04,Food & Nutrition Services,medium_small,83395.58
+2025-05,Food & Nutrition Services,medium_small,79954.94
+2025-06,Food & Nutrition Services,medium_small,84233.26
+2025-07,Food & Nutrition Services,medium_small,79765.51
+2025-08,Food & Nutrition Services,medium_small,84586.84
+2025-09,Food & Nutrition Services,medium_small,78387.85
+2025-10,Food & Nutrition Services,medium_small,83208.14
+2025-11,Food & Nutrition Services,medium_small,81879.03
+2025-12,Food & Nutrition Services,medium_small,78257.0
+2025-01,Winship Elementary,school,77984.88
+2025-02,Winship Elementary,school,81726.26
+2025-03,Winship Elementary,school,80353.03
+2025-04,Winship Elementary,school,82788.66
+2025-05,Winship Elementary,school,80320.01
+2025-06,Winship Elementary,school,80342.0
+2025-07,Winship Elementary,school,83976.06
+2025-08,Winship Elementary,school,78277.88
+2025-09,Winship Elementary,school,85285.33
+2025-10,Winship Elementary,school,84870.25
+2025-11,Winship Elementary,school,83358.01
+2025-12,Winship Elementary,school,82746.56
+2025-01,New Mission High,school,184392.95
+2025-02,New Mission High,school,182368.01
+2025-03,New Mission High,school,185424.45
+2025-04,New Mission High,school,195992.04
+2025-05,New Mission High,school,181524.63
+2025-06,New Mission High,school,191960.26
+2025-07,New Mission High,school,199816.07
+2025-08,New Mission High,school,197155.63
+2025-09,New Mission High,school,190792.04
+2025-10,New Mission High,school,182076.18
+2025-11,New Mission High,school,196692.56
+2025-12,New Mission High,school,192268.14
+2025-01,Manning Elementary,school,58351.92
+2025-02,Manning Elementary,school,63313.61
+2025-03,Manning Elementary,school,61851.28
+2025-04,Manning Elementary,school,62824.96
+2025-05,Manning Elementary,school,63127.2
+2025-06,Manning Elementary,school,61258.7
+2025-07,Manning Elementary,school,60928.28
+2025-08,Manning Elementary,school,60399.01
+2025-09,Manning Elementary,school,59708.8
+2025-10,Manning Elementary,school,60424.36
+2025-11,Manning Elementary,school,62487.96
+2025-12,Manning Elementary,school,61442.09
+2025-01,Business Services,medium_small,91418.69
+2025-02,Business Services,medium_small,92923.82
+2025-03,Business Services,medium_small,93146.48
+2025-04,Business Services,medium_small,92782.3
+2025-05,Business Services,medium_small,93802.25
+2025-06,Business Services,medium_small,89525.23
+2025-07,Business Services,medium_small,92052.92
+2025-08,Business Services,medium_small,88300.52
+2025-09,Business Services,medium_small,90877.45
+2025-10,Business Services,medium_small,91825.86
+2025-11,Business Services,medium_small,93338.79
+2025-12,Business Services,medium_small,96081.4
+2025-01,Mendell Elementary,school,145228.73
+2025-02,Mendell Elementary,school,141864.01
+2025-03,Mendell Elementary,school,143676.44
+2025-04,Mendell Elementary,school,135692.06
+2025-05,Mendell Elementary,school,138293.06
+2025-06,Mendell Elementary,school,139816.6
+2025-07,Mendell Elementary,school,141385.2
+2025-08,Mendell Elementary,school,135333.6
+2025-09,Mendell Elementary,school,136671.61
+2025-10,Mendell Elementary,school,138610.96
+2025-11,Mendell Elementary,school,148460.34
+2025-12,Mendell Elementary,school,139384.1
+2025-01,East Boston EEC,medium_small,59294.62
+2025-02,East Boston EEC,medium_small,61830.53
+2025-03,East Boston EEC,medium_small,59811.89
+2025-04,East Boston EEC,medium_small,59361.25
+2025-05,East Boston EEC,medium_small,61254.43
+2025-06,East Boston EEC,medium_small,58129.1
+2025-07,East Boston EEC,medium_small,58142.29
+2025-08,East Boston EEC,medium_small,59435.1
+2025-09,East Boston EEC,medium_small,58319.99
+2025-10,East Boston EEC,medium_small,58756.04
+2025-11,East Boston EEC,medium_small,60167.66
+2025-12,East Boston EEC,medium_small,63003.48
+2025-01,Bates Elementary,school,137181.67
+2025-02,Bates Elementary,school,134178.74
+2025-03,Bates Elementary,school,142923.48
+2025-04,Bates Elementary,school,135597.13
+2025-05,Bates Elementary,school,131350.94
+2025-06,Bates Elementary,school,138612.01
+2025-07,Bates Elementary,school,131717.38
+2025-08,Bates Elementary,school,134887.54
+2025-09,Bates Elementary,school,137109.66
+2025-10,Bates Elementary,school,142135.26
+2025-11,Bates Elementary,school,136919.69
+2025-12,Bates Elementary,school,139779.22
+2025-01,Ellison-Parks Early Ed,large,639216.59
+2025-02,Ellison-Parks Early Ed,large,648723.21
+2025-03,Ellison-Parks Early Ed,large,656676.97
+2025-04,Ellison-Parks Early Ed,large,658485.62
+2025-05,Ellison-Parks Early Ed,large,657768.39
+2025-06,Ellison-Parks Early Ed,large,690725.75
+2025-07,Ellison-Parks Early Ed,large,677878.47
+2025-08,Ellison-Parks Early Ed,large,670835.07
+2025-09,Ellison-Parks Early Ed,large,651022.25
+2025-10,Ellison-Parks Early Ed,large,685162.8
+2025-11,Ellison-Parks Early Ed,large,693874.85
+2025-12,Ellison-Parks Early Ed,large,684990.77
+2025-01,Instr & Info Technology,medium,84734.42
+2025-02,Instr & Info Technology,medium,79841.94
+2025-03,Instr & Info Technology,medium,81567.92
+2025-04,Instr & Info Technology,medium,79912.07
+2025-05,Instr & Info Technology,medium,84461.85
+2025-06,Instr & Info Technology,medium,85153.97
+2025-07,Instr & Info Technology,medium,80371.53
+2025-08,Instr & Info Technology,medium,82623.14
+2025-09,Instr & Info Technology,medium,83228.35
+2025-10,Instr & Info Technology,medium,82499.54
+2025-11,Instr & Info Technology,medium,80426.17
+2025-12,Instr & Info Technology,medium,82916.63
+2025-01,Lyon Elementary School,school,159704.71
+2025-02,Lyon Elementary School,school,159857.77
+2025-03,Lyon Elementary School,school,164439.68
+2025-04,Lyon Elementary School,school,174233.78
+2025-05,Lyon Elementary School,school,169675.86
+2025-06,Lyon Elementary School,school,169844.35
+2025-07,Lyon Elementary School,school,164558.96
+2025-08,Lyon Elementary School,school,168425.86
+2025-09,Lyon Elementary School,school,158688.91
+2025-10,Lyon Elementary School,school,169133.95
+2025-11,Lyon Elementary School,school,173759.24
+2025-12,Lyon Elementary School,school,168741.44
+2025-01,Another Course to College,medium_small,92554.96
+2025-02,Another Course to College,medium_small,87092.41
+2025-03,Another Course to College,medium_small,94170.7
+2025-04,Another Course to College,medium_small,86602.52
+2025-05,Another Course to College,medium_small,90834.89
+2025-06,Another Course to College,medium_small,87287.76
+2025-07,Another Course to College,medium_small,86107.0
+2025-08,Another Course to College,medium_small,89821.59
+2025-09,Another Course to College,medium_small,88671.95
+2025-10,Another Course to College,medium_small,90400.66
+2025-11,Another Course to College,medium_small,91226.26
+2025-12,Another Course to College,medium_small,86396.98
+2025-01,City Clerk,medium_small,34425.95
+2025-02,City Clerk,medium_small,33688.48
+2025-03,City Clerk,medium_small,35009.6
+2025-04,City Clerk,medium_small,34746.47
+2025-05,City Clerk,medium_small,35408.09
+2025-06,City Clerk,medium_small,34884.06
+2025-07,City Clerk,medium_small,33985.43
+2025-08,City Clerk,medium_small,34817.23
+2025-09,City Clerk,medium_small,33456.48
+2025-10,City Clerk,medium_small,33562.35
+2025-11,City Clerk,medium_small,35214.31
+2025-12,City Clerk,medium_small,34041.87
+2025-01,Welcome Services,medium_small,87615.2
+2025-02,Welcome Services,medium_small,87913.46
+2025-03,Welcome Services,medium_small,88414.86
+2025-04,Welcome Services,medium_small,84292.74
+2025-05,Welcome Services,medium_small,83341.09
+2025-06,Welcome Services,medium_small,85576.22
+2025-07,Welcome Services,medium_small,83785.06
+2025-08,Welcome Services,medium_small,85736.43
+2025-09,Welcome Services,medium_small,86623.51
+2025-10,Welcome Services,medium_small,86477.68
+2025-11,Welcome Services,medium_small,83813.75
+2025-12,Welcome Services,medium_small,82050.88
+2025-01,Health Services,medium_small,55242.13
+2025-02,Health Services,medium_small,59524.55
+2025-03,Health Services,medium_small,56406.74
+2025-04,Health Services,medium_small,55310.11
+2025-05,Health Services,medium_small,54571.0
+2025-06,Health Services,medium_small,58125.11
+2025-07,Health Services,medium_small,58074.01
+2025-08,Health Services,medium_small,56376.53
+2025-09,Health Services,medium_small,54836.05
+2025-10,Health Services,medium_small,56771.97
+2025-11,Health Services,medium_small,56208.17
+2025-12,Health Services,medium_small,58304.42
+2025-01,Labor Compliance & Worker Prot,medium_small,69479.73
+2025-02,Labor Compliance & Worker Prot,medium_small,68446.46
+2025-03,Labor Compliance & Worker Prot,medium_small,73870.85
+2025-04,Labor Compliance & Worker Prot,medium_small,70109.46
+2025-05,Labor Compliance & Worker Prot,medium_small,71759.52
+2025-06,Labor Compliance & Worker Prot,medium_small,67901.73
+2025-07,Labor Compliance & Worker Prot,medium_small,70331.95
+2025-08,Labor Compliance & Worker Prot,medium_small,67105.72
+2025-09,Labor Compliance & Worker Prot,medium_small,70471.87
+2025-10,Labor Compliance & Worker Prot,medium_small,73701.68
+2025-11,Labor Compliance & Worker Prot,medium_small,69617.87
+2025-12,Labor Compliance & Worker Prot,medium_small,67186.43
+2025-01,Alternative Education,medium_small,27015.65
+2025-02,Alternative Education,medium_small,26392.82
+2025-03,Alternative Education,medium_small,26019.4
+2025-04,Alternative Education,medium_small,28021.7
+2025-05,Alternative Education,medium_small,27208.36
+2025-06,Alternative Education,medium_small,26745.87
+2025-07,Alternative Education,medium_small,28414.78
+2025-08,Alternative Education,medium_small,26272.91
+2025-09,Alternative Education,medium_small,28567.33
+2025-10,Alternative Education,medium_small,26813.41
+2025-11,Alternative Education,medium_small,28382.87
+2025-12,Alternative Education,medium_small,27602.94
+2025-01,Hale Elementary,school,188136.9
+2025-02,Hale Elementary,school,175654.14
+2025-03,Hale Elementary,school,187726.36
+2025-04,Hale Elementary,school,177467.97
+2025-05,Hale Elementary,school,177396.72
+2025-06,Hale Elementary,school,176586.95
+2025-07,Hale Elementary,school,180194.29
+2025-08,Hale Elementary,school,173244.82
+2025-09,Hale Elementary,school,180415.09
+2025-10,Hale Elementary,school,180199.62
+2025-11,Hale Elementary,school,184151.09
+2025-12,Hale Elementary,school,185438.62
+2025-01,Road to Success,medium_small,56885.98
+2025-02,Road to Success,medium_small,56636.45
+2025-03,Road to Success,medium_small,56260.91
+2025-04,Road to Success,medium_small,55465.99
+2025-05,Road to Success,medium_small,57118.78
+2025-06,Road to Success,medium_small,56699.78
+2025-07,Road to Success,medium_small,60739.87
+2025-08,Road to Success,medium_small,58368.0
+2025-09,Road to Success,medium_small,57146.8
+2025-10,Road to Success,medium_small,58500.08
+2025-11,Road to Success,medium_small,55939.25
+2025-12,Road to Success,medium_small,57708.37
+2025-01,Comm. for Persons with Disabil,medium_small,71887.67
+2025-02,Comm. for Persons with Disabil,medium_small,71260.7
+2025-03,Comm. for Persons with Disabil,medium_small,75521.68
+2025-04,Comm. for Persons with Disabil,medium_small,74704.61
+2025-05,Comm. for Persons with Disabil,medium_small,72855.7
+2025-06,Comm. for Persons with Disabil,medium_small,72466.87
+2025-07,Comm. for Persons with Disabil,medium_small,72835.94
+2025-08,Comm. for Persons with Disabil,medium_small,69817.99
+2025-09,Comm. for Persons with Disabil,medium_small,71212.91
+2025-10,Comm. for Persons with Disabil,medium_small,68653.18
+2025-11,Comm. for Persons with Disabil,medium_small,71791.58
+2025-12,Comm. for Persons with Disabil,medium_small,72277.21
+2025-01,Muniz Academy,school,83319.78
+2025-02,Muniz Academy,school,82885.24
+2025-03,Muniz Academy,school,81393.77
+2025-04,Muniz Academy,school,79890.8
+2025-05,Muniz Academy,school,82570.83
+2025-06,Muniz Academy,school,76684.03
+2025-07,Muniz Academy,school,81938.14
+2025-08,Muniz Academy,school,76637.59
+2025-09,Muniz Academy,school,81967.61
+2025-10,Muniz Academy,school,77839.51
+2025-11,Muniz Academy,school,82627.54
+2025-12,Muniz Academy,school,83160.64
+2025-01,Transportation-Parking Clerk,large,310833.81
+2025-02,Transportation-Parking Clerk,large,327005.05
+2025-03,Transportation-Parking Clerk,large,311480.64
+2025-04,Transportation-Parking Clerk,large,323340.94
+2025-05,Transportation-Parking Clerk,large,314766.73
+2025-06,Transportation-Parking Clerk,large,308108.63
+2025-07,Transportation-Parking Clerk,large,305314.8
+2025-08,Transportation-Parking Clerk,large,302738.93
+2025-09,Transportation-Parking Clerk,large,320166.38
+2025-10,Transportation-Parking Clerk,large,308458.4
+2025-11,Transportation-Parking Clerk,large,312350.11
+2025-12,Transportation-Parking Clerk,large,311758.88
+2025-01,Special Education Transition,medium_small,70792.67
+2025-02,Special Education Transition,medium_small,71579.18
+2025-03,Special Education Transition,medium_small,67664.76
+2025-04,Special Education Transition,medium_small,70532.75
+2025-05,Special Education Transition,medium_small,70102.54
+2025-06,Special Education Transition,medium_small,68798.1
+2025-07,Special Education Transition,medium_small,71410.54
+2025-08,Special Education Transition,medium_small,66250.29
+2025-09,Special Education Transition,medium_small,65627.36
+2025-10,Special Education Transition,medium_small,70713.34
+2025-11,Special Education Transition,medium_small,67880.35
+2025-12,Special Education Transition,medium_small,70665.58
+2025-01,Budget,medium_small,87957.17
+2025-02,Budget,medium_small,95508.94
+2025-03,Budget,medium_small,91506.39
+2025-04,Budget,medium_small,92077.73
+2025-05,Budget,medium_small,93146.19
+2025-06,Budget,medium_small,95903.71
+2025-07,Budget,medium_small,87558.51
+2025-08,Budget,medium_small,91768.77
+2025-09,Budget,medium_small,93708.47
+2025-10,Budget,medium_small,94030.26
+2025-11,Budget,medium_small,93752.71
+2025-12,Budget,medium_small,88619.24
+2025-01,Age Strong,medium_small,46784.21
+2025-02,Age Strong,medium_small,48899.37
+2025-03,Age Strong,medium_small,46404.78
+2025-04,Age Strong,medium_small,46081.83
+2025-05,Age Strong,medium_small,49625.47
+2025-06,Age Strong,medium_small,45124.0
+2025-07,Age Strong,medium_small,49817.06
+2025-08,Age Strong,medium_small,48293.77
+2025-09,Age Strong,medium_small,49013.41
+2025-10,Age Strong,medium_small,46480.04
+2025-11,Age Strong,medium_small,45149.87
+2025-12,Age Strong,medium_small,48583.47
+2025-01,Off of Historic Pres,medium_small,89666.47
+2025-02,Off of Historic Pres,medium_small,84433.61
+2025-03,Off of Historic Pres,medium_small,89779.88
+2025-04,Off of Historic Pres,medium_small,89915.56
+2025-05,Off of Historic Pres,medium_small,88949.04
+2025-06,Off of Historic Pres,medium_small,89890.98
+2025-07,Off of Historic Pres,medium_small,90589.76
+2025-08,Off of Historic Pres,medium_small,88555.57
+2025-09,Off of Historic Pres,medium_small,83958.63
+2025-10,Off of Historic Pres,medium_small,87452.51
+2025-11,Off of Historic Pres,medium_small,83862.71
+2025-12,Off of Historic Pres,medium_small,86751.28
+2025-01,Office of Arts & Culture,small,20007.69
+2025-02,Office of Arts & Culture,small,20599.2
+2025-03,Office of Arts & Culture,small,20101.78
+2025-04,Office of Arts & Culture,small,21560.08
+2025-05,Office of Arts & Culture,small,21851.75
+2025-06,Office of Arts & Culture,small,20020.88
+2025-07,Office of Arts & Culture,small,21867.29
+2025-08,Office of Arts & Culture,small,20962.61
+2025-09,Office of Arts & Culture,small,20496.18
+2025-10,Office of Arts & Culture,small,20030.38
+2025-11,Office of Arts & Culture,small,20916.7
+2025-12,Office of Arts & Culture,small,21531.38
+2025-01,Winthrop Elementary,school,152339.87
+2025-02,Winthrop Elementary,school,152701.58
+2025-03,Winthrop Elementary,school,157965.1
+2025-04,Winthrop Elementary,school,156249.0
+2025-05,Winthrop Elementary,school,155245.56
+2025-06,Winthrop Elementary,school,156021.12
+2025-07,Winthrop Elementary,school,164355.4
+2025-08,Winthrop Elementary,school,166361.22
+2025-09,Winthrop Elementary,school,158000.66
+2025-10,Winthrop Elementary,school,165992.47
+2025-11,Winthrop Elementary,school,156667.01
+2025-12,Winthrop Elementary,school,159138.55
+2025-01,Boston TeachersUnionElementary,school,80452.68
+2025-02,Boston TeachersUnionElementary,school,83138.31
+2025-03,Boston TeachersUnionElementary,school,80159.26
+2025-04,Boston TeachersUnionElementary,school,78210.09
+2025-05,Boston TeachersUnionElementary,school,80510.92
+2025-06,Boston TeachersUnionElementary,school,76346.49
+2025-07,Boston TeachersUnionElementary,school,82421.72
+2025-08,Boston TeachersUnionElementary,school,79362.63
+2025-09,Boston TeachersUnionElementary,school,78936.32
+2025-10,Boston TeachersUnionElementary,school,80019.4
+2025-11,Boston TeachersUnionElementary,school,80328.18
+2025-12,Boston TeachersUnionElementary,school,75940.71
+2025-01,BPS Substitute Teachers/Nurs,medium_small,74229.91
+2025-02,BPS Substitute Teachers/Nurs,medium_small,77826.53
+2025-03,BPS Substitute Teachers/Nurs,medium_small,78653.89
+2025-04,BPS Substitute Teachers/Nurs,medium_small,78512.34
+2025-05,BPS Substitute Teachers/Nurs,medium_small,76596.33
+2025-06,BPS Substitute Teachers/Nurs,medium_small,76349.98
+2025-07,BPS Substitute Teachers/Nurs,medium_small,73475.14
+2025-08,BPS Substitute Teachers/Nurs,medium_small,78294.33
+2025-09,BPS Substitute Teachers/Nurs,medium_small,74454.52
+2025-10,BPS Substitute Teachers/Nurs,medium_small,76171.11
+2025-11,BPS Substitute Teachers/Nurs,medium_small,74552.54
+2025-12,BPS Substitute Teachers/Nurs,medium_small,73406.2
+2025-01,ASD Intergvernmtl Relations,medium_small,68998.35
+2025-02,ASD Intergvernmtl Relations,medium_small,74012.46
+2025-03,ASD Intergvernmtl Relations,medium_small,70899.5
+2025-04,ASD Intergvernmtl Relations,medium_small,68606.96
+2025-05,ASD Intergvernmtl Relations,medium_small,72297.2
+2025-06,ASD Intergvernmtl Relations,medium_small,68944.34
+2025-07,ASD Intergvernmtl Relations,medium_small,70600.39
+2025-08,ASD Intergvernmtl Relations,medium_small,73711.55
+2025-09,ASD Intergvernmtl Relations,medium_small,69058.71
+2025-10,ASD Intergvernmtl Relations,medium_small,74667.42
+2025-11,ASD Intergvernmtl Relations,medium_small,68633.57
+2025-12,ASD Intergvernmtl Relations,medium_small,70388.47
+2025-01,Office of Tourism,small,31999.38
+2025-02,Office of Tourism,small,31300.55
+2025-03,Office of Tourism,small,32142.69
+2025-04,Office of Tourism,small,31849.83
+2025-05,Office of Tourism,small,33715.49
+2025-06,Office of Tourism,small,31989.85
+2025-07,Office of Tourism,small,33540.18
+2025-08,Office of Tourism,small,33875.75
+2025-09,Office of Tourism,small,32382.56
+2025-10,Office of Tourism,small,33934.65
+2025-11,Office of Tourism,small,32198.39
+2025-12,Office of Tourism,small,34111.13
+2025-01,Women's Advancement,medium_small,32289.5
+2025-02,Women's Advancement,medium_small,31677.11
+2025-03,Women's Advancement,medium_small,31340.6
+2025-04,Women's Advancement,medium_small,32117.37
+2025-05,Women's Advancement,medium_small,32342.87
+2025-06,Women's Advancement,medium_small,30125.71
+2025-07,Women's Advancement,medium_small,30641.07
+2025-08,Women's Advancement,medium_small,32372.0
+2025-09,Women's Advancement,medium_small,32224.1
+2025-10,Women's Advancement,medium_small,33173.93
+2025-11,Women's Advancement,medium_small,32524.12
+2025-12,Women's Advancement,medium_small,33125.52
+2025-01,Expanded Learning Opps,medium_small,76121.59
+2025-02,Expanded Learning Opps,medium_small,74624.6
+2025-03,Expanded Learning Opps,medium_small,79880.04
+2025-04,Expanded Learning Opps,medium_small,78810.44
+2025-05,Expanded Learning Opps,medium_small,74180.37
+2025-06,Expanded Learning Opps,medium_small,76603.26
+2025-07,Expanded Learning Opps,medium_small,81239.44
+2025-08,Expanded Learning Opps,medium_small,77693.65
+2025-09,Expanded Learning Opps,medium_small,77167.91
+2025-10,Expanded Learning Opps,medium_small,77361.9
+2025-11,Expanded Learning Opps,medium_small,75428.83
+2025-12,Expanded Learning Opps,medium_small,76670.52
+2025-01,Veterans' Services,medium_small,50375.29
+2025-02,Veterans' Services,medium_small,54147.04
+2025-03,Veterans' Services,medium_small,52295.67
+2025-04,Veterans' Services,medium_small,54435.04
+2025-05,Veterans' Services,medium_small,54583.59
+2025-06,Veterans' Services,medium_small,51217.17
+2025-07,Veterans' Services,medium_small,53565.81
+2025-08,Veterans' Services,medium_small,52589.82
+2025-09,Veterans' Services,medium_small,54740.79
+2025-10,Veterans' Services,medium_small,51236.92
+2025-11,Veterans' Services,medium_small,53673.71
+2025-12,Veterans' Services,medium_small,53304.24
+2025-01,Black Male Ad,medium_small,45434.27
+2025-02,Black Male Ad,medium_small,47862.56
+2025-03,Black Male Ad,medium_small,48272.54
+2025-04,Black Male Ad,medium_small,46278.34
+2025-05,Black Male Ad,medium_small,47830.46
+2025-06,Black Male Ad,medium_small,46653.18
+2025-07,Black Male Ad,medium_small,48152.83
+2025-08,Black Male Ad,medium_small,45729.48
+2025-09,Black Male Ad,medium_small,48987.38
+2025-10,Black Male Ad,medium_small,46145.3
+2025-11,Black Male Ad,medium_small,46524.25
+2025-12,Black Male Ad,medium_small,45064.12
+2025-01,Off of Part  Budgeting,medium_small,33416.34
+2025-02,Off of Part  Budgeting,medium_small,32588.03
+2025-03,Off of Part  Budgeting,medium_small,34482.69
+2025-04,Off of Part  Budgeting,medium_small,31744.27
+2025-05,Off of Part  Budgeting,medium_small,32960.03
+2025-06,Off of Part  Budgeting,medium_small,32820.75
+2025-07,Off of Part  Budgeting,medium_small,31759.73
+2025-08,Off of Part  Budgeting,medium_small,32110.18
+2025-09,Off of Part  Budgeting,medium_small,33075.3
+2025-10,Off of Part  Budgeting,medium_small,33339.61
+2025-11,Off of Part  Budgeting,medium_small,33044.09
+2025-12,Off of Part  Budgeting,medium_small,33466.63
+2025-01,Enrollment Services,medium_small,66222.24
+2025-02,Enrollment Services,medium_small,69384.85
+2025-03,Enrollment Services,medium_small,72862.45
+2025-04,Enrollment Services,medium_small,69767.41
+2025-05,Enrollment Services,medium_small,70871.19
+2025-06,Enrollment Services,medium_small,68324.79
+2025-07,Enrollment Services,medium_small,71542.81
+2025-08,Enrollment Services,medium_small,71535.36
+2025-09,Enrollment Services,medium_small,69783.17
+2025-10,Enrollment Services,medium_small,72949.59
+2025-11,Enrollment Services,medium_small,67027.4
+2025-12,Enrollment Services,medium_small,66271.15
+2025-01,LGBTQ+ Advancement,medium_small,85303.94
+2025-02,LGBTQ+ Advancement,medium_small,79618.63
+2025-03,LGBTQ+ Advancement,medium_small,80821.79
+2025-04,LGBTQ+ Advancement,medium_small,78769.04
+2025-05,LGBTQ+ Advancement,medium_small,81051.25
+2025-06,LGBTQ+ Advancement,medium_small,85022.44
+2025-07,LGBTQ+ Advancement,medium_small,82910.51
+2025-08,LGBTQ+ Advancement,medium_small,81504.68
+2025-09,LGBTQ+ Advancement,medium_small,81700.36
+2025-10,LGBTQ+ Advancement,medium_small,78634.98
+2025-11,LGBTQ+ Advancement,medium_small,81104.98
+2025-12,LGBTQ+ Advancement,medium_small,83973.99
+2025-01,Youth Employment & Opportunity,medium_small,101468.02
+2025-02,Youth Employment & Opportunity,medium_small,93392.74
+2025-03,Youth Employment & Opportunity,medium_small,101973.05
+2025-04,Youth Employment & Opportunity,medium_small,100841.76
+2025-05,Youth Employment & Opportunity,medium_small,100814.08
+2025-06,Youth Employment & Opportunity,medium_small,97652.67
+2025-07,Youth Employment & Opportunity,medium_small,97064.38
+2025-08,Youth Employment & Opportunity,medium_small,96131.88
+2025-09,Youth Employment & Opportunity,medium_small,93805.59
+2025-10,Youth Employment & Opportunity,medium_small,95399.53
+2025-11,Youth Employment & Opportunity,medium_small,95579.66
+2025-12,Youth Employment & Opportunity,medium_small,97908.44
+2025-01,Offc of Language and Communica,medium_small,80846.04
+2025-02,Offc of Language and Communica,medium_small,77474.29
+2025-03,Offc of Language and Communica,medium_small,84769.1
+2025-04,Offc of Language and Communica,medium_small,84646.98
+2025-05,Offc of Language and Communica,medium_small,83370.03
+2025-06,Offc of Language and Communica,medium_small,85040.95
+2025-07,Offc of Language and Communica,medium_small,81418.9
+2025-08,Offc of Language and Communica,medium_small,84809.45
+2025-09,Offc of Language and Communica,medium_small,77618.26
+2025-10,Offc of Language and Communica,medium_small,79969.56
+2025-11,Offc of Language and Communica,medium_small,78832.32
+2025-12,Offc of Language and Communica,medium_small,78592.8
+2025-01,Office of Food Justice,small,11736.71
+2025-02,Office of Food Justice,small,11920.96
+2025-03,Office of Food Justice,small,11685.56
+2025-04,Office of Food Justice,small,11185.43
+2025-05,Office of Food Justice,small,11955.51
+2025-06,Office of Food Justice,small,11752.41
+2025-07,Office of Food Justice,small,11465.1
+2025-08,Office of Food Justice,small,11796.67
+2025-09,Office of Food Justice,small,11316.39
+2025-10,Office of Food Justice,small,11415.27
+2025-11,Office of Food Justice,small,12078.84
+2025-12,Office of Food Justice,small,11351.86
+2025-01,Immigrant Advancement,medium_small,62599.69
+2025-02,Immigrant Advancement,medium_small,61500.62
+2025-03,Immigrant Advancement,medium_small,57611.43
+2025-04,Immigrant Advancement,medium_small,58124.15
+2025-05,Immigrant Advancement,medium_small,57283.91
+2025-06,Immigrant Advancement,medium_small,61037.91
+2025-07,Immigrant Advancement,medium_small,59933.86
+2025-08,Immigrant Advancement,medium_small,58045.66
+2025-09,Immigrant Advancement,medium_small,63008.13
+2025-10,Immigrant Advancement,medium_small,60427.82
+2025-11,Immigrant Advancement,medium_small,58694.05
+2025-12,Immigrant Advancement,medium_small,60252.76
+2025-01,Institutional Advancemt,medium_small,72752.15
+2025-02,Institutional Advancemt,medium_small,74259.92
+2025-03,Institutional Advancemt,medium_small,78303.59
+2025-04,Institutional Advancemt,medium_small,75665.09
+2025-05,Institutional Advancemt,medium_small,76325.38
+2025-06,Institutional Advancemt,medium_small,75461.12
+2025-07,Institutional Advancemt,medium_small,72506.46
+2025-08,Institutional Advancemt,medium_small,73432.18
+2025-09,Institutional Advancemt,medium_small,75557.8
+2025-10,Institutional Advancemt,medium_small,73762.16
+2025-11,Institutional Advancemt,medium_small,72552.65
+2025-12,Institutional Advancemt,medium_small,78582.28
+2025-01,Equity,medium_small,101479.52
+2025-02,Equity,medium_small,102077.39
+2025-03,Equity,medium_small,96045.61
+2025-04,Equity,medium_small,103130.74
+2025-05,Equity,medium_small,95601.45
+2025-06,Equity,medium_small,103040.06
+2025-07,Equity,medium_small,103467.84
+2025-08,Equity,medium_small,100676.8
+2025-09,Equity,medium_small,103333.01
+2025-10,Equity,medium_small,99275.03
+2025-11,Equity,medium_small,96218.78
+2025-12,Equity,medium_small,97968.29
+2025-01,Supplier Diversity,medium_small,66549.26
+2025-02,Supplier Diversity,medium_small,70367.56
+2025-03,Supplier Diversity,medium_small,72862.08
+2025-04,Supplier Diversity,medium_small,67362.79
+2025-05,Supplier Diversity,medium_small,71551.11
+2025-06,Supplier Diversity,medium_small,72352.66
+2025-07,Supplier Diversity,medium_small,72601.55
+2025-08,Supplier Diversity,medium_small,72715.8
+2025-09,Supplier Diversity,medium_small,69666.25
+2025-10,Supplier Diversity,medium_small,72835.17
+2025-11,Supplier Diversity,medium_small,71305.82
+2025-12,Supplier Diversity,medium_small,67165.11
+2025-01,Legal Advisor,medium_small,62094.25
+2025-02,Legal Advisor,medium_small,59232.16
+2025-03,Legal Advisor,medium_small,61621.99
+2025-04,Legal Advisor,medium_small,61779.9
+2025-05,Legal Advisor,medium_small,58717.82
+2025-06,Legal Advisor,medium_small,61163.02
+2025-07,Legal Advisor,medium_small,62418.12
+2025-08,Legal Advisor,medium_small,60760.8
+2025-09,Legal Advisor,medium_small,57802.68
+2025-10,Legal Advisor,medium_small,57784.06
+2025-11,Legal Advisor,medium_small,59898.71
+2025-12,Legal Advisor,medium_small,63357.38
+2025-01,Fair Housing & Equity,medium_small,42717.11
+2025-02,Fair Housing & Equity,medium_small,40979.29
+2025-03,Fair Housing & Equity,medium_small,41399.08
+2025-04,Fair Housing & Equity,medium_small,43617.78
+2025-05,Fair Housing & Equity,medium_small,43115.43
+2025-06,Fair Housing & Equity,medium_small,40445.34
+2025-07,Fair Housing & Equity,medium_small,41850.23
+2025-08,Fair Housing & Equity,medium_small,40166.17
+2025-09,Fair Housing & Equity,medium_small,42070.21
+2025-10,Fair Housing & Equity,medium_small,42835.43
+2025-11,Fair Housing & Equity,medium_small,40542.72
+2025-12,Fair Housing & Equity,medium_small,41260.89
+2025-01,Boston School Committee,school,112502.56
+2025-02,Boston School Committee,school,113298.58
+2025-03,Boston School Committee,school,103059.05
+2025-04,Boston School Committee,school,110790.95
+2025-05,Boston School Committee,school,106587.74
+2025-06,Boston School Committee,school,106811.61
+2025-07,Boston School Committee,school,110718.14
+2025-08,Boston School Committee,school,112490.64
+2025-09,Boston School Committee,school,112841.57
+2025-10,Boston School Committee,school,108805.48
+2025-11,Boston School Committee,school,106430.07
+2025-12,Boston School Committee,school,111077.52
+2025-01,Workers Compensation Service,medium_small,44105.91
+2025-02,Workers Compensation Service,medium_small,43205.32
+2025-03,Workers Compensation Service,medium_small,44511.54
+2025-04,Workers Compensation Service,medium_small,42687.4
+2025-05,Workers Compensation Service,medium_small,42473.51
+2025-06,Workers Compensation Service,medium_small,45658.04
+2025-07,Workers Compensation Service,medium_small,42080.0
+2025-08,Workers Compensation Service,medium_small,43851.21
+2025-09,Workers Compensation Service,medium_small,42601.74
+2025-10,Workers Compensation Service,medium_small,41804.46
+2025-11,Workers Compensation Service,medium_small,41791.7
+2025-12,Workers Compensation Service,medium_small,42401.76
+2025-01,Frederick Pilot Middle,medium_small,88049.92
+2025-02,Frederick Pilot Middle,medium_small,94062.26
+2025-03,Frederick Pilot Middle,medium_small,90742.44
+2025-04,Frederick Pilot Middle,medium_small,89437.26
+2025-05,Frederick Pilot Middle,medium_small,90728.64
+2025-06,Frederick Pilot Middle,medium_small,90158.08
+2025-07,Frederick Pilot Middle,medium_small,92336.96
+2025-08,Frederick Pilot Middle,medium_small,88050.07
+2025-09,Frederick Pilot Middle,medium_small,88685.12
+2025-10,Frederick Pilot Middle,medium_small,93554.93
+2025-11,Frederick Pilot Middle,medium_small,94026.23
+2025-12,Frederick Pilot Middle,medium_small,93541.11
+2025-01,Jackson/Mann K-8,medium_small,58041.5
+2025-02,Jackson/Mann K-8,medium_small,56324.99
+2025-03,Jackson/Mann K-8,medium_small,56444.71
+2025-04,Jackson/Mann K-8,medium_small,54791.26
+2025-05,Jackson/Mann K-8,medium_small,56973.11
+2025-06,Jackson/Mann K-8,medium_small,54686.57
+2025-07,Jackson/Mann K-8,medium_small,55507.64
+2025-08,Jackson/Mann K-8,medium_small,58463.05
+2025-09,Jackson/Mann K-8,medium_small,54804.79
+2025-10,Jackson/Mann K-8,medium_small,54037.42
+2025-11,Jackson/Mann K-8,medium_small,54025.28
+2025-12,Jackson/Mann K-8,medium_small,58947.21
+2025-01,West Zone ELC,medium_small,62448.16
+2025-02,West Zone ELC,medium_small,64978.16
+2025-03,West Zone ELC,medium_small,65135.38
+2025-04,West Zone ELC,medium_small,61961.52
+2025-05,West Zone ELC,medium_small,64239.2
+2025-06,West Zone ELC,medium_small,64727.62
+2025-07,West Zone ELC,medium_small,63993.63
+2025-08,West Zone ELC,medium_small,60823.42
+2025-09,West Zone ELC,medium_small,65387.81
+2025-10,West Zone ELC,medium_small,63265.4
+2025-11,West Zone ELC,medium_small,61648.2
+2025-12,West Zone ELC,medium_small,62547.83
+2025-01,Philbrick Elementary,school,46144.94
+2025-02,Philbrick Elementary,school,49201.24
+2025-03,Philbrick Elementary,school,45532.15
+2025-04,Philbrick Elementary,school,47528.63
+2025-05,Philbrick Elementary,school,48036.4
+2025-06,Philbrick Elementary,school,45793.94
+2025-07,Philbrick Elementary,school,50195.91
+2025-08,Philbrick Elementary,school,46615.87
+2025-09,Philbrick Elementary,school,46990.07
+2025-10,Philbrick Elementary,school,46988.84
+2025-11,Philbrick Elementary,school,46636.44
+2025-12,Philbrick Elementary,school,45539.15
+2025-01,Election Dept-Listing Board,small,33696.68
+2025-02,Election Dept-Listing Board,small,31306.13
+2025-03,Election Dept-Listing Board,small,32718.64
+2025-04,Election Dept-Listing Board,small,32972.49
+2025-05,Election Dept-Listing Board,small,33315.45
+2025-06,Election Dept-Listing Board,small,31944.65
+2025-07,Election Dept-Listing Board,small,31559.3
+2025-08,Election Dept-Listing Board,small,31631.29
+2025-09,Election Dept-Listing Board,small,32878.24
+2025-10,Election Dept-Listing Board,small,33213.57
+2025-11,Election Dept-Listing Board,small,31168.73
+2025-12,Election Dept-Listing Board,small,31778.25
+2025-01,Strategy,small,39407.2
+2025-02,Strategy,small,40088.41
+2025-03,Strategy,small,39206.68
+2025-04,Strategy,small,37826.21
+2025-05,Strategy,small,38581.12
+2025-06,Strategy,small,38850.2
+2025-07,Strategy,small,36622.82
+2025-08,Strategy,small,38404.71
+2025-09,Strategy,small,39034.9
+2025-10,Strategy,small,36962.59
+2025-11,Strategy,small,39307.56
+2025-12,Strategy,small,38554.88
+2025-01,Shaw Elementary,school,191201.8
+2025-02,Shaw Elementary,school,195668.13
+2025-03,Shaw Elementary,school,202405.14
+2025-04,Shaw Elementary,school,196293.96
+2025-05,Shaw Elementary,school,204666.72
+2025-06,Shaw Elementary,school,205559.99
+2025-07,Shaw Elementary,school,192405.9
+2025-08,Shaw Elementary,school,200647.9
+2025-09,Shaw Elementary,school,200548.44
+2025-10,Shaw Elementary,school,197751.07
+2025-11,Shaw Elementary,school,209044.83
+2025-12,Shaw Elementary,school,206932.55
+2025-01,Human Rights Commission,small,31734.89
+2025-02,Human Rights Commission,small,30950.05
+2025-03,Human Rights Commission,small,32376.98
+2025-04,Human Rights Commission,small,31673.58
+2025-05,Human Rights Commission,small,31780.42
+2025-06,Human Rights Commission,small,32192.73
+2025-07,Human Rights Commission,small,30367.06
+2025-08,Human Rights Commission,small,32023.03
+2025-09,Human Rights Commission,small,30122.14
+2025-10,Human Rights Commission,small,30588.49
+2025-11,Human Rights Commission,small,30558.25
+2025-12,Human Rights Commission,small,32555.73
