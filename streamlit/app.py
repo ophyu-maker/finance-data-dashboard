@@ -151,7 +151,8 @@ annual_df = load_query("""
 
 depMonthly_df = load_query(""" 
     SELECT *
-    FROM department_monthly_budget_vs_actual;
+    FROM department_monthly_budget_vs_actual
+    GROUP BY month;
 """)
 
 # -----------------------------
@@ -522,7 +523,7 @@ annualTrend_options = {
         }
     },
     "legend": {
-        "data": ["Annual Budgeted Amount", "Annual Actual Pay"],
+        "data": ["Annual Budget", "Annual Actual Pay"],
         "bottom": 0
     },
     "toolbox": {
