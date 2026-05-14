@@ -621,11 +621,58 @@ annual_deep_df["variance_pct_true"] = annual_deep_df.apply(
     axis=1
 )
 
+
+# Bubble chart filters
+
+filter_col1, filter_col2, filter_col3 = st.columns([1, 1, 1.2])
+
+with filter_col1:
+    rank_direction = st.selectbox(
+        "Show",
+        options=["Top", "Bottom"],
+        index=0
+    )
+
+with filter_col2:
+    rank_metric_label = st.selectbox(
+        "Rank by",
+        options=[
+            "Annual Actual Pay",
+            "Annual Budget",
+            "Variance Amount",
+            "Variance %"
+        ],
+        index=0
+    )
+
+with filter_col3:
+    rank_n = st.slider(
+        "Number of departments",
+        min_value=5,
+        max_value=min(50, len(annual_deep_df)),
+        value=15,
+        step=1
+    )
+    
+rank_metric_map = {
+    "Annual Actual Pay": "annual_actual_pay",
+    "Annual Budget": "budget_annual_amount",
+    "Variance Amount": "variance",
+    "Variance %": "variance_pct_true"
+}
+
+rank_column = rank_metric_map[rank_metric_label]
+sort_ascending = True if rank_direction == "Bottom" else False
+
 top_deep_df = (
     annual_deep_df
-    .sort_values("annual_actual_pay", ascending=False)
-    .tail(60)
+    .sort_values(rank_column, ascending=sort_ascending)
+    .head(rank_n)
     .copy()
+)
+
+st.caption(
+    f"Displaying {rank_direction.lower()} {rank_n} departments ranked by {rank_metric_label.lower()}."
 )
 
 bubble_data = []
