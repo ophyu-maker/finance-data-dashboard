@@ -649,7 +649,7 @@ with filter_col3:
     rank_n = st.slider(
         "Number of departments",
         min_value=5,
-        max_value=min(50, len(annual_deep_df)),
+        max_value=min(100, len(annual_deep_df)),
         value=15,
         step=1
     )
@@ -881,9 +881,7 @@ with left_col:
     if clicked_department:
         st.session_state["selected_budget_department"] = clicked_department
 
-    st.info(
-    "Note: Data only shows lowest 60 amount for  "
-    )
+
 
 with right_col:
     selected_department = str(st.session_state["selected_budget_department"])
