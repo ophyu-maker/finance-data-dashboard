@@ -47,7 +47,7 @@ df = load_data()
 # Charts
 # -----------------------------
 
-st.subheader("Outstanding Balance by Vendor - ECharts")
+st.subheader("Outstanding Balance by Vendor")
 
 chart_df = df.groupby("client", as_index=False)["outstanding_balance"].sum()
 chart_df = chart_df.sort_values("outstanding_balance", ascending=False)
@@ -67,7 +67,24 @@ options = {
         {
             "name": "Outstanding Balance",
             "data": chart_df["outstanding_balance"].round(2).tolist(),
-            "type": "bar"
+            "type": "bar",
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {
+                "show": True,
+                "title": "Save as Image"
+            },
+            "restore": {
+                "show": True,
+                "title": "Restore"
+            },
+            "dataView": {
+                "show": True,
+                "readOnly": True,
+                "title": "View Data"
+            }
         }
     ],
 }
