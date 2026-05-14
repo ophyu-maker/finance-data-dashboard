@@ -646,13 +646,15 @@ with filter_col2:
     )
 
 with filter_col3:
-    rank_n = st.slider(
-        "Number of departments",
-        min_value=5,
-        max_value=min(100, len(annual_deep_df)),
-        value=15,
-        step=1
-    )
+    rank_range = st.slider(
+    "Department rank range",
+    min_value=1,
+    max_value=len(annual_deep_df),
+    value=(5, 50),
+    step=1
+)
+
+rank_start, rank_end = rank_range
     
 rank_metric_map = {
     "Annual Actual Pay": "annual_actual_pay",
@@ -664,12 +666,14 @@ rank_metric_map = {
 rank_column = rank_metric_map[rank_metric_label]
 sort_ascending = True if rank_direction == "Bottom" else False
 
-top_deep_df = (
+ranked_df = (
     annual_deep_df
     .sort_values(rank_column, ascending=sort_ascending)
-    .head(rank_n)
+    .reset_index(drop=True)
     .copy()
 )
+
+top_deep_df = ranked_df.iloc[rank_start - 1:rank_end].copy()
 
 st.caption(
     f"Displaying {rank_direction.lower()} {rank_n} departments ranked by {rank_metric_label.lower()}."
