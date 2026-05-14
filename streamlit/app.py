@@ -640,14 +640,9 @@ for _, row in top_deep_df.iterrows():
 
 budget_bubble_options = {
     "tooltip": {
-        "trigger": "item",
-        "formatter": """
-            {b}<br/>
-            Annual Budget: ${@[0]}<br/>
-            Variance %: {@[1]}%<br/>
-            Annual Actual: ${@[2]}
-        """
-    },
+    "trigger": "item",
+    "formatter": "{b}<br/>Annual Budget: {c}<br/>"
+},
     "toolbox": {
         "show": True,
         "right": 20,
@@ -777,7 +772,6 @@ with left_col:
     if clicked_department:
         st.session_state["selected_budget_department"] = clicked_department
 
-
 with right_col:
     selected_department = str(st.session_state["selected_budget_department"])
 
@@ -792,10 +786,15 @@ with right_col:
 
     dept_monthly_df = dept_monthly_df.sort_values("month")
 
+    # Convert dollar amounts to millions for chart readability
+    dept_monthly_df["budget_m"] = dept_monthly_df["budget_amount"].fillna(0) / 1_000_000
+    dept_monthly_df["actual_m"] = dept_monthly_df["monthly_actual_pay"].fillna(0) / 1_000_000
+    dept_monthly_df["variance_m"] = dept_monthly_df["variance"].fillna(0) / 1_000_000
+
     deep_months = dept_monthly_df["month"].astype(str).tolist()
-    deep_budget = dept_monthly_df["budget_amount"].fillna(0).round(2).tolist()
-    deep_actual = dept_monthly_df["monthly_actual_pay"].fillna(0).round(2).tolist()
-    deep_variance = dept_monthly_df["variance"].fillna(0).round(2).tolist()
+    deep_budget = dept_monthly_df["budget_m"].round(2).tolist()
+    deep_actual = dept_monthly_df["actual_m"].round(2).tolist()
+    deep_variance = dept_monthly_df["variance_m"].round(2).tolist()
 
     monthly_deep_options = {
         "tooltip": {
@@ -834,16 +833,16 @@ with right_col:
         "yAxis": [
             {
                 "type": "value",
-                "name": "Budget / Actual",
+                "name": "Budget / Actual ($M)",
                 "axisLabel": {
-                    "formatter": "${value}"
+                    "formatter": "${value}M"
                 }
             },
             {
                 "type": "value",
-                "name": "Variance",
+                "name": "Variance ($M)",
                 "axisLabel": {
-                    "formatter": "${value}"
+                    "formatter": "${value}M"
                 }
             }
         ],
@@ -879,6 +878,7 @@ with right_col:
         height="520px",
         key="monthly_deep_dive_chart"
     )
+
 
 
 # -----------------------------
