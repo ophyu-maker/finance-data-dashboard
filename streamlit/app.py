@@ -740,23 +740,30 @@ department_click_event = {
 
 
 # -----------------------------
-# Helper: clean clicked department value
+# Helper: extract clicked department
 # -----------------------------
 
-def clean_clicked_department(clicked_value):
+def extract_department_from_click(clicked_value):
     if clicked_value is None:
         return None
+
+    # streamlit-echarts usually returns {"chart_event": value}
+    if isinstance(clicked_value, dict):
+        chart_event = clicked_value.get("chart_event")
+
+        if chart_event is None:
+            return None
+
+        if isinstance(chart_event, str):
+            return chart_event
+
+        if isinstance(chart_event, dict):
+            return chart_event.get("name")
 
     if isinstance(clicked_value, str):
         return clicked_value
 
-    if isinstance(clicked_value, dict):
-        if "name" in clicked_value:
-            return clicked_value["name"]
-        if "value" in clicked_value:
-            return clicked_value["value"]
-
-    return str(clicked_value)
+    return None
 
 
 # -----------------------------
@@ -779,21 +786,21 @@ with left_col:
         unsafe_allow_html=True
     )
 
-    clicked_department = st_echarts(
+    clicked_result = st_echarts(
         options=budget_bubble_options,
         height="520px",
         key="budget_deep_dive_bubble_chart",
         events=department_click_event
     )
 
-    clicked_department_clean = clean_clicked_department(clicked_department)
+    clicked_department = extract_department_from_click(clicked_result)
 
-    if clicked_department_clean:
-        st.session_state["selected_budget_department"] = clicked_department_clean
+    if clicked_department:
+        st.session_state["selected_budget_department"] = clicked_department
 
 
 with right_col:
-    selected_department = str(st.session_state["selected_budget_department"])
+    selected_department = st.session_state["selected_budget_department"]
 
     st.markdown(
         f"<h3 style='color:#1F4E79; text-align:center;'>{selected_department} — Monthly Trend</h3>",
@@ -801,7 +808,7 @@ with right_col:
     )
 
     dept_monthly_df = monthly_budget_df[
-        monthly_budget_df["department_name"].astype(str) == selected_department
+        monthly_budget_df["department_name"].astype(str) == str(selected_department)
     ].copy()
 
     dept_monthly_df = dept_monthly_df.sort_values("month")
@@ -905,4 +912,3 @@ with st.expander("View selected department budget vs actual data", expanded=Fals
         use_container_width=True,
         height=350
     )
-
