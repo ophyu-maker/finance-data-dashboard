@@ -17,7 +17,7 @@ st.caption("Simple invoice dashboard using SQLite and Streamlit")
 # -----------------------------
 # SQLite database path
 # -----------------------------
-DB_PATH = "database/workforce_analytics.db"  
+DB_PATH = "../database/workforce_analytics.db"
 
 # -----------------------------
 # Load data from SQLite
