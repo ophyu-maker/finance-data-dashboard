@@ -47,10 +47,8 @@ def load_data():
 df = load_data()
 
 # -----------------------------
-# Show raw data first
+# Charts
 # -----------------------------
-st.subheader("Vendor Balance Summary")
-st.dataframe(df, use_container_width=True)
 
 st.subheader("Outstanding Balance by Vendor - ECharts")
 
@@ -79,30 +77,3 @@ options = {
 
 st_echarts(options=options, height="500px")
 
-# -----------------------------
-# KPI cards
-# -----------------------------
-total_outstanding = df["outstanding_balance"].sum()
-total_invoice_amount = df["total_invoice_amount"].sum()
-invoice_count = df["invoice_count"].sum()
-
-col1, col2, col3 = st.columns(3)
-
-col1.metric("Total Outstanding Balance", f"${total_outstanding:,.2f}")
-col2.metric("Total Invoice Amount", f"${total_invoice_amount:,.2f}")
-col3.metric("Invoice Count", f"{invoice_count:,.0f}")
-
-# -----------------------------
-# Simple bar chart
-# -----------------------------
-st.subheader("Outstanding Balance by Vendor")
-
-fig = px.bar(
-    df,
-    x="client",
-    y="outstanding_balance",
-    title="Outstanding Balance by Vendor",
-    text_auto=".2s"
-)
-
-st.plotly_chart(fig, use_container_width=True)
