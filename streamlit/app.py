@@ -308,8 +308,7 @@ trend_options = {
 # -----------------------------
 # Side-by-side chart section
 # -----------------------------
-st.header("How are we trending?")
-st.caption("Track invoice amount and outstanding balances using interactive charts.")
+st.header("Invoice related interactive charts")
 
 left_col, right_col = st.columns([1.4, 1])
 
