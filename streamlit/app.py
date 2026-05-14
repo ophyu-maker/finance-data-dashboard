@@ -259,9 +259,9 @@ trend_options = {
     "dataZoom": [
         {
             "type": "slider",
-            "start": 0,
+            "start": 50,
             "end": 100,
-            "bottom": 45
+            "bottom": 55
         },
         {
             "type": "inside",
