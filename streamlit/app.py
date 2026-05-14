@@ -560,12 +560,12 @@ with st.container():
 
     with right_col:
         st.markdown(
-            "<h3 style='color:#1F4E79;'>Top 5 Revenue by Country</h3>",
+            "<h3 style='color:#1F4E79;'>Top 10 Revenue by Country</h3>",
             unsafe_allow_html=True
         )
 
         st_echarts(
-            ooptions=country_service_options,
+            options=country_service_options,
             height="500px",
             key="top_country_Service_revenue_chart"
         )
