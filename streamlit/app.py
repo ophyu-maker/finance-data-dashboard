@@ -127,7 +127,7 @@ service_df = load_query("""
     ORDER BY total_invoiced DESC;
 """)
 
-country_df = load_query("""
+country_service_df = load_query("""
     SELECT
         country,
         service,
