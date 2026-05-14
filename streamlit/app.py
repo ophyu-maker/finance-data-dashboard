@@ -834,6 +834,10 @@ with left_col:
     if clicked_department:
         st.session_state["selected_budget_department"] = clicked_department
 
+    st.info(
+    "Note: Data only shows lowest 60 amount for  "
+    )
+
 with right_col:
     selected_department = str(st.session_state["selected_budget_department"])
 
