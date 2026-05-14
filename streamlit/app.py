@@ -24,9 +24,6 @@ APP_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = APP_DIR.parent
 DB_PATH = PROJECT_ROOT / "database" / "workforce_analytics.db"
 
-# Optional debug check - keep this until app works
-st.write("Database path:", DB_PATH)
-st.write("Database exists:", DB_PATH.exists())
 
 # -----------------------------
 # Load data from SQLite
@@ -76,4 +73,130 @@ options = {
 }
 
 st_echarts(options=options, height="500px")
+
+#--------------------------------
+# Invoice Trend Chart
+#--------------------------------
+st.subheader("Invoice Trend")
+
+monthly_df = pd.read_sql_query("""
+    SELECT *
+    FROM monthly_invoice_summary
+    ORDER BY invoice_month;
+""", sqlite3.connect(DB_PATH))
+
+# Convert values to Python lists for ECharts
+months = monthly_df["invoice_month"].tolist()
+total_invoice = monthly_df["total_net_invoice_amount"].round(2).tolist()
+outstanding = monthly_df["total_outstanding_balance"].round(2).tolist()
+
+options = {
+    "title": {
+        "text": "Invoice Amount & Outstanding Balance Trend",
+        "left": "center",
+        "textStyle": {
+            "fontSize": 22,
+            "fontWeight": "bold"
+        }
+    },
+    "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+            "type": "cross"
+        }
+    },
+    "legend": {
+        "data": ["Total Invoice Amount", "Outstanding Balance"],
+        "bottom": 0
+    },
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {
+                "show": True,
+                "title": "Save as Image"
+            },
+            "restore": {
+                "show": True,
+                "title": "Restore"
+            },
+            "dataView": {
+                "show": True,
+                "readOnly": True,
+                "title": "View Data"
+            },
+            "magicType": {
+                "show": True,
+                "type": ["line", "bar"],
+                "title": {
+                    "line": "Switch to Line",
+                    "bar": "Switch to Bar"
+                }
+            }
+        }
+    },
+    "grid": {
+        "left": "5%",
+        "right": "5%",
+        "bottom": "18%",
+        "containLabel": True
+    },
+    "xAxis": {
+        "type": "category",
+        "boundaryGap": False,
+        "data": months
+    },
+    "yAxis": {
+        "type": "value",
+        "axisLabel": {
+            "formatter": "${value}"
+        }
+    },
+    "dataZoom": [
+        {
+            "type": "slider",
+            "start": 0,
+            "end": 100,
+            "bottom": 45
+        },
+        {
+            "type": "inside",
+            "start": 0,
+            "end": 100
+        }
+    ],
+    "series": [
+        {
+            "name": "Total Invoice Amount",
+            "type": "line",
+            "smooth": True,
+            "symbol": "circle",
+            "symbolSize": 8,
+            "areaStyle": {
+                "opacity": 0.15
+            },
+            "lineStyle": {
+                "width": 3
+            },
+            "data": total_invoice
+        },
+        {
+            "name": "Outstanding Balance",
+            "type": "line",
+            "smooth": True,
+            "symbol": "circle",
+            "symbolSize": 8,
+            "areaStyle": {
+                "opacity": 0.08
+            },
+            "lineStyle": {
+                "width": 3
+            },
+            "data": outstanding
+        }
+    ]
+}
+
+st_echarts(options=options, height="600px")
 
