@@ -87,7 +87,7 @@ monthly_df = pd.read_sql_query("""
 
 # Convert values to Python lists for ECharts
 months = monthly_df["invoice_month"].tolist()
-total_invoice = monthly_df["total_net_invoice_amount"].round(2).tolist()
+total_invoice = monthly_df["total_invoiced"].round(2).tolist()
 outstanding = monthly_df["total_outstanding_balance"].round(2).tolist()
 
 options = {
