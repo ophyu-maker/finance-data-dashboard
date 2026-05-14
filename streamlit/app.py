@@ -313,14 +313,20 @@ st.header("Invoice related interactive charts")
 left_col, right_col = st.columns([1.4, 1])
 
 with left_col:
-    st.subheader("Invoice Amount & Outstanding Balance Trend")
+    st.markdown(
+        "<h3 style='color:#1F4E79;'>Invoice Amount & Outstanding Balance Trend</h3>",
+        unsafe_allow_html=True
+    )
     st_echarts(
         options=trend_options,
         height="550px"
     )
 
 with right_col:
-    st.subheader("Outstanding Balance by Vendor")
+    st.markdown(
+        "<h3 style='color:#1F4E79;'>Outstanding Balance by Vendor</h3>",
+        unsafe_allow_html=True
+    )
     st_echarts(
         options=vendor_options,
         height="550px"
