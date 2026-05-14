@@ -313,8 +313,6 @@ trend_options = {
 # -----------------------------
 # Service Treemap Chart
 # -----------------------------
-st.markdown("## 🧩 Service Category Breakdown")
-st.caption("Treemap showing invoice amount by service category.")
 
 treemap_data = []
 
@@ -389,12 +387,6 @@ treemap_options = {
         }
     ]
 }
-
-st_echarts(
-    options=treemap_options,
-    height="550px",
-    key="service_category_treemap"
-)
 
 # -----------------------------
 # Invoice Interactive Charts
