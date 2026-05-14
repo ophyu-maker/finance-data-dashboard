@@ -606,22 +606,7 @@ st.markdown("""
 
 
 
-# -----------------------------
-# Budget vs Actual Deep Dive — Click to Explore
-# -----------------------------
 
-st.markdown("""
-<div class="hero-banner">
-    <h1>Budget vs Actual Deep Dive</h1>
-    <p>Click a department bubble to see monthly budget vs actual trend.</p>
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown(
-            "<h3 style='color:#1F4E79;'>Budget vs Actual Deep Dive</h3>",
-            "<p>Click a department bubble to see monthly budget vs actual trend.</p>"
-            ,unsafe_allow_html=True
-        )
 
 # -----------------------------
 # Prepare annual bubble chart data
