@@ -740,11 +740,31 @@ department_click_event = {
 
 
 # -----------------------------
+# Helper: clean clicked department value
+# -----------------------------
+
+def clean_clicked_department(clicked_value):
+    if clicked_value is None:
+        return None
+
+    if isinstance(clicked_value, str):
+        return clicked_value
+
+    if isinstance(clicked_value, dict):
+        if "name" in clicked_value:
+            return clicked_value["name"]
+        if "value" in clicked_value:
+            return clicked_value["value"]
+
+    return str(clicked_value)
+
+
+# -----------------------------
 # Default department before click
 # -----------------------------
 
 if "selected_budget_department" not in st.session_state:
-    st.session_state["selected_budget_department"] = top_deep_df.iloc[0]["department_name"]
+    st.session_state["selected_budget_department"] = str(top_deep_df.iloc[0]["department_name"])
 
 
 # -----------------------------
@@ -766,12 +786,14 @@ with left_col:
         events=department_click_event
     )
 
-    if clicked_department:
-        st.session_state["selected_budget_department"] = clicked_department
+    clicked_department_clean = clean_clicked_department(clicked_department)
+
+    if clicked_department_clean:
+        st.session_state["selected_budget_department"] = clicked_department_clean
 
 
 with right_col:
-    selected_department = st.session_state["selected_budget_department"]
+    selected_department = str(st.session_state["selected_budget_department"])
 
     st.markdown(
         f"<h3 style='color:#1F4E79; text-align:center;'>{selected_department} — Monthly Trend</h3>",
@@ -779,12 +801,12 @@ with right_col:
     )
 
     dept_monthly_df = monthly_budget_df[
-        monthly_budget_df["department_name"] == selected_department
+        monthly_budget_df["department_name"].astype(str) == selected_department
     ].copy()
 
     dept_monthly_df = dept_monthly_df.sort_values("month")
 
-    deep_months = dept_monthly_df["month"].tolist()
+    deep_months = dept_monthly_df["month"].astype(str).tolist()
     deep_budget = dept_monthly_df["budget_amount"].fillna(0).round(2).tolist()
     deep_actual = dept_monthly_df["monthly_actual_pay"].fillna(0).round(2).tolist()
     deep_variance = dept_monthly_df["variance"].fillna(0).round(2).tolist()
@@ -869,7 +891,7 @@ with right_col:
     st_echarts(
         options=monthly_deep_options,
         height="520px",
-        key=f"monthly_deep_dive_chart_{selected_department}"
+        key="monthly_deep_dive_chart"
     )
 
 
@@ -883,5 +905,4 @@ with st.expander("View selected department budget vs actual data", expanded=Fals
         use_container_width=True,
         height=350
     )
-
 
