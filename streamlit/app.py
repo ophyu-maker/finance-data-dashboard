@@ -14,46 +14,80 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Finance Data Dashboard")
-
 st.markdown("""
 <style>
-    .main {
-        background-color: #F7F9FC;
-    }
+.stApp {
+    background: linear-gradient(135deg, #f4f8ff 0%, #eef7f9 45%, #fdfcff 100%);
+    color: #1f2937;
+}
 
-    .main-header {
-        background: linear-gradient(90deg, #1F4E79, #2E86C1);
-        padding: 30px;
-        border-radius: 16px;
-        margin-bottom: 25px;
-        color: white;
-    }
+.main .block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(31, 41, 55, 0.10);
+    margin-top: 2rem;
+}
 
-    .main-header h1 {
-        margin-bottom: 5px;
-        font-size: 40px;
-        font-weight: 700;
-    }
+.hero-banner {
+    background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
+    border-radius: 22px;
+    padding: 2rem;
+    margin-bottom: 1.8rem;
+    color: white;
+    box-shadow: 0 10px 28px rgba(15, 42, 58, 0.25);
+}
 
-    .main-header p {
-        font-size: 18px;
-        margin: 0;
-        color: #EAF2F8;
-    }
+.hero-banner h1 {
+    color: white;
+    margin-bottom: 0.4rem;
+}
 
-    div[data-testid="stMetric"] {
-        background-color: white;
-        border: 1px solid #E5E7EB;
-        padding: 18px;
-        border-radius: 14px;
-        box-shadow: 0px 2px 8px rgba(0,0,0,0.04);
-    }
+.hero-banner p {
+    color: #d7ecf7;
+    font-size: 17px;
+    line-height: 1.5;
+}
 
-    h2, h3 {
-        color: #1F2937;
-    }
+h2, h3 {
+    color: #1d3557;
+    font-weight: 700;
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 0.7rem 1.4rem;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 5px 16px rgba(47, 128, 237, 0.28);
+}
+
+[data-testid="stDataFrame"] {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e5edf5;
+}
+
+footer, #MainMenu {
+    visibility: hidden;
+}
 </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="hero-banner">
+    <h1>Finance Data Dashboard</h1>
+    <p>
+    Data prepared using Python, SQLite, SQL views, and Streamlit-echarts
+    </p>
+</div>
 """, unsafe_allow_html=True)
 
 
