@@ -143,4 +143,4 @@ This project demonstrates the following skills:
 
 ## Disclaimer
 
-This project uses sample or anonymized data for portfolio purposes. No confidential company information is included.
+This project uses sample and synthetic data for portfolio purposes. No confidential company information is included.
