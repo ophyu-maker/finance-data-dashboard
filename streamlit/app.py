@@ -36,29 +36,32 @@ st.markdown("""
 
 .hero-banner {
     background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
-    border-radius: 16px;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 1rem;
+    border-radius: 12px;
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 0.7rem;
     color: white;
-    box-shadow: 0 6px 16px rgba(15, 42, 58, 0.18);
+    box-shadow: 0 3px 10px rgba(15, 42, 58, 0.14);
 }
 
 .hero-banner h1 {
     color: white;
-    margin-bottom: 0.25rem;
+    font-size: 1.35rem;
+    line-height: 1.1;
+    margin: 0 0 0.1rem 0;
+    font-weight: 700;
 }
 
 .hero-banner p {
     color: #d7ecf7;
-    font-size: 17px;
-    line-height: 1.5;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin: 0;
 }
 
 h2, h3 {
     color: #1d3557;
     font-weight: 700;
 }
-
 .stButton > button {
     background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
     color: white;
