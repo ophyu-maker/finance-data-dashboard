@@ -144,6 +144,15 @@ raw_df = load_query("""
     FROM invoice_cleaned;
 """)
 
+annual_df = load_query(""" 
+    SELECT *
+    FROM department_annual_budget_vs_actual;
+""")
+
+depMonthly_df = load_query(""" 
+    SELECT *
+    FROM department_monthly_budget_vs_actual;
+""")
 
 # -----------------------------
 # Prepare Vendor Bar Chart Data
@@ -497,6 +506,223 @@ country_service_options = {
     },
     "series": country_service_series
 }
+
+# -----------------------------
+# Prepare Annual Budget vs Actual Trend Chart Data
+# -----------------------------
+depts = annual_df["department_name"].tolist()
+budget = annual_df["budget_annual_amount"].round(0).tolist()
+actual = annual_df["annual_actual_pay"].round(0).tolist()
+
+annualTrend_options = {
+    "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+            "type": "cross"
+        }
+    },
+    "legend": {
+        "data": ["Annual Budgeted Amount", "Annual Actual Pay"],
+        "bottom": 0
+    },
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {
+                "show": True,
+                "title": "Save as Image"
+            },
+            "restore": {
+                "show": True,
+                "title": "Restore"
+            },
+            "dataView": {
+                "show": True,
+                "readOnly": True,
+                "title": "View Data"
+            },
+            "magicType": {
+                "show": True,
+                "type": ["line", "bar"],
+                "title": {
+                    "line": "Switch to Line",
+                    "bar": "Switch to Bar"
+                }
+            }
+        }
+    },
+    "grid": {
+        "left": "8%",
+        "right": "5%",
+        "bottom": "22%",
+        "containLabel": True
+    },
+    "xAxis": {
+        "type": "category",
+        "boundaryGap": False,
+        "data": depts
+    },
+    "yAxis": {
+        "type": "value",
+        "axisLabel": {
+            "formatter": "${value}"
+        }
+    },
+    "dataZoom": [
+        {
+            "type": "slider",
+            "start": 0,
+            "end": 100,
+            "bottom": 55
+        },
+        {
+            "type": "inside",
+            "start": 0,
+            "end": 100
+        }
+    ],
+    "series": [
+        {
+            "name": "Annual Budget",
+            "type": "line",
+            "smooth": True,
+            "symbol": "circle",
+            "symbolSize": 8,
+            "areaStyle": {
+                "opacity": 0.15
+            },
+            "lineStyle": {
+                "width": 3
+            },
+            "data": budget
+        },
+        {
+            "name": "Annual Actual Pay",
+            "type": "line",
+            "smooth": True,
+            "symbol": "circle",
+            "symbolSize": 8,
+            "areaStyle": {
+                "opacity": 0.08
+            },
+            "lineStyle": {
+                "width": 3
+            },
+            "data": actual
+        }
+    ]
+}
+
+# -----------------------------
+# Prepare Monthly Budget vs Actual Trend Chart Data
+# -----------------------------
+
+months = depMonthly_df["month"].tolist()
+budget = depMonthly_df["budget_amount"].round(0).tolist()
+actual = depMonthly_df["monthly_actual_pay"].round(0).tolist()
+
+Monthlytrend_options = {
+    "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+            "type": "cross"
+        }
+    },
+    "legend": {
+        "data": ["Monthly Budget Amount", "Monthly Actual Amount"],
+        "bottom": 0
+    },
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {
+                "show": True,
+                "title": "Save as Image"
+            },
+            "restore": {
+                "show": True,
+                "title": "Restore"
+            },
+            "dataView": {
+                "show": True,
+                "readOnly": True,
+                "title": "View Data"
+            },
+            "magicType": {
+                "show": True,
+                "type": ["line", "bar"],
+                "title": {
+                    "line": "Switch to Line",
+                    "bar": "Switch to Bar"
+                }
+            }
+        }
+    },
+    "grid": {
+        "left": "8%",
+        "right": "5%",
+        "bottom": "22%",
+        "containLabel": True
+    },
+    "xAxis": {
+        "type": "category",
+        "boundaryGap": False,
+        "data": months
+    },
+    "yAxis": {
+        "type": "value",
+        "axisLabel": {
+            "formatter": "${value}"
+        }
+    },
+    "dataZoom": [
+        {
+            "type": "slider",
+            "start": 0,
+            "end": 100,
+            "bottom": 55
+        },
+        {
+            "type": "inside",
+            "start": 0,
+            "end": 100
+        }
+    ],
+    "series": [
+        {
+            "name": "Monthly Budget Amount",
+            "type": "line",
+            "smooth": True,
+            "symbol": "circle",
+            "symbolSize": 8,
+            "areaStyle": {
+                "opacity": 0.15
+            },
+            "lineStyle": {
+                "width": 3
+            },
+            "data": budget
+        },
+        {
+            "name": "Monthly Actual Amount",
+            "type": "line",
+            "smooth": True,
+            "symbol": "circle",
+            "symbolSize": 8,
+            "areaStyle": {
+                "opacity": 0.08
+            },
+            "lineStyle": {
+                "width": 3
+            },
+            "data": actual
+        }
+    ]
+}
+
+
 # -----------------------------
 # Invoice Interactive Charts
 # -----------------------------
@@ -574,12 +800,51 @@ with st.container():
 # -----------------------------
 # Data table
 # -----------------------------
-st.markdown(
-        "<h3 style='color:#1F4E79;'>Raw Data</h3>",
-        unsafe_allow_html=True
+with st.expander("🧾 Cleanded data preview", expanded=False):
+    st.dataframe(
+        raw_df,
+        use_container_width=True,
+        height=500
     )
 
-st.dataframe(
-    raw_df,
-    use_container_width=True
-)
+# -----------------------------
+# Budget vs Actual Interactive Charts
+# -----------------------------
+
+st.markdown("""
+<div class="hero-banner">
+    <h1>Annual payment related interactive charts</h1>
+</div>
+""", unsafe_allow_html=True)
+
+# -----------------------------
+# Row 1: Two charts side by side
+# -----------------------------
+with st.container():
+    left_col, right_col = st.columns([1.4, 1])
+
+    with left_col:
+        st.markdown(
+            "<h3 style='color:#1F4E79;'>Annual Budget Vs Actual Amount</h3>",
+            unsafe_allow_html=True
+        )
+        st_echarts(
+            options=annualTrend_options,
+            height="550px",
+            key="annual_trend_chart"
+        )
+
+    with right_col:
+        st.markdown(
+            "<h3 style='color:#1F4E79;'>Monthly Budget Vs Actual Amount</h3>",
+            unsafe_allow_html=True
+        )
+        st_echarts(
+            options=Monthlytrend_options,
+            height="550px",
+            key="monthly_bvsa_chart"
+        )
+
+
+# Add spacing between chart rows
+st.markdown("<br>", unsafe_allow_html=True)
