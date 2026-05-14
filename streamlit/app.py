@@ -390,10 +390,14 @@ treemap_options = {
     ]
 }
 
-st_echarts(options=treemap_options, height="550px")
+st_echarts(
+    options=treemap_options,
+    height="550px",
+    key="service_category_treemap"
+)
 
 # -----------------------------
-# Side-by-side chart section
+# Invoice Interactive Charts
 # -----------------------------
 
 st.markdown("""
@@ -402,43 +406,67 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-left_col, right_col = st.columns([1.4, 1])
 
-with left_col:
-    st.markdown(
-        "<h3 style='color:#1F4E79;'>Invoice Amount & Outstanding Balance Trend</h3>",
-        unsafe_allow_html=True
-    )
-    st_echarts(
-        options=trend_options,
-        height="550px"
-    )
+# -----------------------------
+# Row 1: Two charts side by side
+# -----------------------------
+with st.container():
+    left_col, right_col = st.columns([1.4, 1])
 
-with right_col:
-    st.markdown(
-        "<h3 style='color:#1F4E79;'>Outstanding Balance by Vendor</h3>",
-        unsafe_allow_html=True
-    )
-    st_echarts(
-        options=vendor_options,
-        height="550px"
-    )
+    with left_col:
+        st.markdown(
+            "<h3 style='color:#1F4E79;'>Invoice Amount & Outstanding Balance Trend</h3>",
+            unsafe_allow_html=True
+        )
+        st_echarts(
+            options=trend_options,
+            height="550px",
+            key="invoice_trend_chart"
+        )
 
-left_col, right_col = st.columns([1.2, 1])
+    with right_col:
+        st.markdown(
+            "<h3 style='color:#1F4E79;'>Outstanding Balance by Vendor</h3>",
+            unsafe_allow_html=True
+        )
+        st_echarts(
+            options=vendor_options,
+            height="550px",
+            key="vendor_balance_chart"
+        )
 
-with left_col:
-    st.markdown(
-        "<h3 style='color:#1F4E79;'>Service Category Treemap</h3>",
-        unsafe_allow_html=True
-    )
-    st_echarts(options=treemap_options, height="550px")
 
-with right_col:
-    st.markdown(
-        "<h3 style='color:#1F4E79;'>Service Summary Table</h3>",
-        unsafe_allow_html=True
-    )
-    st.dataframe(service_df, use_container_width=True, height=550)
+# Add spacing between chart rows
+st.markdown("<br>", unsafe_allow_html=True)
+
+
+# -----------------------------
+# Row 2: Treemap + table
+# -----------------------------
+with st.container():
+    left_col, right_col = st.columns([1.2, 1])
+
+    with left_col:
+        st.markdown(
+            "<h3 style='color:#1F4E79;'>Service Category Treemap</h3>",
+            unsafe_allow_html=True
+        )
+        st_echarts(
+            options=treemap_options,
+            height="550px",
+            key="service_category_treemap"
+        )
+
+    with right_col:
+        st.markdown(
+            "<h3 style='color:#1F4E79;'>Service Summary Table</h3>",
+            unsafe_allow_html=True
+        )
+        st.dataframe(
+            service_df,
+            use_container_width=True,
+            height=550
+        )
 
 
 # -----------------------------
