@@ -128,8 +128,14 @@ service_df = load_query("""
 """)
 
 country_df = load_query("""
-    SELECT *
-    FROM invoice_country_summary
+    SELECT
+        country,
+        service,
+        COUNT(*) AS invoice_count,
+        ROUND(SUM(total), 2) AS total_invoiced,
+        ROUND(SUM(balance), 2) AS outstanding_balance
+    FROM invoice_cleaned
+    GROUP BY country, service
     ORDER BY total_invoiced DESC;
 """)
 
@@ -395,20 +401,52 @@ treemap_options = {
 }
 
 # -----------------------------
-# Top 10 Revenue by Country
+# Top 10 Revenue by Country and Service Category
 # -----------------------------
 
-top_country_df = country_df.sort_values(
-    "total_invoiced",
-    ascending=False
-).head(10)
+# Top 10 countries by total invoiced amount
+top_countries = (
+    country_service_df
+    .groupby("country", as_index=False)["total_invoiced"]
+    .sum()
+    .sort_values("total_invoiced", ascending=False)
+    .head(10)["country"]
+    .tolist()
+)
 
-countries = top_country_df["country"].tolist()
-country_revenue = top_country_df["total_invoiced"].round(2).tolist()
-country_outstanding = top_country_df["outstanding_balance"].round(2).tolist()
-country_invoice_count = top_country_df["invoice_count"].astype(int).tolist()
+top_country_service_df = country_service_df[
+    country_service_df["country"].isin(top_countries)
+].copy()
 
-top_country_options = {
+# Pivot: rows = countries, columns = services
+country_service_pivot = top_country_service_df.pivot_table(
+    index="country",
+    columns="service",
+    values="total_invoiced",
+    aggfunc="sum",
+    fill_value=0
+)
+
+# Keep country order as Top 
+country_service_pivot = country_service_pivot.reindex(top_countries)
+
+countries = country_service_pivot.index.tolist()
+services = country_service_pivot.columns.tolist()
+
+country_service_series = []
+
+for service in services:
+    country_service_series.append({
+        "name": service,
+        "type": "bar",
+        "stack": "total",
+        "emphasis": {
+            "focus": "series"
+        },
+        "data": country_service_pivot[service].round(2).tolist()
+    })
+
+country_service_options = {
     "tooltip": {
         "trigger": "axis",
         "axisPointer": {
@@ -417,7 +455,7 @@ top_country_options = {
     },
     "legend": {
         "top": 0,
-        "data": ["Total Invoiced", "Outstanding Balance"]
+        "type": "scroll"
     },
     "toolbox": {
         "show": True,
@@ -435,14 +473,6 @@ top_country_options = {
                 "show": True,
                 "readOnly": True,
                 "title": "View Data"
-            },
-            "magicType": {
-                "show": True,
-                "type": ["line", "bar"],
-                "title": {
-                    "line": "Switch to Line",
-                    "bar": "Switch to Bar"
-                }
             }
         }
     },
@@ -450,12 +480,12 @@ top_country_options = {
         "left": "10%",
         "right": "8%",
         "bottom": "8%",
-        "top": "15%",
+        "top": "18%",
         "containLabel": True
     },
     "xAxis": {
         "type": "value",
-        "name": "Amount",
+        "name": "Total Invoiced",
         "axisLabel": {
             "formatter": "${value}"
         }
@@ -465,25 +495,7 @@ top_country_options = {
         "data": countries,
         "inverse": True
     },
-    "series": [
-        {
-            "name": "Total Invoiced",
-            "type": "bar",
-            "data": country_revenue,
-            "barWidth": "35%",
-            "label": {
-                "show": True,
-                "position": "right",
-                "formatter": "${c}"
-            }
-        },
-        {
-            "name": "Outstanding Balance",
-            "type": "bar",
-            "data": country_outstanding,
-            "barWidth": "35%"
-        }
-    ]
+    "series": country_service_series
 }
 # -----------------------------
 # Invoice Interactive Charts
@@ -553,9 +565,9 @@ with st.container():
         )
 
         st_echarts(
-            options=top_country_options,
+            ooptions=country_service_options,
             height="500px",
-            key="top_country_revenue_chart"
+            key="top_country_Service_revenue_chart"
         )
 
 
