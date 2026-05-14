@@ -1,5 +1,6 @@
 import sqlite3
 from pathlib import Path
+from streamlit_echarts import st_echarts
 
 import pandas as pd
 import streamlit as st
@@ -50,6 +51,33 @@ df = load_data()
 # -----------------------------
 st.subheader("Vendor Balance Summary")
 st.dataframe(df, use_container_width=True)
+
+st.subheader("Outstanding Balance by Vendor - ECharts")
+
+chart_df = df.groupby("client", as_index=False)["outstanding_balance"].sum()
+chart_df = chart_df.sort_values("outstanding_balance", ascending=False)
+
+options = {
+    "tooltip": {"trigger": "axis"},
+    "xAxis": {
+        "type": "category",
+        "data": chart_df["client"].tolist(),
+        "axisLabel": {"rotate": 45}
+    },
+    "yAxis": {
+        "type": "value",
+        "name": "Outstanding Balance"
+    },
+    "series": [
+        {
+            "name": "Outstanding Balance",
+            "data": chart_df["outstanding_balance"].round(2).tolist(),
+            "type": "bar"
+        }
+    ],
+}
+
+st_echarts(options=options, height="500px")
 
 # -----------------------------
 # KPI cards
