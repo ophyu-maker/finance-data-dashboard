@@ -624,7 +624,7 @@ annual_deep_df["variance_pct_true"] = annual_deep_df.apply(
 top_deep_df = (
     annual_deep_df
     .sort_values("annual_actual_pay", ascending=False)
-    .head(60)
+    .tail(60)
     .copy()
 )
 
