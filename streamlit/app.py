@@ -687,11 +687,11 @@ budget_bubble_options = {
         "nameLocation": "middle",
         "nameGap": 35,
         "min": 0,
-        "max": round(axis_max, 0),
+        "max": round(max_budget, 0),
         "axisLabel": {
             "formatter": JsCode("""
                 function(value) {
-                    return '$' + (value / 1000000).toFixed(0) + 'M';
+                    return '$' + (value / 1000000).toFixed(1) + 'M';
                 }
             """).js_code
         },
@@ -702,9 +702,9 @@ budget_bubble_options = {
         "type": "value",
         "name": "Annual Actual Pay",
         "nameLocation": "middle",
-        "nameGap": 65,
+        "nameGap": 75,
         "min": 0,
-        "max": round(axis_max, 0),
+        "max": round(max_actual, 0),
         "axisLabel": {
             "formatter": JsCode("""
                 function(value) {
