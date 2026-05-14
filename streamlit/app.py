@@ -28,7 +28,7 @@ def load_data():
 
     df = pd.read_sql_query("""
         SELECT *
-        FROM newest_invoices_data;
+        FROM company_status_summary;
     """, conn)
 
     conn.close()
