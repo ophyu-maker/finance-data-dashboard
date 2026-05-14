@@ -606,6 +606,7 @@ st.markdown("""
 
 # -----------------------------
 # Prepare annual bubble chart data
+# Better version: Budget vs Actual
 # -----------------------------
 
 annual_deep_df = annual_budget_df.copy()
@@ -615,15 +616,11 @@ annual_deep_df["budget_annual_amount"] = annual_deep_df["budget_annual_amount"].
 annual_deep_df["annual_actual_pay"] = annual_deep_df["annual_actual_pay"].fillna(0)
 annual_deep_df["variance"] = annual_deep_df["variance"].fillna(0)
 
-# Recalculate true variance %
 annual_deep_df["variance_pct_true"] = annual_deep_df.apply(
     lambda row: (row["variance"] / row["budget_annual_amount"] * 100)
     if row["budget_annual_amount"] != 0 else 0,
     axis=1
 )
-
-# Cap only for chart display
-annual_deep_df["variance_pct_chart"] = annual_deep_df["variance_pct_true"].clip(-100, 300)
 
 top_deep_df = (
     annual_deep_df
@@ -638,13 +635,17 @@ for _, row in top_deep_df.iterrows():
     bubble_data.append({
         "name": row["department_name"],
         "value": [
-            round(row["budget_annual_amount"], 2),   # x-axis
-            round(row["variance_pct_chart"], 2),     # y-axis capped
-            round(row["annual_actual_pay"], 2),      # bubble size reference
-            round(row["variance"], 2),               # tooltip
-            round(row["variance_pct_true"], 2)       # tooltip true %
+            round(row["budget_annual_amount"], 2),   # x-axis: annual budget
+            round(row["annual_actual_pay"], 2),      # y-axis: annual actual
+            round(abs(row["variance"]), 2),          # bubble size
+            round(row["variance"], 2),               # tooltip variance $
+            round(row["variance_pct_true"], 2)       # tooltip variance %
         ]
     })
+
+max_budget = top_deep_df["budget_annual_amount"].max()
+max_actual = top_deep_df["annual_actual_pay"].max()
+axis_max = max(max_budget, max_actual) * 1.10
 
 
 budget_bubble_options = {
@@ -655,9 +656,9 @@ budget_bubble_options = {
                 var v = params.value;
                 return '<b>' + params.name + '</b><br/>' +
                        'Annual Budget: $' + v[0].toLocaleString() + '<br/>' +
-                       'Annual Actual Pay: $' + v[2].toLocaleString() + '<br/>' +
+                       'Annual Actual Pay: $' + v[1].toLocaleString() + '<br/>' +
                        'Variance: $' + v[3].toLocaleString() + '<br/>' +
-                       'True Variance %: ' + v[4].toLocaleString() + '%';
+                       'Variance %: ' + v[4].toLocaleString() + '%';
             }
         """).js_code
     },
@@ -685,21 +686,31 @@ budget_bubble_options = {
         "name": "Annual Budget",
         "nameLocation": "middle",
         "nameGap": 35,
+        "min": 0,
+        "max": round(axis_max, 0),
         "axisLabel": {
-            "formatter": "${value}"
+            "formatter": JsCode("""
+                function(value) {
+                    return '$' + (value / 1000000).toFixed(0) + 'M';
+                }
+            """).js_code
         },
         "splitLine": {"show": True}
     },
 
     "yAxis": {
         "type": "value",
-        "name": "Variance %",
+        "name": "Annual Actual Pay",
         "nameLocation": "middle",
-        "nameGap": 55,
-        "min": -100,
-        "max": 300,
+        "nameGap": 65,
+        "min": 0,
+        "max": round(axis_max, 0),
         "axisLabel": {
-            "formatter": "{value}%"
+            "formatter": JsCode("""
+                function(value) {
+                    return '$' + (value / 1000000).toFixed(0) + 'M';
+                }
+            """).js_code
         },
         "splitLine": {"show": True}
     },
@@ -709,18 +720,22 @@ budget_bubble_options = {
             "name": "Department",
             "type": "scatter",
             "data": bubble_data,
+
+            # bubble size based on absolute variance amount
             "symbolSize": JsCode("""
                 function(value) {
-                    var actual = value[2];
-                    if (actual <= 0) {
+                    var varianceAmount = value[2];
+                    if (varianceAmount <= 0) {
                         return 12;
                     }
-                    return Math.max(12, Math.min(55, Math.sqrt(actual) / 500));
+                    return Math.max(12, Math.min(60, Math.sqrt(varianceAmount) / 450));
                 }
             """).js_code,
+
             "itemStyle": {
-                "opacity": 0.75
+                "opacity": 0.72
             },
+
             "emphasis": {
                 "focus": "self",
                 "label": {
@@ -728,19 +743,29 @@ budget_bubble_options = {
                     "formatter": "{b}",
                     "position": "top"
                 }
+            },
+
+            # Reference line where budget equals actual
+            "markLine": {
+                "silent": True,
+                "symbol": "none",
+                "lineStyle": {
+                    "type": "dashed",
+                    "width": 2
+                },
+                "label": {
+                    "formatter": "Budget = Actual"
+                },
+                "data": [
+                    [
+                        {"coord": [0, 0]},
+                        {"coord": [round(axis_max, 0), round(axis_max, 0)]}
+                    ]
+                ]
             }
         }
     ]
 }
-
-st.write(top_deep_df[[
-    "department_name",
-    "budget_annual_amount",
-    "annual_actual_pay",
-    "variance",
-    "variance_pct_true",
-    "variance_pct_chart"
-]])
 
 
 # -----------------------------
@@ -920,7 +945,6 @@ with right_col:
     st.info(
     "Note: Monthly budget is synthetic data. Annual budget was divided evenly by 12 "
     "to simulate monthly budget phasing for dashboard demonstration purposes. "
-    "Monthly budget variance should not be interpreted as actual approved monthly budget performance."
     )
 
 # -----------------------------
