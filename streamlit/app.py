@@ -81,14 +81,7 @@ footer, #MainMenu {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<div class="hero-banner">
-    <h1>Finance Data Dashboard</h1>
-    <p>
-    Data prepared using Python, SQLite, SQL views, and Streamlit-echarts
-    </p>
-</div>
-""", unsafe_allow_html=True)
+st.title("Finance Data Dashboard")
 
 
 # -----------------------------
@@ -308,7 +301,12 @@ trend_options = {
 # -----------------------------
 # Side-by-side chart section
 # -----------------------------
-st.header("Invoice related interactive charts")
+
+st.markdown("""
+<div class="hero-banner">
+    <h1>Invoice related interactive charts</h1>
+</div>
+""", unsafe_allow_html=True)
 
 left_col, right_col = st.columns([1.4, 1])
 
