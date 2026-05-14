@@ -338,7 +338,10 @@ with right_col:
 # -----------------------------
 # Data table
 # -----------------------------
-st.subheader("Company Status Summary")
+st.markdown(
+        "<h3 style='color:#1F4E79;'>Company Status Summary</h3>",
+        unsafe_allow_html=True
+    )
 
 st.dataframe(
     df,
