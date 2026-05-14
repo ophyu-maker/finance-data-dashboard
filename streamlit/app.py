@@ -605,33 +605,26 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-
-
-
 # -----------------------------
 # Prepare annual bubble chart data
 # -----------------------------
 
-# Clean annual data
 annual_deep_df = annual_budget_df.copy()
 
+annual_deep_df["department_name"] = annual_deep_df["department_name"].astype(str)
 annual_deep_df["budget_annual_amount"] = annual_deep_df["budget_annual_amount"].fillna(0)
 annual_deep_df["annual_actual_pay"] = annual_deep_df["annual_actual_pay"].fillna(0)
 annual_deep_df["variance"] = annual_deep_df["variance"].fillna(0)
 annual_deep_df["variance_pct"] = annual_deep_df["variance_pct"].fillna(0)
 
-# Avoid too many bubbles by showing top departments by actual pay
+# Limit to top 25 departments so the chart is readable
 top_deep_df = (
     annual_deep_df
     .sort_values("annual_actual_pay", ascending=False)
-    .head(30)
+    .head(25)
     .copy()
 )
 
-# Bubble chart:
-# x = annual budget
-# y = variance %
-# size = annual actual pay
 bubble_data = []
 
 for _, row in top_deep_df.iterrows():
@@ -641,12 +634,7 @@ for _, row in top_deep_df.iterrows():
             round(row["budget_annual_amount"], 2),
             round(row["variance_pct"], 2),
             round(row["annual_actual_pay"], 2)
-        ],
-        "department": row["department_name"],
-        "budget": round(row["budget_annual_amount"], 2),
-        "actual": round(row["annual_actual_pay"], 2),
-        "variance": round(row["variance"], 2),
-        "variance_pct": round(row["variance_pct"], 2)
+        ]
     })
 
 
@@ -654,10 +642,10 @@ budget_bubble_options = {
     "tooltip": {
         "trigger": "item",
         "formatter": """
-            <b>{b}</b><br/>
-            Annual Budget: ${c0}<br/>
-            Variance %: {c1}%<br/>
-            Annual Actual: ${c2}
+            {b}<br/>
+            Annual Budget: ${@[0]}<br/>
+            Variance %: {@[1]}%<br/>
+            Annual Actual: ${@[2]}
         """
     },
     "toolbox": {
@@ -670,9 +658,9 @@ budget_bubble_options = {
         }
     },
     "grid": {
-        "left": "10%",
+        "left": "12%",
         "right": "8%",
-        "bottom": "12%",
+        "bottom": "14%",
         "top": "12%",
         "containLabel": True
     },
@@ -692,7 +680,7 @@ budget_bubble_options = {
         "type": "value",
         "name": "Variance %",
         "nameLocation": "middle",
-        "nameGap": 50,
+        "nameGap": 55,
         "axisLabel": {
             "formatter": "{value}%"
         },
@@ -705,11 +693,7 @@ budget_bubble_options = {
             "name": "Department",
             "type": "scatter",
             "data": bubble_data,
-            "symbolSize": """
-                function(data) {
-                    return Math.sqrt(data[2]) / 25;
-                }
-            """,
+            "symbolSize": 18,
             "itemStyle": {
                 "opacity": 0.75
             },
@@ -739,15 +723,10 @@ department_click_event = {
 }
 
 
-# -----------------------------
-# Helper: extract clicked department
-# -----------------------------
-
 def extract_department_from_click(clicked_value):
     if clicked_value is None:
         return None
 
-    # streamlit-echarts usually returns {"chart_event": value}
     if isinstance(clicked_value, dict):
         chart_event = clicked_value.get("chart_event")
 
@@ -800,7 +779,7 @@ with left_col:
 
 
 with right_col:
-    selected_department = st.session_state["selected_budget_department"]
+    selected_department = str(st.session_state["selected_budget_department"])
 
     st.markdown(
         f"<h3 style='color:#1F4E79; text-align:center;'>{selected_department} — Monthly Trend</h3>",
@@ -808,7 +787,7 @@ with right_col:
     )
 
     dept_monthly_df = monthly_budget_df[
-        monthly_budget_df["department_name"].astype(str) == str(selected_department)
+        monthly_budget_df["department_name"].astype(str) == selected_department
     ].copy()
 
     dept_monthly_df = dept_monthly_df.sort_values("month")
