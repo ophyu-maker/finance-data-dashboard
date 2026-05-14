@@ -93,7 +93,7 @@ st.title("📊 Finance Data Dashboard")
 # -----------------------------
 APP_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = APP_DIR.parent
-DB_PATH = PROJECT_ROOT / "database" / "workforce_analytics.db"
+DB_PATH = PROJECT_ROOT / "database" / "finance_data.db"
 
 
 # -----------------------------
