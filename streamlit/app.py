@@ -1,4 +1,6 @@
 import sqlite3
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -17,7 +19,13 @@ st.caption("Simple invoice dashboard using SQLite and Streamlit")
 # -----------------------------
 # SQLite database path
 # -----------------------------
-DB_PATH = "../database/workforce_analytics.db"
+APP_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = APP_DIR.parent
+DB_PATH = PROJECT_ROOT / "database" / "workforce_analytics.db"
+
+# Optional debug check - keep this until app works
+st.write("Database path:", DB_PATH)
+st.write("Database exists:", DB_PATH.exists())
 
 # -----------------------------
 # Load data from SQLite
