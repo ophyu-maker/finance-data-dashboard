@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-from streamlit_echarts import st_echarts
+from streamlit_echarts import st_echarts, JsCode
 
 
 # -----------------------------
@@ -650,7 +650,7 @@ for _, row in top_deep_df.iterrows():
 budget_bubble_options = {
     "tooltip": {
         "trigger": "item",
-        "formatter": """
+        "formatter": JsCode("""
             function(params) {
                 var v = params.value;
                 return '<b>' + params.name + '</b><br/>' +
@@ -659,8 +659,9 @@ budget_bubble_options = {
                        'Variance: $' + v[3].toLocaleString() + '<br/>' +
                        'True Variance %: ' + v[4].toLocaleString() + '%';
             }
-        """
+        """).js_code
     },
+
     "toolbox": {
         "show": True,
         "right": 20,
@@ -670,6 +671,7 @@ budget_bubble_options = {
             "dataView": {"show": True, "readOnly": True, "title": "View Data"}
         }
     },
+
     "grid": {
         "left": "12%",
         "right": "8%",
@@ -677,6 +679,7 @@ budget_bubble_options = {
         "top": "12%",
         "containLabel": True
     },
+
     "xAxis": {
         "type": "value",
         "name": "Annual Budget",
@@ -687,6 +690,7 @@ budget_bubble_options = {
         },
         "splitLine": {"show": True}
     },
+
     "yAxis": {
         "type": "value",
         "name": "Variance %",
@@ -699,12 +703,21 @@ budget_bubble_options = {
         },
         "splitLine": {"show": True}
     },
+
     "series": [
         {
             "name": "Department",
             "type": "scatter",
             "data": bubble_data,
-            "symbolSize": 22,
+            "symbolSize": JsCode("""
+                function(value) {
+                    var actual = value[2];
+                    if (actual <= 0) {
+                        return 12;
+                    }
+                    return Math.max(12, Math.min(55, Math.sqrt(actual) / 500));
+                }
+            """).js_code,
             "itemStyle": {
                 "opacity": 0.75
             },
