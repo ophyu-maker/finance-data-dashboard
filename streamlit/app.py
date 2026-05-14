@@ -606,7 +606,6 @@ st.markdown("""
 
 # -----------------------------
 # Prepare annual bubble chart data
-# Better version: Budget vs Actual
 # -----------------------------
 
 annual_deep_df = annual_budget_df.copy()
@@ -625,7 +624,7 @@ annual_deep_df["variance_pct_true"] = annual_deep_df.apply(
 top_deep_df = (
     annual_deep_df
     .sort_values("annual_actual_pay", ascending=False)
-    .head(25)
+    .head(60)
     .copy()
 )
 
