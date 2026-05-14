@@ -604,7 +604,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-
 # -----------------------------
 # Prepare annual bubble chart data
 # -----------------------------
@@ -616,17 +615,16 @@ annual_deep_df["budget_annual_amount"] = annual_deep_df["budget_annual_amount"].
 annual_deep_df["annual_actual_pay"] = annual_deep_df["annual_actual_pay"].fillna(0)
 annual_deep_df["variance"] = annual_deep_df["variance"].fillna(0)
 
-# Recalculate variance percent safely
-annual_deep_df["variance_pct_clean"] = annual_deep_df.apply(
+# Recalculate true variance %
+annual_deep_df["variance_pct_true"] = annual_deep_df.apply(
     lambda row: (row["variance"] / row["budget_annual_amount"] * 100)
     if row["budget_annual_amount"] != 0 else 0,
     axis=1
 )
 
-# Limit extreme percentages so the chart remains readable
-annual_deep_df["variance_pct_display"] = annual_deep_df["variance_pct_clean"].clip(-100, 300)
+# Cap only for chart display
+annual_deep_df["variance_pct_chart"] = annual_deep_df["variance_pct_true"].clip(-100, 300)
 
-# Limit to top 25 departments by actual pay
 top_deep_df = (
     annual_deep_df
     .sort_values("annual_actual_pay", ascending=False)
@@ -640,11 +638,11 @@ for _, row in top_deep_df.iterrows():
     bubble_data.append({
         "name": row["department_name"],
         "value": [
-            round(row["budget_annual_amount"], 2),        # x-axis
-            round(row["variance_pct_display"], 2),        # y-axis, capped
-            round(row["annual_actual_pay"], 2),           # actual pay
-            round(row["variance"], 2),                    # variance $
-            round(row["variance_pct_clean"], 2)           # true uncapped variance %
+            round(row["budget_annual_amount"], 2),   # x-axis
+            round(row["variance_pct_chart"], 2),     # y-axis capped
+            round(row["annual_actual_pay"], 2),      # bubble size reference
+            round(row["variance"], 2),               # tooltip
+            round(row["variance_pct_true"], 2)       # tooltip true %
         ]
     })
 
@@ -659,7 +657,7 @@ budget_bubble_options = {
                        'Annual Budget: $' + v[0].toLocaleString() + '<br/>' +
                        'Annual Actual Pay: $' + v[2].toLocaleString() + '<br/>' +
                        'Variance: $' + v[3].toLocaleString() + '<br/>' +
-                       'Variance %: ' + v[4].toLocaleString() + '%';
+                       'True Variance %: ' + v[4].toLocaleString() + '%';
             }
         """
     },
@@ -706,15 +704,7 @@ budget_bubble_options = {
             "name": "Department",
             "type": "scatter",
             "data": bubble_data,
-            "symbolSize": """
-                function(value) {
-                    var actual = value[2];
-                    if (actual <= 0) {
-                        return 12;
-                    }
-                    return Math.max(12, Math.min(55, Math.sqrt(actual) / 500));
-                }
-            """,
+            "symbolSize": 22,
             "itemStyle": {
                 "opacity": 0.75
             },
@@ -729,6 +719,15 @@ budget_bubble_options = {
         }
     ]
 }
+
+st.write(top_deep_df[[
+    "department_name",
+    "budget_annual_amount",
+    "annual_actual_pay",
+    "variance",
+    "variance_pct_true",
+    "variance_pct_chart"
+]])
 
 
 # -----------------------------
@@ -784,12 +783,6 @@ with left_col:
     st.markdown(
         "<h3 style='color:#1F4E79; text-align:center;'>Annual Budget vs Actual Variance</h3>",
         unsafe_allow_html=True
-    )
-
-    st.info(
-    "Note: Monthly budget is synthetic data. Annual budget was divided evenly by 12 "
-    "to simulate monthly budget phasing for dashboard demonstration purposes. "
-    "Monthly budget variance should not be interpreted as actual approved monthly budget performance."
     )
 
     clicked_result = st_echarts(
@@ -911,7 +904,11 @@ with right_col:
         key="monthly_deep_dive_chart"
     )
 
-
+    st.info(
+    "Note: Monthly budget is synthetic data. Annual budget was divided evenly by 12 "
+    "to simulate monthly budget phasing for dashboard demonstration purposes. "
+    "Monthly budget variance should not be interpreted as actual approved monthly budget performance."
+    )
 
 # -----------------------------
 # Selected department detail table
