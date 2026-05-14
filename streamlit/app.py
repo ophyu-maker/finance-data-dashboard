@@ -121,7 +121,16 @@ monthly_df = load_query("""
     ORDER BY invoice_month;
 """)
 
+service_df = load_query(""" 
+    SELECT *
+    FROM invoice_service_summary
+    ORDER BY total_invoice DESC;
+""")
 
+raw_df = load_query(""" 
+    SELECT *
+    FROM invoice_cleaned;
+""")
 
 
 # -----------------------------
@@ -301,6 +310,87 @@ trend_options = {
     ]
 }
 
+# -----------------------------
+# Service Treemap Chart
+# -----------------------------
+st.markdown("## 🧩 Service Category Breakdown")
+st.caption("Treemap showing invoice amount by service category.")
+
+treemap_data = []
+
+for _, row in service_df.iterrows():
+    treemap_data.append({
+        "name": row["service"],
+        "value": round(row["total_invoiced"], 2),
+        "invoice_count": int(row["invoice_count"]),
+        "outstanding_balance": round(row["outstanding_balance"], 2),
+        "avg_invoice_amount": round(row["avg_invoice_amount"], 2)
+    })
+
+treemap_options = {
+    "tooltip": {
+        "formatter": """
+            <b>{b}</b><br/>
+            Total Invoiced: ${c}
+        """
+    },
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {
+                "show": True,
+                "title": "Save as Image"
+            },
+            "restore": {
+                "show": True,
+                "title": "Restore"
+            },
+            "dataView": {
+                "show": True,
+                "readOnly": True,
+                "title": "View Data"
+            }
+        }
+    },
+    "series": [
+        {
+            "name": "Service Category",
+            "type": "treemap",
+            "data": treemap_data,
+            "roam": False,
+            "nodeClick": False,
+            "breadcrumb": {
+                "show": False
+            },
+            "label": {
+                "show": True,
+                "formatter": "{b}",
+                "fontSize": 14
+            },
+            "upperLabel": {
+                "show": True,
+                "height": 30
+            },
+            "itemStyle": {
+                "borderColor": "#ffffff",
+                "borderWidth": 2,
+                "gapWidth": 2
+            },
+            "levels": [
+                {
+                    "itemStyle": {
+                        "borderColor": "#ffffff",
+                        "borderWidth": 2,
+                        "gapWidth": 2
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+st_echarts(options=treemap_options, height="550px")
 
 # -----------------------------
 # Side-by-side chart section
@@ -334,16 +424,32 @@ with right_col:
         height="550px"
     )
 
+left_col, right_col = st.columns([2.2, 2])
+
+with left_col:
+    st.markdown(
+        "<h3 style='color:#1F4E79;'>Service Category Treemap</h3>",
+        unsafe_allow_html=True
+    )
+    st_echarts(options=treemap_options, height="550px")
+
+with right_col:
+    st.markdown(
+        "<h3 style='color:#1F4E79;'>Service Summary Table</h3>",
+        unsafe_allow_html=True
+    )
+    st.dataframe(service_df, use_container_width=True, height=550)
+
 
 # -----------------------------
 # Data table
 # -----------------------------
 st.markdown(
-        "<h3 style='color:#1F4E79;'>Company Status Summary</h3>",
+        "<h3 style='color:#1F4E79;'>Raw Data</h3>",
         unsafe_allow_html=True
     )
 
 st.dataframe(
-    df,
+    raw_df,
     use_container_width=True
 )
