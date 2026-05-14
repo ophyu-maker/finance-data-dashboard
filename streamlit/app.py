@@ -424,7 +424,7 @@ with right_col:
         height="550px"
     )
 
-left_col, right_col = st.columns([2.2, 2])
+left_col, right_col = st.columns([1.2, 1])
 
 with left_col:
     st.markdown(
