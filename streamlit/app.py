@@ -676,7 +676,8 @@ ranked_df = (
 top_deep_df = ranked_df.iloc[rank_start - 1:rank_end].copy()
 
 st.caption(
-    f"Displaying {rank_direction.lower()} {rank_n} departments ranked by {rank_metric_label.lower()}."
+    f"Displaying departments ranked {rank_start} to {rank_end} "
+    f"based on {rank_direction.lower()} {rank_metric_label.lower()}."
 )
 
 bubble_data = []
