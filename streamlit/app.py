@@ -16,6 +16,46 @@ st.set_page_config(
 
 st.title("Finance Data Dashboard")
 
+st.markdown("""
+<style>
+    .main {
+        background-color: #F7F9FC;
+    }
+
+    .main-header {
+        background: linear-gradient(90deg, #1F4E79, #2E86C1);
+        padding: 30px;
+        border-radius: 16px;
+        margin-bottom: 25px;
+        color: white;
+    }
+
+    .main-header h1 {
+        margin-bottom: 5px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .main-header p {
+        font-size: 18px;
+        margin: 0;
+        color: #EAF2F8;
+    }
+
+    div[data-testid="stMetric"] {
+        background-color: white;
+        border: 1px solid #E5E7EB;
+        padding: 18px;
+        border-radius: 14px;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.04);
+    }
+
+    h2, h3 {
+        color: #1F2937;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 
 # -----------------------------
 # SQLite database path
