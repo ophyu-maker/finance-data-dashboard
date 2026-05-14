@@ -11,6 +11,7 @@ from streamlit_echarts import st_echarts
 # -----------------------------
 st.set_page_config(
     page_title="Finance Data Dashboard",
+    page_icon = "📊",
     layout="wide"
 )
 
@@ -35,16 +36,16 @@ st.markdown("""
 
 .hero-banner {
     background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
-    border-radius: 22px;
-    padding: 2rem;
-    margin-bottom: 1.8rem;
+    border-radius: 16px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
     color: white;
-    box-shadow: 0 10px 28px rgba(15, 42, 58, 0.25);
+    box-shadow: 0 6px 16px rgba(15, 42, 58, 0.18);
 }
 
 .hero-banner h1 {
     color: white;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.25rem;
 }
 
 .hero-banner p {
@@ -81,7 +82,7 @@ footer, #MainMenu {
 </style>
 """, unsafe_allow_html=True)
 
-st.title("Finance Data Dashboard")
+st.title("📊 Finance Data Dashboard")
 
 
 # -----------------------------
