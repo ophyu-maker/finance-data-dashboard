@@ -124,7 +124,7 @@ monthly_df = load_query("""
 service_df = load_query(""" 
     SELECT *
     FROM invoice_service_summary
-    ORDER BY total_invoice DESC;
+    ORDER BY total_invoiced DESC;
 """)
 
 raw_df = load_query(""" 
