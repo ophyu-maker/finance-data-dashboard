@@ -144,7 +144,17 @@ raw_df = load_query("""
     FROM invoice_cleaned;
 """)
 
+annual_budget_df = load_query("""
+    SELECT *
+    FROM department_annual_budget_vs_actual
+    ORDER BY variance DESC;
+""")
 
+monthly_budget_df = load_query("""
+    SELECT *
+    FROM department_monthly_budget_vs_actual
+    ORDER BY month, department_name;
+""")
 
 # -----------------------------
 # Prepare Vendor Bar Chart Data
@@ -593,5 +603,300 @@ st.markdown("""
     <h1>Annual payment related interactive charts</h1>
 </div>
 """, unsafe_allow_html=True)
+
+
+
+# -----------------------------
+# Budget vs Actual Deep Dive — Click to Explore
+# -----------------------------
+
+st.markdown("""
+<div class="hero-banner">
+    <h1>Budget vs Actual Deep Dive</h1>
+    <p>Click a department bubble to see monthly budget vs actual trend.</p>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown(
+            "<h3 style='color:#1F4E79;'>Budget vs Actual Deep Dive</h3>",
+            "<p>Click a department bubble to see monthly budget vs actual trend.</p>"
+            ,unsafe_allow_html=True
+        )
+
+# -----------------------------
+# Prepare annual bubble chart data
+# -----------------------------
+
+# Clean annual data
+annual_deep_df = annual_budget_df.copy()
+
+annual_deep_df["budget_annual_amount"] = annual_deep_df["budget_annual_amount"].fillna(0)
+annual_deep_df["annual_actual_pay"] = annual_deep_df["annual_actual_pay"].fillna(0)
+annual_deep_df["variance"] = annual_deep_df["variance"].fillna(0)
+annual_deep_df["variance_pct"] = annual_deep_df["variance_pct"].fillna(0)
+
+# Avoid too many bubbles by showing top departments by actual pay
+top_deep_df = (
+    annual_deep_df
+    .sort_values("annual_actual_pay", ascending=False)
+    .head(30)
+    .copy()
+)
+
+# Bubble chart:
+# x = annual budget
+# y = variance %
+# size = annual actual pay
+bubble_data = []
+
+for _, row in top_deep_df.iterrows():
+    bubble_data.append({
+        "name": row["department_name"],
+        "value": [
+            round(row["budget_annual_amount"], 2),
+            round(row["variance_pct"], 2),
+            round(row["annual_actual_pay"], 2)
+        ],
+        "department": row["department_name"],
+        "budget": round(row["budget_annual_amount"], 2),
+        "actual": round(row["annual_actual_pay"], 2),
+        "variance": round(row["variance"], 2),
+        "variance_pct": round(row["variance_pct"], 2)
+    })
+
+
+budget_bubble_options = {
+    "tooltip": {
+        "trigger": "item",
+        "formatter": """
+            <b>{b}</b><br/>
+            Annual Budget: ${c0}<br/>
+            Variance %: {c1}%<br/>
+            Annual Actual: ${c2}
+        """
+    },
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {"show": True, "title": "Save as Image"},
+            "restore": {"show": True, "title": "Restore"},
+            "dataView": {"show": True, "readOnly": True, "title": "View Data"}
+        }
+    },
+    "grid": {
+        "left": "10%",
+        "right": "8%",
+        "bottom": "12%",
+        "top": "12%",
+        "containLabel": True
+    },
+    "xAxis": {
+        "type": "value",
+        "name": "Annual Budget",
+        "nameLocation": "middle",
+        "nameGap": 35,
+        "axisLabel": {
+            "formatter": "${value}"
+        },
+        "splitLine": {
+            "show": True
+        }
+    },
+    "yAxis": {
+        "type": "value",
+        "name": "Variance %",
+        "nameLocation": "middle",
+        "nameGap": 50,
+        "axisLabel": {
+            "formatter": "{value}%"
+        },
+        "splitLine": {
+            "show": True
+        }
+    },
+    "series": [
+        {
+            "name": "Department",
+            "type": "scatter",
+            "data": bubble_data,
+            "symbolSize": """
+                function(data) {
+                    return Math.sqrt(data[2]) / 25;
+                }
+            """,
+            "itemStyle": {
+                "opacity": 0.75
+            },
+            "emphasis": {
+                "focus": "self",
+                "label": {
+                    "show": True,
+                    "formatter": "{b}",
+                    "position": "top"
+                }
+            }
+        }
+    ]
+}
+
+
+# -----------------------------
+# Click event
+# -----------------------------
+
+department_click_event = {
+    "click": """
+        function(params) {
+            return params.name;
+        }
+    """
+}
+
+
+# -----------------------------
+# Default department before click
+# -----------------------------
+
+if "selected_budget_department" not in st.session_state:
+    st.session_state["selected_budget_department"] = top_deep_df.iloc[0]["department_name"]
+
+
+# -----------------------------
+# Layout: Bubble chart + monthly trend chart
+# -----------------------------
+
+left_col, right_col = st.columns([1, 1.25])
+
+with left_col:
+    st.markdown(
+        "<h3 style='color:#1F4E79; text-align:center;'>Annual Budget vs Actual Variance</h3>",
+        unsafe_allow_html=True
+    )
+
+    clicked_department = st_echarts(
+        options=budget_bubble_options,
+        height="520px",
+        key="budget_deep_dive_bubble_chart",
+        events=department_click_event
+    )
+
+    if clicked_department:
+        st.session_state["selected_budget_department"] = clicked_department
+
+
+with right_col:
+    selected_department = st.session_state["selected_budget_department"]
+
+    st.markdown(
+        f"<h3 style='color:#1F4E79; text-align:center;'>{selected_department} — Monthly Trend</h3>",
+        unsafe_allow_html=True
+    )
+
+    dept_monthly_df = monthly_budget_df[
+        monthly_budget_df["department_name"] == selected_department
+    ].copy()
+
+    dept_monthly_df = dept_monthly_df.sort_values("month")
+
+    deep_months = dept_monthly_df["month"].tolist()
+    deep_budget = dept_monthly_df["budget_amount"].fillna(0).round(2).tolist()
+    deep_actual = dept_monthly_df["monthly_actual_pay"].fillna(0).round(2).tolist()
+    deep_variance = dept_monthly_df["variance"].fillna(0).round(2).tolist()
+
+    monthly_deep_options = {
+        "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {
+                "type": "cross"
+            }
+        },
+        "legend": {
+            "data": ["Monthly Budget", "Monthly Actual", "Variance"],
+            "bottom": 0
+        },
+        "toolbox": {
+            "show": True,
+            "right": 20,
+            "feature": {
+                "saveAsImage": {"show": True, "title": "Save as Image"},
+                "restore": {"show": True, "title": "Restore"},
+                "dataView": {"show": True, "readOnly": True, "title": "View Data"}
+            }
+        },
+        "grid": {
+            "left": "10%",
+            "right": "8%",
+            "bottom": "18%",
+            "top": "12%",
+            "containLabel": True
+        },
+        "xAxis": {
+            "type": "category",
+            "data": deep_months,
+            "axisLabel": {
+                "rotate": 45
+            }
+        },
+        "yAxis": [
+            {
+                "type": "value",
+                "name": "Budget / Actual",
+                "axisLabel": {
+                    "formatter": "${value}"
+                }
+            },
+            {
+                "type": "value",
+                "name": "Variance",
+                "axisLabel": {
+                    "formatter": "${value}"
+                }
+            }
+        ],
+        "series": [
+            {
+                "name": "Monthly Budget",
+                "type": "bar",
+                "data": deep_budget,
+                "barWidth": "45%"
+            },
+            {
+                "name": "Monthly Actual",
+                "type": "line",
+                "smooth": True,
+                "symbol": "circle",
+                "symbolSize": 8,
+                "data": deep_actual
+            },
+            {
+                "name": "Variance",
+                "type": "line",
+                "smooth": True,
+                "symbol": "circle",
+                "symbolSize": 7,
+                "yAxisIndex": 1,
+                "data": deep_variance
+            }
+        ]
+    }
+
+    st_echarts(
+        options=monthly_deep_options,
+        height="520px",
+        key=f"monthly_deep_dive_chart_{selected_department}"
+    )
+
+
+# -----------------------------
+# Selected department detail table
+# -----------------------------
+
+with st.expander("View selected department budget vs actual data", expanded=False):
+    st.dataframe(
+        dept_monthly_df,
+        use_container_width=True,
+        height=350
+    )
 
 
