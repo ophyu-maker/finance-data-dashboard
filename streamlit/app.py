@@ -127,6 +127,12 @@ service_df = load_query("""
     ORDER BY total_invoiced DESC;
 """)
 
+country_df = load_query("""
+    SELECT *
+    FROM invoice_country_summary
+    ORDER BY total_invoiced DESC;
+""")
+
 raw_df = load_query(""" 
     SELECT *
     FROM invoice_cleaned;
@@ -389,6 +395,97 @@ treemap_options = {
 }
 
 # -----------------------------
+# Top 10 Revenue by Country
+# -----------------------------
+
+top_country_df = country_df.sort_values(
+    "total_invoiced",
+    ascending=False
+).head(10)
+
+countries = top_country_df["country"].tolist()
+country_revenue = top_country_df["total_invoiced"].round(2).tolist()
+country_outstanding = top_country_df["outstanding_balance"].round(2).tolist()
+country_invoice_count = top_country_df["invoice_count"].astype(int).tolist()
+
+top_country_options = {
+    "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+            "type": "shadow"
+        }
+    },
+    "legend": {
+        "top": 0,
+        "data": ["Total Invoiced", "Outstanding Balance"]
+    },
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {
+                "show": True,
+                "title": "Save as Image"
+            },
+            "restore": {
+                "show": True,
+                "title": "Restore"
+            },
+            "dataView": {
+                "show": True,
+                "readOnly": True,
+                "title": "View Data"
+            },
+            "magicType": {
+                "show": True,
+                "type": ["line", "bar"],
+                "title": {
+                    "line": "Switch to Line",
+                    "bar": "Switch to Bar"
+                }
+            }
+        }
+    },
+    "grid": {
+        "left": "10%",
+        "right": "8%",
+        "bottom": "8%",
+        "top": "15%",
+        "containLabel": True
+    },
+    "xAxis": {
+        "type": "value",
+        "name": "Amount",
+        "axisLabel": {
+            "formatter": "${value}"
+        }
+    },
+    "yAxis": {
+        "type": "category",
+        "data": countries,
+        "inverse": True
+    },
+    "series": [
+        {
+            "name": "Total Invoiced",
+            "type": "bar",
+            "data": country_revenue,
+            "barWidth": "35%",
+            "label": {
+                "show": True,
+                "position": "right",
+                "formatter": "${c}"
+            }
+        },
+        {
+            "name": "Outstanding Balance",
+            "type": "bar",
+            "data": country_outstanding,
+            "barWidth": "35%"
+        }
+    ]
+}
+# -----------------------------
 # Invoice Interactive Charts
 # -----------------------------
 
@@ -451,13 +548,14 @@ with st.container():
 
     with right_col:
         st.markdown(
-            "<h3 style='color:#1F4E79;'>Service Summary Table</h3>",
+            "<h3 style='color:#1F4E79;'>Top 5 Revenue by Country</h3>",
             unsafe_allow_html=True
         )
-        st.dataframe(
-            service_df,
-            use_container_width=True,
-            height=550
+
+        st_echarts(
+            options=top_country_options,
+            height="500px",
+            key="top_country_revenue_chart"
         )
 
 
