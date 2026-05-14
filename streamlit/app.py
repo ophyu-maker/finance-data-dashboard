@@ -509,11 +509,44 @@ country_service_options = {
 }
 
 # -----------------------------
+# Sidebar department filter
+# -----------------------------
+
+st.sidebar.header("Dashboard Filters")
+
+department_options = sorted(
+    depMonthly_df["department_name"]
+    .dropna()
+    .unique()
+    .tolist()
+)
+
+selected_departments = st.sidebar.multiselect(
+    "Select Department(s)",
+    options=department_options,
+    default=department_options[:5]
+)
+
+# Safety fallback: if user selects nothing, show first 5 departments
+if not selected_departments:
+    selected_departments = department_options[:5]
+
+filtered_monthly_budget_df = depMonthly_df[
+    depMonthly_df["department_name"].isin(selected_departments)
+].copy()
+
+filtered_annual_budget_df = annual_df[
+    annual_df["department_name"].isin(selected_departments)
+].copy()
+
+
+
+# -----------------------------
 # Prepare Annual Budget vs Actual Trend Chart Data
 # -----------------------------
-depts = annual_df["department_name"].tolist()
-budget = annual_df["budget_annual_amount"].round(0).tolist()
-actual = annual_df["annual_actual_pay"].round(0).tolist()
+depts = filtered_annual_budget_df["department_name"].tolist()
+budget = filtered_annual_budget_df["budget_annual_amount"].round(0).tolist()
+actual = filtered_annual_budget_df["annual_actual_pay"].round(0).tolist()
 
 annualTrend_options = {
     "tooltip": {
@@ -619,9 +652,9 @@ annualTrend_options = {
 # Prepare Monthly Budget vs Actual Trend Chart Data
 # -----------------------------
 
-months = depMonthly_df["month"].tolist()
-budget = depMonthly_df["budget_amount"].round(0).tolist()
-actual = depMonthly_df["monthly_actual_pay"].round(0).tolist()
+months = filtered_monthly_budget_df["month"].tolist()
+budget = filtered_monthly_budget_df["budget_amount"].round(0).tolist()
+actual = filtered_monthly_budget_df["monthly_actual_pay"].round(0).tolist()
 
 Monthlytrend_options = {
     "tooltip": {
