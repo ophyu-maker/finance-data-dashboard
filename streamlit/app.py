@@ -615,7 +615,7 @@ with st.expander("🧾 Cleanded data preview", expanded=False):
 
 st.markdown("""
 <div class="hero-banner">
-    <h1>Annual payment related interactive charts</h1>
+    <h1>Payment related interactive charts</h1>
 </div>
 """, unsafe_allow_html=True)
 
