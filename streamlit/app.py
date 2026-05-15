@@ -1287,3 +1287,162 @@ with st.expander("View workforce payroll data", expanded=False):
         use_container_width=True,
         height=450
     )
+
+# -----------------------------
+# Multi-Metric Comparison Chart
+# Uses same current filter fields
+# -----------------------------
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+st.markdown(
+    "<h3 style='color:#1F4E79; text-align:center;'>Multi-Metric Comparison Chart</h3>",
+    unsafe_allow_html=True
+)
+
+# Exclude Headcount from pay comparison unless you want mixed scale
+comparison_metric_options = [
+    metric for metric in available_metrics
+    if metric != "Headcount"
+]
+
+default_metrics = []
+
+if selected_metric_label in comparison_metric_options:
+    default_metrics.append(selected_metric_label)
+
+if "Regular Pay" in comparison_metric_options and "Regular Pay" not in default_metrics:
+    default_metrics.append("Regular Pay")
+
+selected_comparison_metrics = st.multiselect(
+    "Select metrics to compare",
+    options=comparison_metric_options,
+    default=default_metrics,
+    key="multi_metric_comparison"
+)
+
+if len(selected_comparison_metrics) == 0:
+    st.warning("Please select at least one metric to display.")
+else:
+    comparison_names = workforce_chart_df[name_col].astype(str).tolist()
+
+    comparison_series = []
+
+    for metric_label in selected_comparison_metrics:
+        metric_col = pay_metric_options[metric_label]
+
+        comparison_series.append({
+            "name": metric_label,
+            "type": "line",
+            "smooth": True,
+            "symbol": "circle",
+            "symbolSize": 7,
+            "data": workforce_chart_df[metric_col].fillna(0).round(2).tolist()
+        })
+
+    comparison_chart_options = {
+        "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {
+                "type": "cross"
+            },
+            "formatter": JsCode("""
+                function(params) {
+                    var result = '<b>' + params[0].axisValue + '</b><br/>';
+
+                    params.forEach(function(item) {
+                        result += item.marker + item.seriesName + ': $' +
+                                  item.value.toLocaleString() + '<br/>';
+                    });
+
+                    return result;
+                }
+            """).js_code
+        },
+
+        "legend": {
+            "data": selected_comparison_metrics,
+            "bottom": 0,
+            "type": "scroll"
+        },
+
+        "toolbox": {
+            "show": True,
+            "right": 20,
+            "feature": {
+                "saveAsImage": {"show": True, "title": "Save as Image"},
+                "restore": {"show": True, "title": "Restore"},
+                "dataView": {"show": True, "readOnly": True, "title": "View Data"},
+                "magicType": {
+                    "show": True,
+                    "type": ["line", "bar"],
+                    "title": {
+                        "line": "Switch to Line",
+                        "bar": "Switch to Bar"
+                    }
+                }
+            }
+        },
+
+        "grid": {
+            "left": "10%",
+            "right": "8%",
+            "bottom": "25%",
+            "top": "12%",
+            "containLabel": True
+        },
+
+        "xAxis": {
+            "type": "category",
+            "data": comparison_names,
+            "axisLabel": {
+                "rotate": 45,
+                "fontSize": 10
+            }
+        },
+
+        "yAxis": {
+            "type": "value",
+            "name": "Pay Amount",
+            "axisLabel": {
+                "formatter": JsCode("""
+                    function(value) {
+                        if (value >= 1000000) {
+                            return '$' + (value / 1000000).toFixed(1) + 'M';
+                        }
+                        if (value >= 1000) {
+                            return '$' + (value / 1000).toFixed(0) + 'K';
+                        }
+                        return '$' + value;
+                    }
+                """).js_code
+            }
+        },
+
+        "dataZoom": [
+            {
+                "type": "slider",
+                "start": 0,
+                "end": 100,
+                "bottom": 55
+            },
+            {
+                "type": "inside",
+                "start": 0,
+                "end": 100
+            }
+        ],
+
+        "series": comparison_series
+    }
+
+    st.caption(
+        f"Comparison uses the same current filter: {analysis_level.lower()} records ranked "
+        f"{rank_start} to {rank_end} by {rank_direction.lower()} {selected_metric_label.lower()}."
+    )
+
+    st_echarts(
+        options=comparison_chart_options,
+        height="600px",
+        key=f"multi_metric_comparison_{analysis_level}_{rank_direction}_{rank_start}_{rank_end}_{'_'.join(selected_comparison_metrics)}"
+    )
