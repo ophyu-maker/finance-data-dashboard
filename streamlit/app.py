@@ -902,6 +902,11 @@ with left_col:
         st.session_state["selected_budget_department"] = clicked_department
 
 
+    st.info(
+    "Note: Click on bubble to see its monthly trend. "
+    )
+
+
 
 with right_col:
     selected_department = str(st.session_state["selected_budget_department"])
