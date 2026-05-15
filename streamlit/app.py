@@ -1438,7 +1438,7 @@ else:
 
     st.caption(
         f"Comparison uses the same current filter: {analysis_level.lower()} records ranked "
-        f"{rank_start} to {rank_end} by {rank_direction.lower()} {selected_metric_label.lower()}."
+        f"{rank_start} to {rank_end} ."
     )
 
     st_echarts(
