@@ -156,6 +156,21 @@ monthly_budget_df = load_query("""
     ORDER BY month, department_name;
 """)
 
+employee_pay_df = load_query("""
+    SELECT *
+    FROM employee_pay_summary;
+""")
+
+title_pay_df = load_query("""
+    SELECT *
+    FROM title_pay_summary;
+""")
+
+department_headcount_df = load_query("""
+    SELECT *
+    FROM department_headcount_summary;
+""")
+
 # -----------------------------
 # Prepare Vendor Bar Chart Data
 # -----------------------------
@@ -1009,4 +1024,266 @@ with st.expander("View selected department budget vs actual data", expanded=Fals
         dept_monthly_df,
         use_container_width=True,
         height=350
+    )
+
+# -----------------------------
+# Workforce Payroll Analysis
+# -----------------------------
+
+
+st.markdown(
+        "<h3 style='color:#1F4E79; text-align:center;'>Workforce Payroll Analysis</h3>",
+        unsafe_allow_html=True
+    )
+
+
+analysis_level = st.selectbox(
+    "Analyze by",
+    options=["Employee", "Job Title", "Department"],
+    index=0
+)
+
+pay_metric_options = {
+    "Total Pay": "total_pay",
+    "Regular Pay": "regular_pay",
+    "Overtime Pay": "overtime_pay",
+    "Injured Pay": "injured_pay",
+    "Detail Pay": "detail_pay",
+    "Other Pay": "other_pay",
+    "Retro Pay": "retro_pay",
+    "Quinn Education Pay": "quinn_education_pay",
+    "Headcount": "headcount"
+}
+
+if analysis_level == "Employee":
+    available_metrics = [
+        "Total Pay",
+        "Regular Pay",
+        "Overtime Pay",
+        "Injured Pay",
+        "Detail Pay",
+        "Other Pay",
+        "Retro Pay",
+        "Quinn Education Pay"
+    ]
+    chart_df = employee_pay_df.copy()
+    name_col = "name"
+
+elif analysis_level == "Job Title":
+    available_metrics = [
+        "Total Pay",
+        "Regular Pay",
+        "Overtime Pay",
+        "Injured Pay",
+        "Detail Pay",
+        "Other Pay",
+        "Retro Pay",
+        "Quinn Education Pay",
+        "Headcount"
+    ]
+    chart_df = title_pay_df.copy()
+    name_col = "title"
+
+else:
+    available_metrics = [
+        "Total Pay",
+        "Regular Pay",
+        "Overtime Pay",
+        "Injured Pay",
+        "Headcount"
+    ]
+    chart_df = department_headcount_df.copy()
+    name_col = "department_name"
+
+
+filter_col1, filter_col2, filter_col3 = st.columns([1, 1, 1.2])
+
+with filter_col1:
+    selected_metric_label = st.selectbox(
+        "Select metric",
+        options=available_metrics,
+        index=0
+    )
+
+with filter_col2:
+    rank_direction = st.selectbox(
+        "Show",
+        options=["Top", "Bottom"],
+        index=0,
+        key="workforce_rank_direction"
+    )
+
+with filter_col3:
+    max_rank = min(100, len(chart_df))
+
+    rank_range = st.slider(
+        "Rank range",
+        min_value=1,
+        max_value=max_rank,
+        value=(1, min(20, max_rank)),
+        step=1,
+        key="workforce_rank_range"
+    )
+
+rank_start, rank_end = rank_range
+selected_metric_col = pay_metric_options[selected_metric_label]
+
+sort_ascending = True if rank_direction == "Bottom" else False
+
+ranked_workforce_df = (
+    chart_df
+    .sort_values(selected_metric_col, ascending=sort_ascending)
+    .reset_index(drop=True)
+    .copy()
+)
+
+workforce_chart_df = ranked_workforce_df.iloc[rank_start - 1:rank_end].copy()
+
+workforce_chart_df[name_col] = workforce_chart_df[name_col].astype(str)
+workforce_names = workforce_chart_df[name_col].tolist()
+workforce_values = workforce_chart_df[selected_metric_col].fillna(0).round(2).tolist()
+
+st.caption(
+    f"Displaying {analysis_level.lower()} records ranked {rank_start} to {rank_end} "
+    f"based on {rank_direction.lower()} {selected_metric_label.lower()}."
+)
+
+
+# -----------------------------
+# Chart formatting
+# -----------------------------
+
+if selected_metric_label == "Headcount":
+    x_axis_name = "Headcount"
+else:
+    x_axis_name = selected_metric_label
+
+
+workforce_bar_options = {
+    "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+            "type": "shadow"
+        },
+        "formatter": JsCode("""
+            function(params) {
+                var item = params[0];
+                var value = item.value;
+
+                if (item.seriesName === 'Headcount') {
+                    return '<b>' + item.name + '</b><br/>' +
+                           item.seriesName + ': ' + value.toLocaleString();
+                }
+
+                return '<b>' + item.name + '</b><br/>' +
+                       item.seriesName + ': $' + value.toLocaleString();
+            }
+        """).js_code
+    },
+
+    "toolbox": {
+        "show": True,
+        "right": 20,
+        "feature": {
+            "saveAsImage": {"show": True, "title": "Save as Image"},
+            "restore": {"show": True, "title": "Restore"},
+            "dataView": {"show": True, "readOnly": True, "title": "View Data"},
+            "magicType": {
+                "show": True,
+                "type": ["line", "bar"],
+                "title": {
+                    "line": "Switch to Line",
+                    "bar": "Switch to Bar"
+                }
+            }
+        }
+    },
+
+    "grid": {
+        "left": "28%",
+        "right": "10%",
+        "bottom": "8%",
+        "top": "10%",
+        "containLabel": True
+    },
+
+    "xAxis": {
+        "type": "value",
+        "name": x_axis_name,
+        "axisLabel": {
+            "formatter": JsCode("""
+                function(value) {
+                    if (value >= 1000000) {
+                        return '$' + (value / 1000000).toFixed(1) + 'M';
+                    }
+                    if (value >= 1000) {
+                        return '$' + (value / 1000).toFixed(0) + 'K';
+                    }
+                    return value;
+                }
+            """).js_code
+        }
+    },
+
+    "yAxis": {
+        "type": "category",
+        "data": workforce_names,
+        "inverse": True,
+        "axisLabel": {
+            "fontSize": 11
+        }
+    },
+
+    "series": [
+        {
+            "name": selected_metric_label,
+            "type": "bar",
+            "data": workforce_values,
+            "barWidth": "60%",
+            "itemStyle": {
+                "borderRadius": [0, 8, 8, 0]
+            },
+            "label": {
+                "show": True,
+                "position": "right",
+                "formatter": JsCode("""
+                    function(params) {
+                        var value = params.value;
+
+                        if (params.seriesName === 'Headcount') {
+                            return value.toLocaleString();
+                        }
+
+                        if (value >= 1000000) {
+                            return '$' + (value / 1000000).toFixed(1) + 'M';
+                        }
+                        if (value >= 1000) {
+                            return '$' + (value / 1000).toFixed(0) + 'K';
+                        }
+                        return '$' + value.toLocaleString();
+                    }
+                """).js_code
+            }
+        }
+    ]
+}
+
+
+st.markdown(
+    f"<h3 style='color:#1F4E79; text-align:center;'>{rank_direction} {analysis_level}s by {selected_metric_label}</h3>",
+    unsafe_allow_html=True
+)
+
+st_echarts(
+    options=workforce_bar_options,
+    height="700px",
+    key=f"workforce_bar_{analysis_level}_{selected_metric_col}_{rank_direction}_{rank_start}_{rank_end}"
+)
+
+
+with st.expander("View workforce payroll data", expanded=False):
+    st.dataframe(
+        workforce_chart_df,
+        use_container_width=True,
+        height=450
     )
